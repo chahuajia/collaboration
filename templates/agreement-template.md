@@ -8,14 +8,15 @@ applies-to: [all]
 supersedes: null
 ---
 
-# A<n> 标题
 
-## 上下文
-
-## 问题
-
-## 方案
-
-## 反面
-
-## 关联
+```yaml
+A<n>:标题?
+上下文:
+问题:
+方案:
+反面:
+关联:
+author: <git email>
+co-authors: []
+proposed-by: <git email>
+confirmed-by: <git email>

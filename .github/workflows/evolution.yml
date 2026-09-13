@@ -1,0 +1,18 @@
+# 工程化阶段填写
+# 触发：PR to main
+# 步骤：
+#   1. YAML 元数据校验
+#   2. 双向链接死链检查
+#   3. "反面"章节非空检查
+#   4. _index.md 一致性检查
+#   5. evolution-log 由 Bot 更新
+name: evolution
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "TODO: validate YAML / links / sections"

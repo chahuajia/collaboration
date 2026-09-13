@@ -16,3 +16,10 @@ updated: YYYY-MM-DD
 ## 替代方案
 ## 未解决问题
 ## 关联
+
+```yaml
+author: <git email>
+co-authors: []
+proposed-by: <git email>
+confirmed-by: <git email>
+```

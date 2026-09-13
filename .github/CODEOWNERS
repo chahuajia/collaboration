@@ -1,0 +1,9 @@
+# 主干保护
+
+agreements/**      @core-team
+workflows/**       @maintainers
+skills/**          @any-contributor
+patterns/**        @maintainers
+meta/**            @core-team
+rfcs/**            @core-team
+profiles/**        @any-contributor
