@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b2f4f37-94b5-4125-962a-3b7d51a71b71" name="更改" comment="">
+    <list default="true" id="3b2f4f37-94b5-4125-962a-3b7d51a71b71" name="更改" comment="docs(collaboration): 添加作者信息到协议和模式文档&#10;&#10;- 在所有合作协议文件中添加 author: heiniao 字段&#10;- 在决策记录文件中添加 author: heiniao 字段&#10;- 在模式文档中添加 author: heiniao 字段&#10;- 在技能文档中添加 author: heiniao 字段&#10;- 在工作流程文档中添加 author: heiniao 字段&#10;- 更新 IDEA 工作空间配置文件以反映项目结构变化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A1-output-format.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A1-output-format.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A10 Review 上移原则.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A10 Review 上移原则.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A2-depth-and-reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A2-depth-and-reflection.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A3-mutual-critique.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A3-mutual-critique.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A4-proactive-update.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A4-proactive-update.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A5-declare-mode.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A5-declare-mode.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A6-version-authority.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A6-version-authority.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A7-distribution-and-community.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A7-distribution-and-community.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A8-设计不是可选项，只有好坏之分.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A8-设计不是可选项，只有好坏之分.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/A9 跨域借鉴：不局限在代码思维.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/A9 跨域借鉴：不局限在代码思维.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COLLABORATION/agreements/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/agreements/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/meta/decision-records/ADR-0001-adopt-v3-structure.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/meta/decision-records/ADR-0001-adopt-v3-structure.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/meta/decision-records/ADR-0002-community-distribution.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/meta/decision-records/ADR-0002-community-distribution.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COLLABORATION/meta/decision-records/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/meta/decision-records/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/catalyst-nodes.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/catalyst-nodes.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/distributed-evolution.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/distributed-evolution.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/ecological-niche.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/ecological-niche.md" afterDir="false" />
@@ -30,24 +23,8 @@
       <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/peer-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/peer-review.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/rfc-process.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/rfc-process.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COLLABORATION/patterns/rooted-graph.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/patterns/rooted-graph.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S1-h2-output.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S1-h2-output.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S10-collab-cli.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S10-collab-cli.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S11-profile-declaration.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S11-profile-declaration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S2-csp-reporting.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S2-csp-reporting.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S3-env-fail-fast.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S3-env-fail-fast.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S4-setstate-in-render.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S4-setstate-in-render.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S5-null-not-sentinel.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S5-null-not-sentinel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S6-sw-debugging.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S6-sw-debugging.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S7-ddd-frontend-light.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S7-ddd-frontend-light.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S8-pattern-language-format.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S8-pattern-language-format.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/S9-yaml-metadata.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/S9-yaml-metadata.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W1-blank-page-triage.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W1-blank-page-triage.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W2-three-stage-analysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W2-three-stage-analysis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W3-ddd-refactor.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W3-ddd-refactor.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W4-three-question-retro.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W4-three-question-retro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W5-update-collaboration.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W5-update-collaboration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W6-local-patch-to-community-pr.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W6-local-patch-to-community-pr.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/W7-rfc-process.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/W7-rfc-process.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COLLABORATION/skills/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/skills/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COLLABORATION/workflows/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/COLLABORATION/workflows/_index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +76,15 @@
       <updated>1789346698298</updated>
       <workItem from="1789346699405" duration="414000" />
     </task>
+    <task id="LOCAL-00001" summary="docs(collaboration): 添加作者信息到协议和模式文档&#10;&#10;- 在所有合作协议文件中添加 author: heiniao 字段&#10;- 在决策记录文件中添加 author: heiniao 字段&#10;- 在模式文档中添加 author: heiniao 字段&#10;- 在技能文档中添加 author: heiniao 字段&#10;- 在工作流程文档中添加 author: heiniao 字段&#10;- 更新 IDEA 工作空间配置文件以反映项目结构变化">
+      <option name="closed" value="true" />
+      <created>1789349391849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789349391849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docs(collaboration): 添加作者信息到协议和模式文档&#10;&#10;- 在所有合作协议文件中添加 author: heiniao 字段&#10;- 在决策记录文件中添加 author: heiniao 字段&#10;- 在模式文档中添加 author: heiniao 字段&#10;- 在技能文档中添加 author: heiniao 字段&#10;- 在工作流程文档中添加 author: heiniao 字段&#10;- 更新 IDEA 工作空间配置文件以反映项目结构变化" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs(collaboration): 添加作者信息到协议和模式文档&#10;&#10;- 在所有合作协议文件中添加 author: heiniao 字段&#10;- 在决策记录文件中添加 author: heiniao 字段&#10;- 在模式文档中添加 author: heiniao 字段&#10;- 在技能文档中添加 author: heiniao 字段&#10;- 在工作流程文档中添加 author: heiniao 字段&#10;- 更新 IDEA 工作空间配置文件以反映项目结构变化" />
   </component>
 </project>

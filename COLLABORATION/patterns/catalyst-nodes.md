@@ -2,6 +2,8 @@
 id: catalyst-nodes
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 化学（催化剂）
 author: heiniao
 ---

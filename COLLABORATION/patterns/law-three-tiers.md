@@ -2,6 +2,8 @@
 id: law-three-tiers
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 法律
 author: heiniao
 ---

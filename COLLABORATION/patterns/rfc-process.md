@@ -2,6 +2,8 @@
 id: rfc-process
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: Rust RFC 流程
 author: heiniao
 ---

@@ -2,6 +2,8 @@
 id: layered-defense
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 军事纵深防御
 author: heiniao
 ---

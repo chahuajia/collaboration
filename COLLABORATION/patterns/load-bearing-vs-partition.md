@@ -2,6 +2,8 @@
 id: load-bearing-vs-partition
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 建筑
 author: heiniao
 ---

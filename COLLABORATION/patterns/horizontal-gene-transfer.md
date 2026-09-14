@@ -2,6 +2,8 @@
 id: horizontal-gene-transfer
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 生物学（水平基因转移）
 author: heiniao
 ---

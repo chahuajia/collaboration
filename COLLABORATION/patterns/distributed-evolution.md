@@ -2,6 +2,8 @@
 id: distributed-evolution
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 分布式系统 + 生物进化
 author: heiniao
 ---

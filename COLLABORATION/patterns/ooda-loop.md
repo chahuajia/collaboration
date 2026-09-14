@@ -2,6 +2,8 @@
 id: ooda-loop
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: 军事（OODA）
 author: heiniao
 ---

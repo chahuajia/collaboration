@@ -2,6 +2,8 @@
 id: ADR-0002
 type: adr
 status: accepted
+created: 2026-09-11
+updated: 2026-09-14
 date: 2026-09-11
 author: heiniao
 ---

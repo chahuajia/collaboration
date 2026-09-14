@@ -2,6 +2,8 @@
 id: pattern-language
 type: pattern
 status: active
+created: 2026-09-11
+updated: 2026-09-14
 source: Christopher Alexander《建筑模式语言》
 author: heiniao
 ---
