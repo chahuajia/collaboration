@@ -7,6 +7,7 @@ updated: 2026-09-12
 applies-to: [all]
 supersedes: null
 author: heiniao
+aliases: [A10]
 ---
 
 # A10 Review 上移原则
@@ -87,4 +88,4 @@ AI 让"实现"的边际成本趋近于零，但人的 review 带宽没有增加�
 
 ## 关联
 
-[[A8]] [[A9]] [[W2]] [[W5]] [[patterns/review-marginal-value]] [[patterns/hierarchical-actor-collaboration]]
+[[A8-设计不是可选项，只有好坏之分]] [[A9-跨域借鉴：不局限在代码思维]] [[W2-three-stage-analysis]] [[W5-update-collaboration]] [[patterns/review-marginal-value]] [[patterns/hierarchical-actor-collaboration]]

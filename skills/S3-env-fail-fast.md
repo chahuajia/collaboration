@@ -8,6 +8,7 @@ domains: [config, nextjs]
 applies-to: [W1]
 supersedes: null
 author: heiniao
+aliases: [S3]
 ---
 
 # S3 环境变量 fail-fast 校验
@@ -35,4 +36,4 @@ author: heiniao
 
 ## 关联
 
-[[W1]] [[S2]] [[domains/nextjs/_index]]
+[[W1-blank-page-triage]] [[S2-csp-reporting]] [[domains/nextjs/_index]]

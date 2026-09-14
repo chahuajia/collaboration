@@ -6,6 +6,8 @@ created: 2026-09-11
 updated: 2026-09-14
 date: 2026-09-11
 author: heiniao
+aliases:
+  - ADR-0001
 ---
 
 # ADR-0001 采用 v3 目录结构

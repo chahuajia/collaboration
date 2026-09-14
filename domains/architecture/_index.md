@@ -2,8 +2,8 @@
 
 ## 相关条目
 
-- [[W3]] DDD 重构工作流
-- [[S7]] DDD 前端轻量化
+- [[W3-ddd-refactor]] 
+- [[S7-ddd-frontend-light]] 
 - [[patterns/load-bearing-vs-partition]]
 - [[patterns/rooted-graph]]
 

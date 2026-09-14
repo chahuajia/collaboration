@@ -2,8 +2,8 @@
 
 ## 相关条目
 
-- [[S5]] 哨兵值替换
-- [[S7]] DDD 前端轻量化
+- [[S5-null-not-sentinel]] 哨兵值替换
+- [[S7-ddd-frontend-light]] 
 
 ## 常见问题
 

@@ -8,6 +8,7 @@ domains: [react, nextjs, graphql, security]
 applies-to: [blank-page, data-missing]
 supersedes: null
 author: heiniao
+aliases: [W1]
 ---
 
 # W1 页面空白/数据不出来的黄金排查路径
@@ -41,4 +42,4 @@ author: heiniao
 
 ## 关联
 
-[[S2]] [[S3]] [[S4]] [[S6]] [[patterns/layered-defense]]
+[[S2-csp-reporting]] [[S3-env-fail-fast]] [[S4-setstate-in-render]] [[S6-sw-debugging]] [[patterns/layered-defense]]

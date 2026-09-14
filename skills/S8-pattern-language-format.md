@@ -8,6 +8,7 @@ domains: [meta]
 applies-to: [all-entries]
 supersedes: null
 author: heiniao
+aliases: [S8]
 ---
 
 # S8 模式语言格式
@@ -37,4 +38,4 @@ author: heiniao
 
 ## 关联
 
-[[patterns/pattern-language]] [[S9]] [[ROOT]]
+[[patterns/pattern-language]] [[S9-yaml-metadata]] [[ROOT]]

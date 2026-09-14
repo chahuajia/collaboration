@@ -8,6 +8,7 @@ domains: [security, nextjs]
 applies-to: [W1]
 supersedes: null
 author: heiniao
+aliases: [S2]
 ---
 
 # S2 CSP 报告配置
@@ -38,4 +39,4 @@ author: heiniao
 
 ## 关联
 
-[[W1]] [[S3]] [[patterns/layered-defense]]
+[[W1-blank-page-triage]] [[S3-env-fail-fast]] [[patterns/layered-defense]]

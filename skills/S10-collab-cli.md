@@ -8,6 +8,7 @@ domains: [meta, tooling]
 applies-to: [W6]
 supersedes: null
 author: heiniao
+aliases: [S10]
 ---
 
 # S10 collab CLI 使用
@@ -84,4 +85,4 @@ collab sync --rebase --respect-profile
 
 ## 关联
 
-[[A7]] [[W6]] [[S11]] [[profiles/_index]]
+[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[S11-profile-declaration]] [[profiles/_index]]

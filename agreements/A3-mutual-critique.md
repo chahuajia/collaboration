@@ -7,6 +7,7 @@ updated: 2026-09-11
 applies-to: [all]
 supersedes: null
 author: heiniao
+aliases: [A3]
 ---
 
 # A3 互相批评、鼓励、归纳总结
@@ -36,4 +37,4 @@ author: heiniao
 
 ## 关联
 
-[[A2]] [[W4]] [[ROOT]]
+[[A2-depth-and-reflection]] [[W4-three-question-retro]] [[ROOT]]

@@ -8,6 +8,7 @@ domains: [meta]
 applies-to: [A1]
 supersedes: null
 author: heiniao
+aliases: [S1]
 ---
 
 # S1 H2 输出
@@ -31,4 +32,4 @@ author: heiniao
 
 ## 关联
 
-[[A1]] [[ROOT]]
+[[A1-output-format]] [[ROOT]]

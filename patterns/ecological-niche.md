@@ -29,4 +29,4 @@ author: heiniao
 
 ## 关联
 
-[[S8]] [[patterns/pattern-language]] [[ROOT]]
+[[S8-pattern-language-format]] [[patterns/pattern-language]] [[ROOT]]

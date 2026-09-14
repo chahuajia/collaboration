@@ -20,4 +20,4 @@
 
 ## 关联
 
-[[A7]] [[S10]] [[S11]]
+[[A7-distribution-and-community]] [[S10-collab-cli]] [[S11-profile-declaration]]

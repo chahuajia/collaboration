@@ -8,6 +8,7 @@ domains: [meta]
 applies-to: [agreement-change, structural-change]
 supersedes: null
 author: heiniao
+aliases: [W7]
 ---
 
 # W7 RFC 流程（约定级变更）
@@ -43,4 +44,4 @@ RFC 状态：`draft → discussion → fcp → accepted / rejected / withdrawn`�
 
 ## 关联
 
-[[A6]] [[A7]] [[W6]] [[patterns/rfc-process]] [[rfcs/_index]]
+[[A6-version-authority]] [[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[patterns/rfc-process]] [[rfcs/_index]]

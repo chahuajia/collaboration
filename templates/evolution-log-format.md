@@ -52,4 +52,4 @@ updated: 2026-09-11
 
 ## 关联
 
-[[A4]] [[A6]] [[meta/evolution-log]]
+[[A4-proactive-update]] [[A6-version-authority]] [[meta/evolution-log]]

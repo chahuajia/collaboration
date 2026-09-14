@@ -8,6 +8,7 @@ domains: [meta]
 applies-to: [W6]
 supersedes: null
 author: heiniao
+aliases: [S11]
 ---
 # S11 Profile 声明侧重点
 ## 上下文
@@ -69,4 +70,4 @@ fork-policy:
 
 ## 关联
 
-[[A7]] [[S10]] [[profiles/_index]]
+[[A7-distribution-and-community]] [[S10-collab-cli]] [[profiles/_index]]

@@ -7,6 +7,7 @@ updated: 2026-09-11
 applies-to: [all]
 supersedes: null
 author: heiniao
+aliases: [A2]
 ---
 
 # A2 深入、扩展、反思
@@ -41,4 +42,4 @@ author: heiniao
 
 ## 关联
 
-[[W2]] [[A3]] [[ROOT]]
+[[W2-three-stage-analysis]] [[A3-mutual-critique]] [[ROOT]]

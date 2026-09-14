@@ -8,6 +8,7 @@ domains: [meta]
 applies-to: [new-insight, conflict, obsolescence]
 supersedes: null
 author: heiniao
+aliases: [W5]
 ---
 
 # W5 更新 COLLABORATION
@@ -39,4 +40,4 @@ author: heiniao
 
 ## 关联
 
-[[A4]] [[A6]] [[W4]] [[meta/evolution-log]] [[ROOT]]
+[[A4-proactive-update]] [[A6-version-authority]] [[W4-three-question-retro]] [[meta/evolution-log]] [[ROOT]]

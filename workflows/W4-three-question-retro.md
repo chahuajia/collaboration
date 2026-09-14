@@ -8,6 +8,7 @@ domains: [all]
 applies-to: [after-complex-task]
 supersedes: null
 author: heiniao
+aliases: [W4]
 ---
 
 # W4 复盘三问
@@ -41,4 +42,4 @@ author: heiniao
 
 ## 关联
 
-[[A3]] [[W5]] [[patterns/ooda-loop]] [[ROOT]]
+[[A3-mutual-critique]] [[W5-update-collaboration]] [[patterns/ooda-loop]] [[ROOT]]

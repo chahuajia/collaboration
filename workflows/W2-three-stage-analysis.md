@@ -8,6 +8,7 @@ domains: [all]
 applies-to: [any-technical-question]
 supersedes: null
 author: heiniao
+aliases: [W2]
 ---
 
 # W2 复杂问题分析三段式
@@ -37,4 +38,4 @@ author: heiniao
 
 ## 关联
 
-[[A2]] [[patterns/layered-defense]] [[ROOT]]
+[[A2-depth-and-reflection]] [[patterns/layered-defense]] [[ROOT]]

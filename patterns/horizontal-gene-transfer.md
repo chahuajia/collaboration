@@ -34,4 +34,4 @@ author: heiniao
 
 ## 关联
 
-[[A7]] [[patterns/distributed-evolution]] [[meta/pruning-policy]]
+[[A7-distribution-and-community]] [[patterns/distributed-evolution]] [[meta/pruning-policy]]

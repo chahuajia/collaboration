@@ -8,6 +8,7 @@ domains: [architecture]
 applies-to: [directory-bloat, module-coupling]
 supersedes: null
 author: heiniao
+aliases: [W3]
 ---
 
 # W3 DDD 架构重构工作流
@@ -47,4 +48,4 @@ author: heiniao
 
 ## 关联
 
-[[S7]] [[patterns/load-bearing-vs-partition]] [[domains/architecture/_index]]
+[[S7-ddd-frontend-light]] [[patterns/load-bearing-vs-partition]] [[domains/architecture/_index]]

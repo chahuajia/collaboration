@@ -7,6 +7,7 @@ updated: 2026-09-11
 applies-to: [all]
 supersedes: null
 author: heiniao
+aliases: [A7]
 ---
 
 # A7 分发与社区协作原则
@@ -74,4 +75,4 @@ COLLABORATION 从个人规范升级为社区协议，需要明确分发、身份
 
 ## 关联
 
-[[A6]] [[W6]] [[W7]] [[S10]] [[S11]] [[patterns/distributed-evolution]] [[patterns/horizontal-gene-transfer]] [[ADR-0002-community-distribution]]
+[[A6-version-authority]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]] [[S10-collab-cli]] [[S11-profile-declaration]] [[patterns/distributed-evolution]] [[patterns/horizontal-gene-transfer]] [[ADR-0002-community-distribution]]

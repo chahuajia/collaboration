@@ -25,4 +25,4 @@ author: heiniao
 - 不要让 fork 永久漂移。
 - 不要用投票替代讨论。
 ## 关联
-[[A7]] [[W6]] [[S11]] [[patterns/evolution-loop]] [[patterns/horizontal-gene-transfer]]
+[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[S11-profile-declaration]] [[patterns/evolution-loop]] [[patterns/horizontal-gene-transfer]]

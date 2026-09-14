@@ -33,4 +33,4 @@ author: heiniao
 
 ## 关联
 
-[[A7]] [[W6]] [[patterns/rfc-process]]
+[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[patterns/rfc-process]]

@@ -12,6 +12,7 @@ applies-to:
   - W1
 supersedes:
 author: heiniao
+aliases: [S5]
 ---
 
 # S5 哨兵值替换为 null
@@ -44,4 +45,4 @@ const isValidCoordinate = (lat, lng) => {
 - 不要在渲染期间无条件 setState。
 - 不要用 useEffect 处理可推导值。
 ## 关联
-[[W1]] [[S5]] [[domains/react/_index]]
+[[W1-blank-page-triage]] [[S5-null-not-sentinel]] [[domains/react/_index]]

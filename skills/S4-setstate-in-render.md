@@ -8,6 +8,7 @@ domains: [react]
 applies-to: [W1]
 supersedes: null
 author: heiniao
+aliases: [S4]
 ---
 
 # S4 React setState in render 修复
@@ -38,4 +39,4 @@ author: heiniao
 
 ## 关联
 
-[[W1]] [[S5]] [[domains/react/_index]]
+[[W1-blank-page-triage]] [[S5-null-not-sentinel]] [[domains/react/_index]]

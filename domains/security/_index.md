@@ -2,8 +2,8 @@
 
 ## 相关条目
 
-- [[S2]] CSP 报告配置
-- [[W1]] 排查路径
+- [[S2-csp-reporting]] CSP 报告配置
+- [[W1-blank-page-triage]] 排查路径
 
 ## 常见问题
 

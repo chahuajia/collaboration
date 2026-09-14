@@ -6,6 +6,7 @@ created: 2026-09-11
 updated: 2026-09-14
 date: 2026-09-11
 author: heiniao
+aliases: [ADR-0002]
 ---
 
 # ADR-0002 采用社区化分发模型
@@ -43,4 +44,4 @@ COLLABORATION v3 是个人知识库。用户希望分享出去，让更多人机
 
 ## 关联
 
-[[A7]] [[W6]] [[W7]] [[S10]] [[S11]] [[patterns/distributed-evolution]]
+[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]] [[S10-collab-cli]] [[S11-profile-declaration]] [[patterns/distributed-evolution]]

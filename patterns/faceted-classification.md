@@ -33,4 +33,4 @@ author: heiniao
 
 ## 关联
 
-[[S9]] [[patterns/rooted-graph]] [[ROOT]]
+[[S9-yaml-metadata]] [[patterns/rooted-graph]] [[ROOT]]

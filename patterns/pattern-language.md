@@ -34,4 +34,4 @@ author: heiniao
 
 ## 关联
 
-[[S8]] [[ROOT]]
+[[S8-pattern-language-format]] [[ROOT]]
