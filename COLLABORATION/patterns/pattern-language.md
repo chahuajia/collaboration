@@ -3,6 +3,7 @@ id: pattern-language
 type: pattern
 status: active
 source: Christopher Alexander《建筑模式语言》
+author: heiniao
 ---
 
 # 模式语言

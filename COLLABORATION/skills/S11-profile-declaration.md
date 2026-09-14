@@ -7,6 +7,7 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [W6]
 supersedes: null
+author: heiniao
 ---
 # S11 Profile 声明侧重点
 ## 上下文

@@ -3,6 +3,7 @@ id: law-three-tiers
 type: pattern
 status: active
 source: 法律
+author: heiniao
 ---
 
 # 三层法律结构

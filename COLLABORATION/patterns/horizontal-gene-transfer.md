@@ -3,6 +3,7 @@ id: horizontal-gene-transfer
 type: pattern
 status: active
 source: 生物学（水平基因转移）
+author: heiniao
 ---
 
 # 水平基因转移

@@ -3,6 +3,7 @@ id: rfc-process
 type: pattern
 status: active
 source: Rust RFC 流程
+author: heiniao
 ---
 
 # RFC 流程

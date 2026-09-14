@@ -7,6 +7,7 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [agreement-change, structural-change]
 supersedes: null
+author: heiniao
 ---
 
 # W7 RFC 流程（约定级变更）

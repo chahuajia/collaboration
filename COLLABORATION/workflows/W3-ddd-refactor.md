@@ -7,6 +7,7 @@ updated: 2026-09-11
 domains: [architecture]
 applies-to: [directory-bloat, module-coupling]
 supersedes: null
+author: heiniao
 ---
 
 # W3 DDD 架构重构工作流

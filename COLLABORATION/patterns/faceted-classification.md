@@ -3,6 +3,7 @@ id: faceted-classification
 type: pattern
 status: active
 source: 图书馆学
+author: heiniao
 ---
 
 # 分面分类

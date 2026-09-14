@@ -3,6 +3,7 @@ id: ADR-0001
 type: adr
 status: accepted
 date: 2026-09-11
+author: heiniao
 ---
 
 # ADR-0001 采用 v3 目录结构

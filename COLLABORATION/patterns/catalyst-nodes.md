@@ -3,6 +3,7 @@ id: catalyst-nodes
 type: pattern
 status: active
 source: 化学（催化剂）
+author: heiniao
 ---
 
 # 杠杆节点

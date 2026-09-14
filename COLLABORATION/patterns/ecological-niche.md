@@ -3,6 +3,7 @@ id: ecological-niche
 type: pattern
 status: active
 source: 生态学
+author: heiniao
 ---
 
 # 生态位

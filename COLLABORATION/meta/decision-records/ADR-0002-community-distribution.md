@@ -3,6 +3,7 @@ id: ADR-0002
 type: adr
 status: accepted
 date: 2026-09-11
+author: heiniao
 ---
 
 # ADR-0002 采用社区化分发模型

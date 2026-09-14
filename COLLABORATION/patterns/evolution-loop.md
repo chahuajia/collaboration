@@ -3,6 +3,7 @@ id: evolution-loop
 type: pattern
 status: active
 source: 生物进化论
+author: heiniao
 ---
 
 # 进化闭环

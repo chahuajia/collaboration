@@ -3,6 +3,7 @@ id: peer-review
 type: pattern
 status: active
 source: 学术同行评审
+author: heiniao
 ---
 
 # 同行评审

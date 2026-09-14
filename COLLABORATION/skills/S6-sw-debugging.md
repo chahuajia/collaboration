@@ -9,6 +9,7 @@ domains:
 applies-to:
   - W1
 supersedes:
+author: heiniao
 ---
 
 # S6 Service Worker 调试

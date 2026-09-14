@@ -3,6 +3,7 @@ id: entropy-reduction
 type: pattern
 status: active
 source: 物理学（熵增定律）
+author: heiniao
 ---
 
 # 熵减机制

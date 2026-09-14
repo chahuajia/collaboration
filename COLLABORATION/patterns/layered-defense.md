@@ -3,6 +3,7 @@ id: layered-defense
 type: pattern
 status: active
 source: 军事纵深防御
+author: heiniao
 ---
 
 # 分层防御

@@ -7,6 +7,7 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [all-entries]
 supersedes: null
+author: heiniao
 ---
 
 # S8 模式语言格式

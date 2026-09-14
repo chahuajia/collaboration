@@ -6,6 +6,7 @@ created: 2026-09-11
 updated: 2026-09-11
 applies-to: [all]
 supersedes: null
+author: heiniao
 ---
 
 # A4 主动触发知识沉淀

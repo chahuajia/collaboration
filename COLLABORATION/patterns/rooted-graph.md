@@ -3,6 +3,7 @@ id: rooted-graph
 type: pattern
 status: active
 source: 图论
+author: heiniao
 ---
 
 # 有根图

@@ -3,6 +3,7 @@ id: load-bearing-vs-partition
 type: pattern
 status: active
 source: 建筑
+author: heiniao
 ---
 
 # 承重墙 vs 隔断

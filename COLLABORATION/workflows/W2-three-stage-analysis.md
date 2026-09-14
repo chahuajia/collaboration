@@ -7,6 +7,7 @@ updated: 2026-09-11
 domains: [all]
 applies-to: [any-technical-question]
 supersedes: null
+author: heiniao
 ---
 
 # W2 复杂问题分析三段式
