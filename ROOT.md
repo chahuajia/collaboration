@@ -63,4 +63,4 @@ updated: 2026-09-11
 
 ## 关联
 
-[[A1]] [[A2]] [[A3]] [[A4]] [[A5]] [[A6]] [[W4]] [[W5]] [[patterns/rooted-graph]] [[patterns/pattern-language]] [[patterns/evolution-loop]]
+[[A1]] [[A2]] [[A3]] [[A4]] [[A5]] [[A6]] [[W4]] [[W5]] [[patterns/rooted-graph]] [[patterns/pattern-language]] [[patterns/evolution-loop]] [[A4-proactive-update]]
