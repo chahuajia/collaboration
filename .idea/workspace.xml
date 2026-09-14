@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b2f4f37-94b5-4125-962a-3b7d51a71b71" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/CODEOWNERS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/evolution.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/成长的协作.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROOT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A1-output-format.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A10 Review 上移原则.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A2-depth-and-reflection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A3-mutual-critique.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A4-proactive-update.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A5-declare-mode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A6-version-authority.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A7-distribution-and-community.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A8-设计不是可选项，只有好坏之分.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/A9 跨域借鉴：不局限在代码思维.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agreements/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/architecture/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/graphql/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/nextjs/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/react/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/security/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/decision-records/ADR-0001-adopt-v3-structure.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/decision-records/ADR-0002-community-distribution.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/decision-records/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/evolution-log.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/naming-conventions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/pruning-policy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/catalyst-nodes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/distributed-evolution.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/ecological-niche.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/entropy-reduction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/evolution-loop.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/faceted-classification.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/horizontal-gene-transfer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/law-three-tiers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/layered-defense.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/load-bearing-vs-partition.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/ooda-loop.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/pattern-language.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/peer-review.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/rfc-process.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/rooted-graph.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/_template.yaml.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rfcs/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rfcs/_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S1-h2-output.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S10-collab-cli.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S11-profile-declaration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S2-csp-reporting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S3-env-fail-fast.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S4-setstate-in-render.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S5-null-not-sentinel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S6-sw-debugging.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S7-ddd-frontend-light.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S8-pattern-language-format.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/S9-yaml-metadata.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/agreement-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/evolution-log-format.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/evolution-log-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pattern-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rfc-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/skill-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/workflow-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W1-blank-page-triage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W2-three-stage-analysis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W3-ddd-refactor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W4-three-question-retro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W5-update-collaboration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W6-local-patch-to-community-pr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/W7-rfc-process.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/_index.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3JIRfRKXQAujIFaav18j2Kv6Gbq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "test-cil",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.26222.58" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="3b2f4f37-94b5-4125-962a-3b7d51a71b71" name="更改" comment="" />
+      <created>1789346698298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789346698298</updated>
+      <workItem from="1789346699405" duration="414000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
