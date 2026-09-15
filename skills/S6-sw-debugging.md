@@ -10,7 +10,8 @@ applies-to:
   - W1
 supersedes:
 author: heiniao
-aliases: [S6]
+aliases:
+  - S6
 ---
 
 # S6 Service Worker 调试
