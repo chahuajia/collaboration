@@ -6,6 +6,8 @@ created: 2026-09-11
 updated: 2026-09-11
 applies-to: [all]
 supersedes: null
+author: heiniao
+aliases: [A5]
 ---
 
 # A5 显式声明协作模式
@@ -35,4 +37,4 @@ supersedes: null
 
 ## 关联
 
-[[A1]] [[W2]] [[ROOT]]
+[[A1-output-format]] [[W2-three-stage-analysis]] [[ROOT]]

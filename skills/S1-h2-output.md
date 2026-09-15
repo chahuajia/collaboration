@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [A1]
 supersedes: null
+author: heiniao
+aliases: [S1]
 ---
 
 # S1 H2 输出

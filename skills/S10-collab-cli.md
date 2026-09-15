@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [meta, tooling]
 applies-to: [W6]
 supersedes: null
+author: heiniao
+aliases: [S10]
 ---
 
 # S10 collab CLI 使用

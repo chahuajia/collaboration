@@ -6,6 +6,8 @@ created: 2026-09-11
 updated: 2026-09-11
 applies-to: [all]
 supersedes: null
+author: heiniao
+aliases: [A4]
 ---
 
 # A4 主动触发知识沉淀
@@ -42,4 +44,4 @@ supersedes: null
 
 ## 关联
 
-[[W5]] [[meta/evolution-log]] [[ROOT]]
+[[W5-update-collaboration]] [[meta/evolution-log]] [[ROOT]]

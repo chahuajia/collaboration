@@ -3,6 +3,10 @@ id: law-three-tiers
 type: pattern
 status: active
 source: 法律
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [law-three-tiers]
 ---
 
 # 三层法律结构

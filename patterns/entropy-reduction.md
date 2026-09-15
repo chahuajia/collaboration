@@ -3,6 +3,10 @@ id: entropy-reduction
 type: pattern
 status: active
 source: 物理学（熵增定律）
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [entropy-reduction]
 ---
 
 # 熵减机制
@@ -18,7 +22,7 @@ source: 物理学（熵增定律）
 ## 方案
 
 主动输入负熵：
-- 定期修剪（见 `meta/pruning-policy.md`）。
+- 定期修剪（见 [[meta/pruning-policy]]）。
 - 合并重叠条目。
 - 标记 dormant，再删除。
 - 保持 30 秒查找成本。

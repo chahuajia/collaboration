@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [react]
 applies-to: [W1]
 supersedes: null
+author: heiniao
+aliases: [S4]
 ---
 
 # S4 React setState in render 修复

@@ -11,6 +11,8 @@ domains:
 applies-to:
   - W1
 supersedes:
+author: heiniao
+aliases: [S5]
 ---
 
 # S5 哨兵值替换为 null
@@ -40,7 +42,11 @@ const isValidCoordinate = (lat, lng) => {
 };
 ```
 ## 反面
-- 不要在渲染期间无条件 setState。
-- 不要用 useEffect 处理可推导值。
+
+- 不要用 `0` / `-1` / `1970-01-01` 这类**合法值**表达"无值"。
+- 不要把"无值"和"空值"混为一谈——空字符串是值，`null` 才是无值。
+- 不要为了兼容历史数据，把哨兵值分支长期留在业务逻辑里（迁移应当有截止日期）。
+
 ## 关联
-[[W1]] [[S5]] [[domains/react/_index]]
+
+[[W1]] [[A11]] [[S4]]

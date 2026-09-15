@@ -3,6 +3,10 @@ id: distributed-evolution
 type: pattern
 status: active
 source: 分布式系统 + 生物进化
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [distributed-evolution]
 ---
 # 分布式演化
 ## 上下文

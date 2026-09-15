@@ -3,6 +3,10 @@ id: evolution-loop
 type: pattern
 status: active
 source: 生物进化论
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [evolution-loop]
 ---
 
 # 进化闭环

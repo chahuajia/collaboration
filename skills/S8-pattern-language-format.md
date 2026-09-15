@@ -7,9 +7,10 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [all-entries]
 supersedes: null
+author: heiniao
+aliases: [S8]
 ---
 
-# S8 模式语言格式
 
 ## 上下文
 
@@ -36,4 +37,4 @@ supersedes: null
 
 ## 关联
 
-[[patterns/pattern-language]] [[S9]] [[ROOT]]
+[[patterns/pattern-language]] [[S9-yaml-metadata]] [[ROOT]]

@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [community-contribution]
 supersedes: null
+author: heiniao
+aliases: [W6]
 ---
 
 # W6 从本地 patch 到社区 PR

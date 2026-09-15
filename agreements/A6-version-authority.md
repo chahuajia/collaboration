@@ -6,6 +6,8 @@ created: 2026-09-11
 updated: 2026-09-11
 applies-to: [all]
 supersedes: null
+author: heiniao
+aliases: [A6]
 ---
 
 # A6 版本与修改权限
@@ -38,4 +40,4 @@ supersedes: null
 
 ## 关联
 
-[[A4]] [[meta/decision-records]] [[meta/evolution-log]] [[ROOT]]
+[[A4-proactive-update]] [[meta/evolution-log]] [[ROOT]]（ADR 目录见 `meta/decision-records/`）

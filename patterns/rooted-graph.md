@@ -3,6 +3,10 @@ id: rooted-graph
 type: pattern
 status: active
 source: 图论
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [rooted-graph]
 ---
 
 # 有根图
@@ -22,7 +26,7 @@ source: 图论
 
 - 主结构是树（目录层级）。
 - 每个条目带 YAML 元数据（横切标签）。
-- 条目之间用 `[[ID]]` 双向链接。
+- 条目之间用**双链语法**（双方括号包裹条目 ID）互相链接。
 - 结果：有根图（Rooted Graph），树 + 横切 + 双向。
 
 ## 反面

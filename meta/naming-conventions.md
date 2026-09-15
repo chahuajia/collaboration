@@ -1,3 +1,13 @@
+---
+id: naming-conventions
+type: meta
+status: active
+created: 2026-09-11
+updated: 2026-09-15
+author: heiniao
+aliases: [naming-conventions]
+---
+
 # 命名规范
 
 ## 条目命名
@@ -9,6 +19,9 @@
 - 领域：`<domain>/_index.md`
 - ADR：`ADR-<4位数字>-<kebab-name>.md`
 
+**硬规则**：文件名里**不允许出现空格**。空格会让 `[[A9]]` 这类链接无法按文件名匹配，
+也会让脚本与 shell 处理变复杂（历史上 `A9 ...md`、`A10 Review ....md` 就是这样断链的）。
+
 ## 内容命名
 
 - 约定：以“必须/禁止/优先”开头
@@ -18,10 +31,39 @@
 
 ## 链接
 
-- 条目互链用 `[[ID]]`，如 `[[A1]]` `[[W2]]` `[[S5]]`
+- 条目互链用**双链语法**（双方括号包裹 ID），如 `[[A1]]` `[[W2]]` `[[S5]]`
 - 跨目录链接用 `[[patterns/rooted-graph]]`
+
+## 元数据字段（frontmatter）
+
+| 字段 | 必填 | 说明 |
+| :--- | :--- | :--- |
+| `id` | 是 | 条目的唯一标识，与文件名前缀一致 |
+| `type` | 是 | agreement / workflow / skill / pattern / adr / meta |
+| `status` | 是 | draft / active / dormant / deprecated（ADR 用 proposed/accepted/…） |
+| `created` / `updated` | 是 | ISO 日期 |
+| `author` | 是 | git email 或 `heiniao` |
+| `aliases` | 建议 | 填 `[<id>]`，让 Obsidian 也能按 ID 解析双链 |
+| `provenance` | 建议 | **这条目来自哪次真实事故/需求**。写不出来，说明它不该存在（见 pruning-policy） |
+| `applies-to` / `domains` / `supersedes` | 按类型 | 见各自的模板 |
+
+## 模板位置
+
+**所有模板集中在 `templates/`，一处一份。** 目录内不放 `_template.*`。
+详见 `templates/README.md`。
+
+## ID 的两种形态（演化方向）
+
+| 形态 | 例子 | 优点 | 缺点 |
+| :--- | :--- | :--- | :--- |
+| **位置编号**（当前） | `A10`、`S5` | 短、好写 | 两个 fork 的 `S5` 可能是不同东西，**跨国杂交会撞号** |
+| **语义名**（模式层已用） | `rooted-graph`、`null-not-sentinel` | 可跨 fork 合并、可读 | 稍长 |
+
+模式的命名已经采用语义名，这是正确方向。A/W/S 目前仍是位置编号；
+**若要真正支持"fork 之间交换条目"（见 `patterns/horizontal-gene-transfer`），
+早晚要补上语义别名**——最小改动是在 `aliases` 里同时写编号与语义名。
 ## 社区相关命名
 
-- Profile：`profiles/<username>.yaml`，username 用 git 用户名。
+- Profile：`profiles/<username>.yaml`，从 `templates/profile-template.yaml` 复制。
 - RFC：`rfcs/RFC-<4位数字>-<kebab-name>.md`。
 - CODEOWNERS：按目录划分，见 `.github/CODEOWNERS`。

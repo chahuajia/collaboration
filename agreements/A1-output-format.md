@@ -6,6 +6,8 @@ created: 2026-09-11
 updated: 2026-09-11
 applies-to: [all]
 supersedes: null
+author: heiniao
+aliases: [A1]
 ---
 
 # A1 输出从 H2 标题开始
@@ -32,4 +34,4 @@ supersedes: null
 
 ## 关联
 
-[[A5]] [[S1]] [[ROOT]]
+[[A5-declare-mode]] [[S1-h2-output]] [[ROOT]]

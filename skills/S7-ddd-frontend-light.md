@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [architecture]
 applies-to: [W3]
 supersedes: null
+author: heiniao
+aliases: [S7]
 ---
 
 # S7 DDD 前端轻量化落地

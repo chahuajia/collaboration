@@ -3,6 +3,10 @@ id: ooda-loop
 type: pattern
 status: active
 source: 军事（OODA）
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [ooda-loop]
 ---
 
 # OODA 闭环

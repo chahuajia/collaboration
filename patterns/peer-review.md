@@ -3,6 +3,10 @@ id: peer-review
 type: pattern
 status: active
 source: 学术同行评审
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [peer-review]
 ---
 
 # 同行评审

@@ -1,0 +1,21 @@
+# 编辑器 / IDE
+.idea/
+.vscode/
+
+# Obsidian 本地配置（vault 内容本身要跟踪，配置不跟踪）
+.obsidian/
+
+# Node（迁移脚本用）
+node_modules/
+dist/
+
+# 迁移暂存区
+.landing/
+
+# 系统
+Thumbs.db
+Desktop.ini
+
+# 临时
+*.tmp
+*.bak

@@ -4,6 +4,8 @@ type: meta
 status: active
 created: 2026-09-11
 updated: 2026-09-11
+author: heiniao
+aliases: [evolution-log-format]
 ---
 
 # evolution-log 格式规范
@@ -52,4 +54,4 @@ updated: 2026-09-11
 
 ## 关联
 
-[[A4]] [[A6]] [[meta/evolution-log]]
+[[A4-proactive-update]] [[A6-version-authority]] [[meta/evolution-log]]

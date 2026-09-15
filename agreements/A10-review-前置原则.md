@@ -6,9 +6,10 @@ created: 2026-09-12
 updated: 2026-09-12
 applies-to: [all]
 supersedes: null
+author: heiniao
+aliases: [A10]
 ---
 
-# A10 Review 上移原则
 
 ## 上下文
 
@@ -34,15 +35,24 @@ AI 让"实现"的边际成本趋近于零，但人的 review 带宽没有增加�
 
 **用户不应直接 review 实现细节，除非前三层已经通过。**
 
-### 五阶段流程
+### 五阶段流程（+ 可选 Spike 前置阶段）
 
 ```text
-需求 → 规格 → Review → 测试 → Review → 实现 → Review → 完成
-         ↑         ↑                   ↑
-         └─────────┴───────────────────┘
-              拒绝/新需求回退
-              
+需求 → Spike（可选） → 规格 → Review → 测试 → Review → 实现 → Review → 完成
+              ↑          ↑         ↑                   ↑
+              │          └─────────┴───────────────────┘
+              │               拒绝/新需求回退
+              └─ 仅当"写不出测试"时启用，见 [[W9]]
 ```
+
+**Spike 的判定**：能不能在**不写任何实现代码**的情况下明确写出测试？能 → 跳过 Spike；不能 → 先 Spike。
+
+**Spike 的规则**：
+
+- 目标：学习，不是生产。
+- Timebox：默认 2 小时。
+- 代码：**不保留**（故意扔掉）。
+- 产出：把发现写入规格，再进入正式流程。
 
 
 每一阶段：
@@ -86,4 +96,4 @@ AI 让"实现"的边际成本趋近于零，但人的 review 带宽没有增加�
 
 ## 关联
 
-[[A8]] [[A9]] [[W2]] [[W5]] [[patterns/review-marginal-value]] [[patterns/hierarchical-actor-collaboration]]
+[[A8-设计不是可选项，只有好坏之分]] [[A9-跨域借鉴：不局限在代码思维]] [[W2-three-stage-analysis]] [[W5-update-collaboration]] [[patterns/review-marginal-value]] [[patterns/hierarchical-actor-collaboration]]

@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [security, nextjs]
 applies-to: [W1]
 supersedes: null
+author: heiniao
+aliases: [S2]
 ---
 
 # S2 CSP 报告配置

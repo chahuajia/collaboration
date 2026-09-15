@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [config, nextjs]
 applies-to: [W1]
 supersedes: null
+author: heiniao
+aliases: [S3]
 ---
 
 # S3 环境变量 fail-fast 校验

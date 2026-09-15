@@ -1,14 +1,16 @@
 ---
-id: S4
+id: S6
 type: skill
 status: active
 created: 2026-09-11
 updated: 2026-09-11
 domains:
-  - react
+  - nextjs
 applies-to:
   - W1
 supersedes:
+author: heiniao
+aliases: [S6]
 ---
 
 # S6 Service Worker 调试

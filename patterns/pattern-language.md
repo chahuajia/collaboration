@@ -3,6 +3,10 @@ id: pattern-language
 type: pattern
 status: active
 source: Christopher Alexander《建筑模式语言》
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [pattern-language]
 ---
 
 # 模式语言

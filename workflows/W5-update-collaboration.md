@@ -7,6 +7,8 @@ updated: 2026-09-11
 domains: [meta]
 applies-to: [new-insight, conflict, obsolescence]
 supersedes: null
+author: heiniao
+aliases: [W5]
 ---
 
 # W5 更新 COLLABORATION

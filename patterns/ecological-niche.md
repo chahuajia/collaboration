@@ -3,9 +3,12 @@ id: ecological-niche
 type: pattern
 status: active
 source: 生态学
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [ecological-niche]
 ---
 
-# 生态位
 
 ## 上下文
 
@@ -26,4 +29,4 @@ source: 生态学
 
 ## 关联
 
-[[S8]] [[patterns/pattern-language]] [[ROOT]]
+[[S8-pattern-language-format]] [[patterns/pattern-language]] [[ROOT]]

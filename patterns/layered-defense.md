@@ -3,6 +3,10 @@ id: layered-defense
 type: pattern
 status: active
 source: 军事纵深防御
+created: 2026-09-15
+updated: 2026-09-15
+author: heiniao
+aliases: [layered-defense]
 ---
 
 # 分层防御
@@ -36,4 +40,4 @@ source: 军事纵深防御
 
 ## 关联
 
-[[W1]] [[S2]] [[S3]] [[S5]] [[ROOT]]
+[[W1-blank-page-triage]] [[S2-csp-reporting]] [[S3-env-fail-fast]] [[S5]] [[ROOT]]
