@@ -34,4 +34,4 @@ aliases: [A1]
 
 ## 关联
 
-[[A5-declare-mode]] [[S1-h2-output]] [[ROOT]]
+[[ROOT]]
