@@ -2,9 +2,9 @@
 
 ## 相关条目
 
-- [[S2]] CSP 报告
-- [[S3]] 环境变量 fail-fast
-- [[S6]] Service Worker 调试
+- [[S2-csp-reporting]] CSP 报告
+- [[S3-env-fail-fast]] 环境变量 fail-fast
+- [[S6-sw-debugging]] Service Worker 调试
 
 ## 常见问题
 

@@ -2,9 +2,9 @@
 
 ## 相关条目
 
-- [[S4]] setState in render
-- [[S5]] 哨兵值替换
-- [[S7]] DDD 前端轻量化
+- [[S4-setstate-in-render]] setState in render
+- [[S5-null-not-sentinel]] 哨兵值替换
+- [[S7-ddd-frontend-light]] DDD 前端轻量化
 
 ## 常见问题
 

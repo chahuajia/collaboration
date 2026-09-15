@@ -35,4 +35,4 @@ aliases: [rfc-process]
 
 ## 关联
 
-[[W7]] [[patterns/peer-review]] [[rfcs/_index]]
+[[W7-rfc-process]] [[patterns/peer-review]] [[rfcs/_index]]

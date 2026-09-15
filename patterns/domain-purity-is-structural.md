@@ -43,7 +43,7 @@ aliases: [domain-purity-is-structural]
 任何"想换掉 zod"的尝试 —— 都要改整个系统  
 ↓  
 架构的"可替换性"瓦解
-```
+
 
 ### 为什么"侵蚀整个系统"
 
@@ -65,11 +65,10 @@ aliases: [domain-purity-is-structural]
 ```powershell
 # 检查领域层是否 import 了外部库
 Select-String -Path "src/domain/**/*.ts" -Pattern "from\s+['\"](?!\.\.?/|@/)"
-
-```
 **结果为空** —— 领域纯洁。  
 **结果非空** —— 依赖图已改写。
 
+```
 ### 与其他原则的关系
 
 - **A18 内外有别** —— 领域纯洁是"内层是内层"的前提。

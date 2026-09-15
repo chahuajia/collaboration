@@ -37,4 +37,4 @@ confirmed-by: <待确认>
 
 ## 关联
 
-[[A6]] [[A7]] [[W7]]
+[[A6-version-authority]] [[A7-distribution-and-community]] [[W7-rfc-process]]

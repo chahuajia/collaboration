@@ -3,7 +3,7 @@ id: ADR-<4 位数字>
 type: adr
 status: proposed
 date: YYYY-MM-DD
-author: <git email 或 heiniao>
+author: <git email >
 provenance: <提出这个决策的讨论或事故>
 ---
 
@@ -32,5 +32,4 @@ provenance: <提出这个决策的讨论或事故>
 - <方案>：否决，理由。
 
 ## 关联
-
-示例（把 `?` 换成真实 ID）：`[[A1]]` `[[W5]]` `[[patterns/rooted-graph]]`
+[[A1-output-format|A]] [[W5-update-collaboration]] [[rooted-graph]]

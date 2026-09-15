@@ -32,4 +32,4 @@ aliases: [law-three-tiers]
 
 ## 关联
 
-[[A6]] [[patterns/load-bearing-vs-partition]] [[ROOT]]
+[[A6-version-authority]] [[patterns/load-bearing-vs-partition]] [[ROOT]]

@@ -4,11 +4,14 @@ type: workflow
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [meta]
-applies-to: [A10]
-supersedes: null
-author: <待填>
-aliases: [W9]
+domains:
+  - meta
+applies-to:
+  - A10
+supersedes:
+author: heiniao
+aliases:
+  - W9
 ---
 
 # W9 Spike 工作流

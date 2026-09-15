@@ -48,4 +48,4 @@ aliases: [W3]
 
 ## 关联
 
-[[S7]] [[patterns/load-bearing-vs-partition]] [[domains/architecture/_index]]
+[[S7-ddd-frontend-light]] [[patterns/load-bearing-vs-partition]] [[domains/architecture/_index]]

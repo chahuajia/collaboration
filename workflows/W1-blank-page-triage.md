@@ -42,4 +42,4 @@ aliases: [W1]
 
 ## 关联
 
-[[S2]] [[S3]] [[S4]] [[S6]] [[patterns/layered-defense]]
+[[S2-csp-reporting]] [[S3-env-fail-fast]] [[S4-setstate-in-render]] [[S6-sw-debugging]] [[patterns/layered-defense]]

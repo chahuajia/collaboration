@@ -1,7 +1,7 @@
 # 演化日志
 
 > 只追加，不修改历史。每条记录代表一次正式的演化决策。
-> 格式规范见 `meta/evolution-log-format.md`。
+> 格式规范见 [[meta/evolution-log-format]]`。
 
 ## 新格式（v4.0.1 起）
 

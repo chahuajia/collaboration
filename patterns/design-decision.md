@@ -58,13 +58,3 @@ aliases: [design-decision]
 ## 关联
 
 [[A8-设计不是可选项，只有好坏之分]] [[A9-跨域借鉴：不局限在代码思维]] [[patterns/cross-domain-borrowing]] [[S7-ddd-frontend-light]] 
-
-### 二、`patterns/review-marginal-value.md`
----
-id: review-marginal-value
-type: pattern
-status: active
-created: 2026-09-15
-updated: 2026-09-15
-source: 工程方法论（源自 A10 Review 上移原则）
----

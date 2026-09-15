@@ -29,9 +29,9 @@
 **人**：`ROOT.md` → 按需查 `_index.md` → 读条目。
 **AI**：先读 `AGENTS.md`（自动加载），再按它的路由表按需取 2-3 条，**不要全量读**。
 
-- 需求清晰、要 AI 落地 → [[W8]]（内含 [[A10]] 的 review 上移）
-- 需求不清、写不出测试 → 先 [[W9]]
-- 任务结束要沉淀 → [[W4]] → [[W5]]
+- 需求清晰、要 AI 落地 → [[W8-规格优先的-AI-协作流程]]（内含 [[A10-review-前置原则]] 的 review 上移）
+- 需求不清、写不出测试 → 先 [[W9-Spike-工作流]]
+- 任务结束要沉淀 → [[W4-three-question-retro]] → [[W5-update-collaboration]]
 
 ## 如何贡献
 
@@ -44,10 +44,10 @@
 ## 演化机制
 
 - **生命周期**：draft → active → dormant → deprecated。
-- **修剪**：标记-清除 + 分代 + 冷热分级，判据见 `meta/pruning-policy.md`。
+- **修剪**：标记-清除 + 分代 + 冷热分级，判据见[[pruning-policy]]。
 - **代谢配额**：新增 3 条 → 处理 1 条，防止只增不减。
 - **结构性决策**：写入 `meta/decision-records/`。
-- **约定级变更**：走 [[W7]]。
+- **约定级变更**：走 [[W7-rfc-process]]。
 
 ## 公开仓库
 
@@ -55,5 +55,5 @@
 
 - 许可证：CC BY-SA 4.0
 - 主干：<待填写 GitHub 地址>
-- 贡献流程：[[A7]] [[W6]]；个人侧重：[[S11]] `profiles/`
-- 快速开始：fork → 复制 `templates/profile-template.yaml` 为 `profiles/<你的用户名>.yaml` → 声明 `focus` / `exclude` → 用 `collab` CLI（[[S10]]）
+- 贡献流程：[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]]；个人侧重：[[S11-profile-declaration]] `profiles/`
+- 快速开始：fork → 复制 `templates/profile-template.yaml` 为 `profiles/<你的用户名>.yaml` → 声明 `focus` / `exclude` → 用 `collab` CLI（[[S10-collab-cli]]）

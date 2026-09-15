@@ -4,10 +4,12 @@ type: agreement
 status: draft
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-author: <git email 或 heiniao>
-aliases: [A<n>]
-applies-to: [all]
-supersedes: null
+author: <git email>
+aliases:
+  - A<n>
+applies-to:
+  - all
+supersedes:
 provenance: <这条约定来自哪次真实事故/需求——禁止留空>
 ---
 

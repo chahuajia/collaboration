@@ -18,7 +18,7 @@ provenance: 跨对话上下文反复丢失——把"当前进度"混进知识库
 ## 上下文
 
 跨对话的上下文会丢失——每次新对话都是白纸。但并非所有内容都值得进 COLLABORATION（长期知识）。
-需要一层"工作记忆"作为桥梁（见 `patterns/three-layer-memory`）。
+需要一层"工作记忆"作为桥梁（见 [[W10-working-memory]]）。
 
 ## 问题
 

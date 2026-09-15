@@ -40,4 +40,4 @@ aliases: [layered-defense]
 
 ## 关联
 
-[[W1-blank-page-triage]] [[S2-csp-reporting]] [[S3-env-fail-fast]] [[S5]] [[ROOT]]
+[[W1-blank-page-triage]] [[S2-csp-reporting]] [[S3-env-fail-fast]] [[S5-null-not-sentinel]] [[ROOT]]

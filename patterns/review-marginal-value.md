@@ -108,4 +108,4 @@ AI 让"实现"的边际成本趋近于零 —— 但人的 review 带宽没变�
 
 ## 关联
 
-[[A10]] [[A12]] [[W8]] [[patterns/hierarchical-actor-collaboration]] [[S27]] [[patterns/design-decision]]
+[[A10-review-前置原则]] [[A12-知识笔记返回]] [[W8-规格优先的-AI-协作流程]] [[patterns/hierarchical-actor-collaboration]] [[S27-规格优先-review]] [[patterns/design-decision]]

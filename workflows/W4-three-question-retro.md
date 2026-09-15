@@ -42,4 +42,4 @@ aliases: [W4]
 
 ## 关联
 
-[[A3]] [[W5]] [[patterns/ooda-loop]] [[ROOT]]
+[[A3-mutual-critique]] [[W5-update-collaboration]] [[patterns/ooda-loop]] [[ROOT]]

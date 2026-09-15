@@ -36,4 +36,4 @@ aliases: [rooted-graph]
 
 ## 关联
 
-[[S9]] [[patterns/faceted-classification]] [[ROOT]]
+[[S9-yaml-metadata]] [[patterns/faceted-classification]] [[ROOT]]

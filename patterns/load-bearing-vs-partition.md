@@ -33,4 +33,4 @@ aliases: [load-bearing-vs-partition]
 
 ## 关联
 
-[[A6]] [[W3]] [[S7]] [[ROOT]]
+[[A6-version-authority]] [[W3-ddd-refactor]] [[S7-ddd-frontend-light]] [[ROOT]]

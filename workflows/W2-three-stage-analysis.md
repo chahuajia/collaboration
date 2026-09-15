@@ -38,4 +38,4 @@ aliases: [W2]
 
 ## 关联
 
-[[A2]] [[patterns/layered-defense]] [[ROOT]]
+[[A2-depth-and-reflection]] [[patterns/layered-defense]] [[ROOT]]

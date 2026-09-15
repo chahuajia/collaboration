@@ -30,4 +30,4 @@
 
 ## 关联
 
-[[S8]] [[S9]] [[W5]]
+[[S8-pattern-language-format]] [[S9-yaml-metadata]] [[W5-update-collaboration]]

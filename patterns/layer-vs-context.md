@@ -68,4 +68,4 @@ aliases: [layer-vs-context]
 - 不要把"上下文"当"层"（不能用内外描述）。
 - 不要假设"架构层平级 = 领域层平级"。
 ## 关联
-[[patterns/derivation-over-copy]] [[S7]]
+[[patterns/derivation-over-copy]] [[S7-ddd-frontend-light]]

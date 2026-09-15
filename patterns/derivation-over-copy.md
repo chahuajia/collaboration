@@ -71,4 +71,4 @@ const DEFAULT_DIRS = Object.values(EntryKindDir);
 
 ## 关联
 
-[[S15]] [[S32]] [[patterns/layer-vs-context]]
+[[S15-TS-类型工厂]] [[S32-数据变更管理原则]] [[patterns/layer-vs-context]]

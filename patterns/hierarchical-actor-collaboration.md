@@ -137,4 +137,4 @@ READ_IMPL → CHECK_STYLE → CONFIRM_INTENT → APPROVED
 
 ## 关联
 
-[[A10]] [[W8]] [[patterns/review-marginal-value]] [[patterns/layer-vs-context]] [[patterns/design-decision]]
+[[A10-review-前置原则]] [[W8-规格优先的-AI-协作流程]] [[patterns/review-marginal-value]] [[patterns/layer-vs-context]] [[patterns/design-decision]]

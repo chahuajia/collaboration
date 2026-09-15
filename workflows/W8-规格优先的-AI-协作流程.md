@@ -4,11 +4,14 @@ type: workflow
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [meta]
-applies-to: [A10]
-supersedes: null
-author: <待填>
-aliases: [W8]
+domains:
+  - meta
+applies-to:
+  - A10
+supersedes:
+author: heiniao
+aliases:
+  - W8
 ---
 
 # W8 规格优先的 AI 协作流程

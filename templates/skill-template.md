@@ -4,11 +4,12 @@ type: skill
 status: draft
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-author: <git email 或 heiniao>
-aliases: [S<n>]
+author: <git email>
+aliases:
+  - S<n>
 domains: []
 applies-to: []
-supersedes: null
+supersedes:
 provenance: <这条技能来自哪次真实事故/需求——禁止留空>
 ---
 
@@ -23,5 +24,5 @@ provenance: <这条技能来自哪次真实事故/需求——禁止留空>
 ## 反面
 
 ## 关联
-
-示例（把 `?` 换成真实 ID）：`[[W5]]` `[[S27]]`
+[[W5-update-collaboration]] 
+[[W5]][[S27]]

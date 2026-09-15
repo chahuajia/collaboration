@@ -75,4 +75,4 @@ export function useTestWorkspace(opts: {
 
 ## 关联
 
-[[S31]] [[W8]] [[patterns/derivation-over-copy]]
+[[S31-测试设计原则]] [[W8-规格优先的-AI-协作流程]] [[patterns/derivation-over-copy]]
