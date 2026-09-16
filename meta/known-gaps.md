@@ -47,6 +47,7 @@ provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-16 | **路由表不覆盖「工程 / 领域」类症状**（如"状态机怎么建模""不变量放哪一层""聚合边界"） | `evolutionary` 项目：第 1 轮 4 个真实需求命中 2/4；第 3 轮臂 B **独立复现** | 症状表 → `catalog.json` 关键词（`不变量`/`聚合`/`实体`/`状态机`/`invariant`/`aggregate`）→ 逐条读 `S13`/`S24`/`parse-dont-validate` | 已两次独立复现，**未修** | 症状表出现 ≥1 条领域建模症状，且**另一次独立命中** |
 | 2026-09-16 | `catalog.json` 的 `trigger` 只覆盖 **11/108** 条；直接依赖它，等于把 97 条当不存在 | 同上 | 按 `trigger` 检索 | 已知（`AGENTS.md` 已写明"填充 `trigger` 是待办"） | `trigger` 覆盖率 ≥ 80% |
+| 2026-09-16 | **工作记忆没有新鲜度检测**：`collab-cli/working-memory/README.md` 停在 18:18，之后约 5 小时的工作没写入；另有指针指向已不存在的路径（`specs/round-2-diagnosis.md`，实际在 `_experiment\`） | 换会话前的交接盘点 | 无（纯靠"想起来"更新） | 已加 `working-memory/check-freshness.mjs`：比对 README 登记的 commit 与实际 HEAD，退出码可判 | 连续两个会话都在交接时通过自检 |
 
 ## 判据
 
