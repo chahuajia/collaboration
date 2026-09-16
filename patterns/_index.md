@@ -58,6 +58,7 @@
 | [[patterns/allowlist-over-denylist]] | 安全工程 | 白名单优于黑名单 |
 | [[patterns/structure-over-algorithm]] | 计算机科学（Wirth） | 结构优先 |
 | [[patterns/three-level-dry]] | 软件工程（DRY） | 不重复的三个层次 |
+| [[value-semantics]] | 工程实践 | 值同不代表语义同（原 A11） |
 | [[patterns/feature-discovery-over-hardcoded-paths]] | 航海导航 | 特征发现优于硬编码 |
 | [[patterns/layered-defense]] | 军事纵深防御 | 分层拦截 |
 | [[patterns/ooda-loop]] | 军事（OODA） | 复盘闭环 |

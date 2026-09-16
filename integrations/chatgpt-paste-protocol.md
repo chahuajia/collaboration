@@ -1,18 +1,24 @@
 ---
-id: A15
-type: agreement
+id: chatgpt-paste-protocol
+type: integration
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-16
 applies-to:
-  - all
+  - chatgpt-like
 supersedes:
 author: heiniao
 aliases:
+  - chatgpt-paste-protocol
   - A15
+provenance: 2026-09-16 从 agreements/ 迁入 integrations/ —— 它假设"AI 无 IO、靠用户粘贴"，那只在对话式环境成立
 ---
 
-# A15 AI 交互协议
+# chatgpt-like：粘贴交互协议
+
+> 本条目原为 `A15-AI-交互协议`（约定层）。
+> 2026-09-16 迁入集成层：它整条建立在"**AI 没有文件读写，IO 由用户承担**"这个环境前提上。
+> 有文件权限的 agent（见 [[cli-agent-boundaries]]）不需要它。
 ## 上下文
 
 对话式 AI 无法自主读写文件——IO 执行由用户承担。交互效率依赖用户的传递方式。

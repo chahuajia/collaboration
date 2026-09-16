@@ -32,4 +32,4 @@ provenance: <提出这个决策的讨论或事故>
 - <方案>：否决，理由。
 
 ## 关联
-[[A1-output-format|A]] [[W5-update-collaboration]] [[rooted-graph]]
+[[S1-h2-output]] [[W5-update-collaboration]] [[patterns/rooted-graph]]

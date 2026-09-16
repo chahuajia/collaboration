@@ -20,5 +20,5 @@ provenance: <从哪次讨论或事故提炼出来>
 ## 反面
 
 ## 关联
-[[A8-设计不是可选项，只有好坏之分]] [[W5-update-collaboration]] [[A10-review-前置原则]] 
+[[patterns/design-decision]] [[W5-update-collaboration]] [[A10-review-前置原则]] 
 [[design-decision]]

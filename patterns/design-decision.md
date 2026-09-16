@@ -11,6 +11,9 @@ aliases: [design-decision]
 
 # 设计决策三问
 
+> 本条已吸收 `A8-设计不是可选项，只有好坏之分`（2026-09-16）。
+> 按"agreements = 协作规则"的定义，**设计判据不是协作规则** —— 它是通用工程思维，归 patterns。
+
 ## 上下文
 
 面对非平凡的设计选择——架构、分层、命名、工具选型——需要判断"这个设计好不好"。
@@ -57,4 +60,4 @@ aliases: [design-decision]
 
 ## 关联
 
-[[A8-设计不是可选项，只有好坏之分]] [[A9-跨域借鉴：不局限在代码思维]] [[patterns/cross-domain-borrowing]] [[S7-ddd-frontend-light]] 
+[[patterns/cross-domain-borrowing]] [[patterns/dependency-decision]] [[S7-ddd-frontend-light]]

@@ -1,18 +1,25 @@
 ---
-id: A11
-type: agreement
+id: value-semantics
+type: pattern
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-16
 applies-to:
   - all
 supersedes:
 author: heiniao
+source: 工程实践（值语义）
 aliases:
+  - value-semantics
   - A11
+provenance: 2026-09-16 从 agreements/ 降级为 pattern —— 它是通用的设计判据，不是"人和 AI 怎么协作"的规则
 ---
 
-# A11 值同不代表语义同
+# 值同不代表语义同
+
+> 原为 `A11-值同不代表语义同`（约定层）。2026-09-16 降级为 pattern：
+> 它约束的是**代码怎么写**，不是**人和 AI 怎么协作** —— 按 `agreements/` 的新定义，它不该占宪法席位。
+> 但它是通用判据（不绑语言、不绑栈），所以留在本库；**绑栈的那部分（TS/DDD 具体手法）归真实项目的规约**。
 
 ## 上下文
 
@@ -38,4 +45,4 @@ aliases:
 
 ## 关联
 
-[[A8-设计不是可选项，只有好坏之分]] [[S5-null-not-sentinel]] [[S17-ESLint-工具约束]]
+[[patterns/design-decision]] [[S5-null-not-sentinel]] [[S17-ESLint-工具约束]]

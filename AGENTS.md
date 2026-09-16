@@ -28,30 +28,30 @@
 | 遇到的情况           | 先读                                                                                  |
 | :-------------- | :---------------------------------------------------------------------------------- |
 | 页面空白 / 数据不出来    | [[W1-blank-page-triage]]                                                            |
-| 要设计一个新结构或抽象     | [[A8-设计不是可选项，只有好坏之分]]                                                               |
+| 要设计一个新结构或抽象     | [[patterns/design-decision]]                                                               |
 | AI 写了大量代码等我确认   | [[A10-review-前置原则]]                                                            |
 | 问题空间不明确，写不出测试   | [[W9-Spike-工作流]]                                                                    |
 | 不确定要不要引入依赖 / 放哪 | [[dependency-decision]]                                                             |
 | 出了故障要定位         | [[W1-blank-page-triage]]                                                            |
 | 任务做完要沉淀         | [[W4-three-question-retro]] → [[W5-update-collaboration]] → [[meta/pruning-policy]] |
 | 想改约定            | [[W7-rfc-process]]                                                                  |
-| 要跨领域找灵感         | [[A9-跨域借鉴：不局限在代码思维]]                                                                |
+| 要跨领域找灵感         | [[patterns/cross-domain-borrowing]]                                                                |
 
 ## 协作规则（摘要）
 
-- 回答从 H2 开始（[[A1-output-format]]）；不客套、不堆砌。
+- 回答从 H2 开始（[[S1-h2-output]]）；不客套、不堆砌。
 - **先给规格再写实现**；review 对象优先级：规格 > 测试 > 类型 > 实现（[[A10-review-前置原则]]）。
-- 每个设计决策要能回答："不做会怎样 / 收益是什么 / 成本是什么"（[[A8-设计不是可选项，只有好坏之分]]）。
-- 不确定就问，不猜；先看地图再点菜（[[A15-AI-交互协议]]）。
+- 每个设计决策要能回答："不做会怎样 / 收益是什么 / 成本是什么"（[[patterns/design-decision]]）。
+- 不确定就问，不猜；先看地图再点菜（[[chatgpt-paste-protocol]]）。
 - 复杂讨论结束附一份**面向人的知识笔记**（[[A12-知识笔记返回]]），它与条目是两种表达，不是复制。
 - **新增条目必须能说出它拦住了什么**；说不出来就别进库（[[meta/pruning-policy]]）。
 
 ## 边界
 
-- **AI 不 commit、不 push**：改动留在工作区，由人确认（[[A7-distribution-and-community]]、[[A6-version-authority]]）。
+- **AI 不 commit、不 push**：改动留在工作区，由人确认（[[cli-agent-boundaries]]、[[A6-version-authority]]）。
 - 约定级变更走 [[W7-rfc-process]]；技能/模式可自由增删，但要走同一套校验。
 - 本文件**不存放**日常进度、任务、决策——它们属于工作记忆或条目本身。
 
 ## 关联
 
-[[ROOT]] [[A1-output-format]] [[A6-version-authority]] [[A7-distribution-and-community]] [[A8-设计不是可选项，只有好坏之分]] [[A9-跨域借鉴：不局限在代码思维]] [[A10-review-前置原则]] [[A12-知识笔记返回]] [[A13-AI-入口文件规范]] [[A15-AI-交互协议]] [[A16-上下文预算法]] [[W1-blank-page-triage]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[W7-rfc-process]] [[W9-Spike-工作流]]
+[[ROOT]] [[S1-h2-output]] [[A6-version-authority]] [[cli-agent-boundaries]] [[patterns/design-decision]] [[patterns/cross-domain-borrowing]] [[A10-review-前置原则]] [[A12-知识笔记返回]] [[A13-AI-入口文件规范]] [[chatgpt-paste-protocol]] [[A16-上下文预算法]] [[W1-blank-page-triage]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[W7-rfc-process]] [[W9-Spike-工作流]]

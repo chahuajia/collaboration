@@ -49,4 +49,4 @@ aliases: [W6]
 
 ## 关联
 
-[[A7-distribution-and-community]] [[W7-rfc-process]] [[S10-collab-cli]] [[patterns/peer-review]]
+[[cli-agent-boundaries]] [[W7-rfc-process]] [[S10-collab-cli]] [[patterns/peer-review]]

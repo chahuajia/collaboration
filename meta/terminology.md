@@ -1,6 +1,6 @@
 ---
-id: A18
-type: agreement
+id: terminology
+type: meta
 status: active
 created: 2026-09-15
 updated: 2026-09-16
@@ -9,9 +9,14 @@ applies-to:
 supersedes: null
 author: heiniao
 aliases:
+  - terminology
   - A18
+provenance: 2026-09-16 从 agreements/ 迁入 meta/ —— 它是术语表（查阅型），不是协作规则
 ---
-# A18-内外有别
+# 术语规范：内外有别
+
+> 原为 `A18-内外有别`（约定层）。2026-09-16 迁入 `meta/`：
+> **术语表是查阅材料，不是行为约束** —— 它规定"该怎么措辞"，不规定"该怎么协作"。
 
 ## 上下文
 

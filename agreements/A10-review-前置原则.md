@@ -114,8 +114,8 @@ AI 让"实现"的边际成本趋近于零，但**人的 review 带宽没有增�
 - 不要让流程僵化 —— 它是骨架，不是监狱；并行、异步、模糊都有空间。
 - 不要在规格里写"可能这样也可能那样" —— 不确定 = 未想透。
 - **不要用编造的数字壮声势**：本条目曾写"边际价值增加 3-5 倍""等价于读 1000 行代码" ——
-  无来源、不可验证，正是 [[A8-设计不是可选项，只有好坏之分]] 禁止的"拿最佳实践当理由"。已删除。
+  无来源、不可验证，正是 [[patterns/design-decision]] 禁止的"拿最佳实践当理由"。已删除。
 
 ## 关联
 
-[[A8-设计不是可选项，只有好坏之分]] [[A9-跨域借鉴：不局限在代码思维]] [[A12-知识笔记返回]] [[W9-Spike-工作流]] [[W2-three-stage-analysis]] [[patterns/hierarchical-actor-collaboration]] [[patterns/design-decision]]
+[[patterns/design-decision]] [[patterns/cross-domain-borrowing]] [[A12-知识笔记返回]] [[W9-Spike-工作流]] [[W2-three-stage-analysis]] [[patterns/hierarchical-actor-collaboration]] [[patterns/design-decision]]

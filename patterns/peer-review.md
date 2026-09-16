@@ -34,4 +34,4 @@ aliases: [peer-review]
 
 ## 关联
 
-[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[patterns/rfc-process]]
+[[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[patterns/rfc-process]]

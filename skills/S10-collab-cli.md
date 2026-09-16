@@ -84,4 +84,4 @@ collab sync --rebase --respect-profile    # 从上游同步，保留本地 profi
 
 ## 关联
 
-[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[S11-profile-declaration]] [[profiles/_index]]
+[[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[S11-profile-declaration]] [[profiles/_index]]

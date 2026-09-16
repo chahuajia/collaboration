@@ -34,9 +34,9 @@ aliases: [naming-conventions]
 **链接按文件名解析，不按 `frontmatter.id` 解析。**（2026-09-16 修正）
 
 - 条目互链用**双链语法**，内容为**文件名**（去 `.md`）：
-  `[[A1-output-format]]` `[[S5-null-not-sentinel]]` `[[W2-three-stage-analysis]]`
+  `[[S1-h2-output]]` `[[S5-null-not-sentinel]]` `[[W2-three-stage-analysis]]`
 - 跨目录链接用 `[[patterns/rooted-graph]]`（完整路径也合法）
-- ❌ **不要用 id 当链接**：`[[A1]]`、`[[S5]]` 在渲染层解析不了 —— 那是"工具说合法、人点不开"
+- ❌ **不要用 id 当链接**：`[[S1-h2-output]]`、`[[S5]]` 在渲染层解析不了 —— 那是"工具说合法、人点不开"
 - **`id` 必须是文件名的前缀**：文件要么叫 `<id>.md`，要么叫 `<id>-<slug>.md`。
   这条由 `collab validate` 的 `ID_FILE_NAME_MISMATCH` 强制，不靠自觉。
 

@@ -44,4 +44,4 @@ COLLABORATION v3 是个人知识库。用户希望分享出去，让更多人机
 
 ## 关联
 
-[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]] [[S10-collab-cli]] [[S11-profile-declaration]] [[patterns/distributed-evolution]]
+[[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]] [[S10-collab-cli]] [[S11-profile-declaration]] [[patterns/distributed-evolution]]

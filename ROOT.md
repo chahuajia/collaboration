@@ -70,7 +70,7 @@ updated: 2026-09-15
 - 身份：Git + YAML + Profile。
 - 门槛：约定 RFC，工作流 PR，技能 CI。
 - AI 边界：不持主干写权限，不自动 push。
-- 详见 [[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]]。
+- 详见 [[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]]。
 
 ## 反面
 
@@ -80,4 +80,4 @@ updated: 2026-09-15
 
 ## 关联
 
-[[A1-output-format]] [[A2-depth-and-reflection]] [[A3-mutual-critique]] [[A4-proactive-update]] [[A5-declare-mode]] [[A6-version-authority]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[patterns/rooted-graph]] [[patterns/pattern-language]] [[patterns/evolution-loop]]
+[[S1-h2-output]] [[W2-three-stage-analysis]] [[A3-mutual-critique]] [[A4-proactive-update]] [[A6-version-authority]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[patterns/rooted-graph]] [[patterns/pattern-language]] [[patterns/evolution-loop]]

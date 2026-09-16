@@ -1,17 +1,22 @@
 ---
-id: A17
-type: agreement
+id: chatgpt-output-format
+type: integration
 status: active
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 applies-to:
-  - all
+  - chatgpt-like
 supersedes:
 author: heiniao
 aliases:
+  - chatgpt-output-format
   - A17
+provenance: 2026-09-16 从 agreements/ 迁入 integrations/ —— 它是对话式 AI 的适配层，不是跨环境不变的协作规则
 ---
-# A17-对话式AI输出格式约定
+# chatgpt-like：输出格式约定
+
+> 本条目原为 `A17-对话式AI输出格式约定`（约定层）。
+> 2026-09-16 迁入集成层：**它描述的是"对话式 AI 这个特定环境怎么输出"，不是通用协作规则**。
 
 ## 上下文
 
@@ -122,4 +127,4 @@ A15 说"批处理写入"——用户一次写入多个文件。本约定的"三�
 
 ## 关联
 
-[[A15-AI-交互协议]] [[A12-知识笔记返回]] [[A16-上下文预算法]]
+[[chatgpt-paste-protocol]] [[A12-知识笔记返回]] [[A16-上下文预算法]]

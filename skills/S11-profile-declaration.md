@@ -70,4 +70,4 @@ fork-policy:
 
 ## 关联
 
-[[A7-distribution-and-community]] [[S10-collab-cli]] [[profiles/_index]]
+[[cli-agent-boundaries]] [[S10-collab-cli]] [[profiles/_index]]

@@ -55,4 +55,4 @@ aliases:
 
 ## 关联
 
-[[A8-设计不是可选项，只有好坏之分]] [[S12-边界解析]] [[patterns/allowlist-over-denylist]]
+[[patterns/design-decision]] [[S12-边界解析]] [[patterns/allowlist-over-denylist]]

@@ -44,4 +44,4 @@ RFC 状态：`draft → discussion → fcp → accepted / rejected / withdrawn`�
 
 ## 关联
 
-[[A6-version-authority]] [[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]] [[patterns/rfc-process]] [[rfcs/_index]]
+[[A6-version-authority]] [[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[patterns/rfc-process]] [[rfcs/_index]]

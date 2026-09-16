@@ -55,5 +55,5 @@
 
 - 许可证：CC BY-SA 4.0
 - 主干：<待填写 GitHub 地址>
-- 贡献流程：[[A7-distribution-and-community]] [[W6-local-patch-to-community-pr]]；个人侧重：[[S11-profile-declaration]] `profiles/`
+- 贡献流程：[[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]]；个人侧重：[[S11-profile-declaration]] `profiles/`
 - 快速开始：fork → 复制 `templates/profile-template.yaml` 为 `profiles/<你的用户名>.yaml` → 声明 `focus` / `exclude` → 用 `collab` CLI（[[S10-collab-cli]]）

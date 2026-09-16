@@ -49,4 +49,4 @@ const isValidCoordinate = (lat, lng) => {
 
 ## 关联
 
-[[W1-blank-page-triage]] [[A11-值同不代表语义同]]
+[[W1-blank-page-triage]] [[value-semantics]]

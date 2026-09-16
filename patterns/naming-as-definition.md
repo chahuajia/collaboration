@@ -52,4 +52,4 @@ aliases: [naming-as-definition]
 
 ## 关联
 
-[[S15-TS-类型工厂]] [[A11-值同不代表语义同]] [[patterns/allowlist-over-denylist]]
+[[S15-TS-类型工厂]] [[value-semantics]] [[patterns/allowlist-over-denylist]]

@@ -49,4 +49,4 @@ aliases: [dependency-decision]
 
 ## 关联
 
-[[A8-设计不是可选项，只有好坏之分]] [[S19-Make-or-Buy]] [[patterns/allowlist-over-denylist]]
+[[patterns/design-decision]] [[S19-Make-or-Buy]] [[patterns/allowlist-over-denylist]]

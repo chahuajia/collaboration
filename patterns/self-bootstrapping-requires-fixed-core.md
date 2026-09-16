@@ -62,4 +62,4 @@ aliases: [self-bootstrapping-requires-fixed-core]
 
 ## 关联
 
-[[A8-设计不是可选项，只有好坏之分]] [[A10-review-前置原则]] [[patterns/context-overflow-solved-by-retrieval]]
+[[patterns/design-decision]] [[A10-review-前置原则]] [[patterns/context-overflow-solved-by-retrieval]]

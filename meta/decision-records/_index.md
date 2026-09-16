@@ -7,3 +7,6 @@
 | [[ADR-0003-采用-Spike-前置阶段]]                   | 采用 Spike 前置阶段         | 2026-09-13 | accepted |
 | [[ADR-0004-采用-MCP-Server-作为工具桥接方案]]          | 采用 MCP Server 作为工具桥接 | 2026-09-13 | accepted |
 | [[ADR-0005-合并四条-review-规则]]                    | 合并四条 review 规则为 A10     | 2026-09-16 | accepted |
+| [[ADR-0006-约定层收窄为协作规则]]                     | 约定层收窄为协作规则            | 2026-09-16 | accepted |
+| [[ADR-0007-建立集成层]]                          | 建立集成层（integrations）       | 2026-09-16 | accepted |
+| [[ADR-0008-约定层收敛完成]]                        | 约定层收敛完成：19 → 8          | 2026-09-16 | accepted |
