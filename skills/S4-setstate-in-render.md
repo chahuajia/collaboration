@@ -11,7 +11,6 @@ author: heiniao
 aliases: [S4]
 ---
 
-# S4 React setState in render 修复
 
 ## 上下文
 
@@ -39,4 +38,4 @@ aliases: [S4]
 
 ## 关联
 
-[[W1]] [[S5]] [[domains/react/_index]]
+[[W1-blank-page-triage]]  [[domains/react/_index]]

@@ -3,14 +3,15 @@ id: S6
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-16
 domains:
   - nextjs
 applies-to:
   - W1
 supersedes:
 author: heiniao
-aliases: [S6]
+aliases:
+  - S6
 ---
 
 # S6 Service Worker 调试
@@ -37,5 +38,5 @@ PWA 缓存旧响应，调试时看到过期数据。
 
 ## 关联
 
-[[W1]] [[domains/nextjs/_index]]
+[[W1-blank-page-triage]] [[domains/nextjs/_index]]
 
