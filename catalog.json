@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:20:47.947Z",
+  "generatedAt": "2026-09-16T11:35:02.380Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -146,6 +146,32 @@
       ],
       "trigger": "开始跨会话的任务；或发现\"某条约束只存在于对话里\"",
       "antiTrigger": "单轮问答"
+    },
+    {
+      "id": "A20",
+      "type": "agreement",
+      "status": "active",
+      "title": "A20 外部输入分流：事实随时给，判断先想后看",
+      "path": "agreements/A20-外部输入分流.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ],
+      "trigger": "用户要贴给你\"另一个 AI 的分析 / 方案 / 建议\"时",
+      "antiTrigger": "用户给的是**外部事实**（实测结论、业务约束、领域知识）—— 那随时可以给，越早越好"
+    },
+    {
+      "id": "A21",
+      "type": "agreement",
+      "status": "active",
+      "title": "A21 决策授权：先做，然后记账",
+      "path": "agreements/A21-决策授权与记账.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ],
+      "trigger": "用户说\"这类任务你可以自己决定\"时；或 AI 在多个都合理的选项里要挑一个时",
+      "antiTrigger": "改约定 / commit / push / 加新 kind —— 那是**动作**不是决策，不在授权范围"
     },
     {
       "id": "A3",
@@ -1218,9 +1244,9 @@
     }
   ],
   "summary": {
-    "total": 107,
+    "total": 109,
     "byType": {
-      "agreement": 8,
+      "agreement": 10,
       "workflow": 10,
       "skill": 34,
       "pattern": 43,
@@ -1228,7 +1254,7 @@
       "integration": 3
     },
     "byStatus": {
-      "active": 95,
+      "active": 97,
       "draft": 3,
       "accepted": 9
     }
