@@ -4,11 +4,14 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [meta]
-applies-to: [all]
-supersedes: null
-author: <待填>
-aliases: [S19]
+domains:
+  - meta
+applies-to:
+  - all
+supersedes:
+author: heiniao
+aliases:
+  - S19
 ---
 
 # S19 Make-or-Buy（货架商品）
@@ -46,4 +49,4 @@ aliases: [S19]
 
 ## 关联
 
-[[A8]] [[patterns/dependency-decision]]
+[[A8-设计不是可选项，只有好坏之分]] [[patterns/dependency-decision]]

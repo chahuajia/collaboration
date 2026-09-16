@@ -4,11 +4,15 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [typescript, tooling]
-applies-to: [all]
-supersedes: null
-author: <待填>
-aliases: [S17]
+domains:
+  - typescript
+  - tooling
+applies-to:
+  - all
+supersedes:
+author: heiniao
+aliases:
+  - S17
 ---
 
 # S17 ESLint 工具约束
@@ -51,4 +55,4 @@ aliases: [S17]
 
 ## 关联
 
-[[A8]] [[S12]] [[patterns/allowlist-over-denylist]]
+[[A8-设计不是可选项，只有好坏之分]] [[S12-边界解析]] [[patterns/allowlist-over-denylist]]

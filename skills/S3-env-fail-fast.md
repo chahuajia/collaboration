@@ -36,4 +36,4 @@ aliases: [S3]
 
 ## 关联
 
-[[W1]] [[S2]] [[domains/nextjs/_index]]
+[[W1-blank-page-triage]] [[S2-csp-reporting]] [[domains/nextjs/_index]]

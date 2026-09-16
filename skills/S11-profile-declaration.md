@@ -43,7 +43,7 @@ fork-policy:
 
 ### 用途
 
-- `collab sync` 时按 `focus` / `exclude` 保留/裁剪条目。
+- 同步时按 `focus` / `exclude` 保留/裁剪条目。（`collab sync` **尚未实现** —— 见 [[S10-collab-cli]]）
     
 - AI 回答时按 `focus` 调整深度与优先级。
     
@@ -70,4 +70,4 @@ fork-policy:
 
 ## 关联
 
-[[A7]] [[S10]] [[profiles/_index]]
+[[A7-distribution-and-community]] [[S10-collab-cli]] [[profiles/_index]]

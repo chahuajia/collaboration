@@ -4,11 +4,15 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [typescript, documentation]
-applies-to: [all]
-supersedes: null
-author: <待填>
-aliases: [S16]
+domains:
+  - typescript
+  - documentation
+applies-to:
+  - all
+supersedes:
+author: heiniao
+aliases:
+  - S16
 ---
 
 
@@ -51,4 +55,4 @@ aliases: [S16]
 
 ## 关联
 
-[[S8]] [[patterns/pattern-language]]
+[[S8-pattern-language-format]] [[patterns/pattern-language]]

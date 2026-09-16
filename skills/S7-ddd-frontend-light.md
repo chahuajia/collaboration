@@ -52,4 +52,4 @@ DDD 概念的前端映射：
 
 ## 关联
 
-[[W3]] [[patterns/load-bearing-vs-partition]] [[domains/architecture/_index]]
+[[W3-ddd-refactor]] [[patterns/load-bearing-vs-partition]] [[domains/architecture/_index]]

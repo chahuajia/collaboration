@@ -1,18 +1,23 @@
 # 演化日志
 
-| 日期         | 版本     | 变更                                                                                          | 提议者                  | 确认者            | commit | 关联                                           |
-|:-----------| :----- | :------------------------------------------------------------------------------------------ | :------------------- | :------------- | ------ | -------------------------------------------- |
-| 2026-09-11 | v1     | 初始 8 项 Skill 单文件                                                                            | chahuajia            | AI + chahuajia | -      |                                              |
-| 2026-09-11 | v2     | 分层为约定/工作流/技能                                                                                | A4 触发                | AI + chahuajia | -      |                                              |
-| 2026-09-11 | v3     | 升级为目录结构，引入模式语言、有根图、跨领域模式                                                                    | A4 触发                | AI + chahuajia | -      |                                              |
-| 2026-09-11 | v4.0.0 | 并入社区分发模型                                                                                    | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A7, W6, W7, S10, S11                         |
-| 2026-09-11 | v4.0.1 | 新增约定 A8（设计决策三问），立即生效                                                                        | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A8                                           |
-| 2026-09-11 | v4.0.2 | 新增约定 A9（跨域借鉴五步法），立即生效                                                                       | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A9                                           |
-| 2026-09-11 | v4.0.3 | 启用 evolution-log 新格式（提议者/确认者/commit/关联）                                                     | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A6                                           |
-| 2026-09-12 | v4.0.4 | 新增约定 A10（Review 上移原则），立即生效                                                                  | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A10                                          |
-| 2026-09-15 | v4.1.0 | **批量落盘**：A11-A16 / W8-W9 / S12-S30 / 17 个模式 / ADR-0003-0004 / 演化日志格式规范                      | AI（从 v4.1 bundle 提取） | heiniao（待确认）   | -      | A11-A16, W8, W9, S12-S30, ADR-0003, ADR-0004 |
-| 2026-09-15 | v4.1.1 | 新增入口文件 `AGENTS.md`；建立 `inbox/` 增量策略；bundle 移出仓库根                                            | AI（提议）               | heiniao（待确认）   | -      | A13, A16                                     |
-| 2026-09-15 | v4.1.2 | **模板集中化**：删除 `rfcs/_template.md`、`profiles/_template.yaml.md`；格式规范从 `templates/` 移到 `meta/` | AI（提议）               | heiniao（待确认）   | -      | templates/README.md                          |
-| 2026-09-15 | v4.1.3 | **修剪策略升级**：从"6 个月一刀切"改为标记-清除 + 分代 + 冷热分级                                                    | AI（提议）               | heiniao（待确认）   | -      | meta/pruning-policy                          |
-| 2026-09-15 | v4.1.4 | 修复 S5（反面/关联误复制自 S4）、S6（id 误写为 S4、domains 错）                                                 | AI（发现并修复）            | heiniao（待确认）   | -      | S5, S6                                       |
-| 2026-09-16 | v4.1.5 | 新增 A16（上下文预算法）；创建 parking-lot.md / decisions.md / anchors.md；W12 暂缓 | AI（提议） | heiniao | -      | A16 |
+| 日期         | 版本      | 变更                                                                                          | 提议者                  | 确认者            | commit | 关联                                           |
+|:-----------|:--------| :------------------------------------------------------------------------------------------ |:---------------------|:---------------| ------ | -------------------------------------------- |
+| 2026-09-11 | v1      | 初始 8 项 Skill 单文件                                                                            | chahuajia            | AI + chahuajia | -      |                                              |
+| 2026-09-11 | v2      | 分层为约定/工作流/技能                                                                                | A4 触发                | AI + chahuajia | -      |                                              |
+| 2026-09-11 | v3      | 升级为目录结构，引入模式语言、有根图、跨领域模式                                                                    | A4 触发                | AI + chahuajia | -      |                                              |
+| 2026-09-11 | v4.0.0  | 并入社区分发模型                                                                                    | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A7, W6, W7, S10, S11                         |
+| 2026-09-11 | v4.0.1  | 新增约定 A8（设计决策三问），立即生效                                                                        | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A8                                           |
+| 2026-09-11 | v4.0.2  | 新增约定 A9（跨域借鉴五步法），立即生效                                                                       | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A9                                           |
+| 2026-09-11 | v4.0.3  | 启用 evolution-log 新格式（提议者/确认者/commit/关联）                                                     | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A6                                           |
+| 2026-09-12 | v4.0.4  | 新增约定 A10（Review 上移原则），立即生效                                                                  | chahuajia提议 + ai双方确认 | AI + chahuajia | -      | A10                                          |
+| 2026-09-15 | v4.1.0  | **批量落盘**：A11-A16 / W8-W9 / S12-S30 / 17 个模式 / ADR-0003-0004 / 演化日志格式规范                      | AI（从 v4.1 bundle 提取） | heiniao（待确认）   | -      | A11-A16, W8, W9, S12-S30, ADR-0003, ADR-0004 |
+| 2026-09-15 | v4.1.1  | 新增入口文件 `AGENTS.md`；建立 `inbox/` 增量策略；bundle 移出仓库根                                            | AI（提议）               | heiniao（待确认）   | -      | A13, A16                                     |
+| 2026-09-15 | v4.1.2  | **模板集中化**：删除 `rfcs/_template.md`、`profiles/_template.yaml.md`；格式规范从 `templates/` 移到 `meta/` | AI（提议）               | heiniao（待确认）   | -      | templates/README.md                          |
+| 2026-09-15 | v4.1.3  | **修剪策略升级**：从"6 个月一刀切"改为标记-清除 + 分代 + 冷热分级                                                    | AI（提议）               | heiniao（待确认）   | -      | meta/pruning-policy                          |
+| 2026-09-15 | v4.1.4  | 修复 S5（反面/关联误复制自 S4）、S6（id 误写为 S4、domains 错）                                                 | AI（发现并修复）            | heiniao（待确认）   | -      | S5, S6                                       |
+| 2026-09-16 | v4.1.5  | 新增 A16（上下文预算法）；创建 working-memory 三件套（`parking-lot` / `decisions` / `anchors`，**实体在 `collab-cli/working-memory/`**）；W12 暂缓 | AI（提议） | heiniao | - | A16 |
+| 2026-09-16 | v4.1.6  | 废弃两条分支 test-cil / single-entry（内容已被 main 吸收，归档为 archive/* tag） | heiniao | heiniao | - | meta/pruning-policy |
+| 2026-09-16 | v4.1.7  | 修复 `agreements/_index.md` 里 A17 的引用（多一个空格 → 2 个 error）；清除 2 个 `AD` 残留索引项。`collab validate`：2 errors → **0** | AI（提议） | heiniao（待确认） | - | A17, agreements/_index |
+| 2026-09-16 | v4.1.8  | **去幻**：S10 区分"已实现 / 设计草案"（此前把不存在的 `init`/`propose`/`pr`/`sync` 写成了使用说明）；写明 `apply` 的语义变更；S5 去掉误连的 S4；模板关联补空格 | AI（提议） | heiniao（待确认） | - | S5, S10, S11, profiles/_index, templates/agreement-template |
+| 2026-09-16 | v4.1.9  | **本库第一次"减"**：删除 `.github/workflows/evolution.yml`（`echo TODO` 的假绿灯 —— 五项校验一项未做，且只在 PR 触发、实际从未运行）；`.idea/` 退出跟踪（已在 `.gitignore` 中） | AI（提议） | heiniao（待确认） | - | meta/pruning-policy |
+| 2026-09-16 | v4.2.0  | **第一次"选择"事件**：合并 A10 / W8 / S27 / review-marginal-value 四条（320 行 → 约 130 行）为 [[A10-review-前置原则]]；删除 3 个文件、改 14 个文件的引用；删除编造的"3-5 倍"数字。见 [[ADR-0005-合并四条-review-规则]]。`collab validate`：105 entries / 0 issues | AI（提议） | heiniao（已确认） | - | A10, W8, S27, review-marginal-value, ADR-0005 |

@@ -29,4 +29,4 @@ TDD 假设"问题空间已明确"。当问题空间不明确（如 `collab new` 
 - 直接 TDD：否决，问题空间不明确时无法写出正确测试。
 - 完全跳过 Spike：同上。
 ## 关联
-[[A10-review-前置原则]] [[W8-规格优先的-AI-协作流程]] [[W9-Spike-工作流]] [[patterns/cross-domain-borrowing]]
+[[A10-review-前置原则]] [[W9-Spike-工作流]] [[patterns/cross-domain-borrowing]]

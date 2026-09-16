@@ -6,7 +6,7 @@
 
 - 复制 `_template.yaml` 为 `<你的用户名>.yaml`。
 - 填写 `identity` / `focus` / `exclude` / `fork-policy`。
-- `collab sync` 与 AI 回答会读取此文件。
+- AI 回答会读取此文件。（`collab sync` **尚未实现** —— 见 [[S10-collab-cli]]）
 
 ## 规则
 

@@ -4,11 +4,14 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [typescript]
-applies-to: [S13]
-supersedes: null
-author: <待填>
-aliases: [S21]
+domains:
+  - typescript
+applies-to:
+  - S13
+supersedes:
+author: heiniao
+aliases:
+  - S21
 ---
 
 # S21 Branded Type
@@ -49,4 +52,4 @@ export type ISODate = string & { readonly [ISODateBrand]: true };
 
 ## 关联
 
-[[S13]] [[S17]]
+[[S13-Smart-Constructor]] [[S17-ESLint-工具约束]]

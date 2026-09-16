@@ -4,11 +4,14 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [typescript]
-applies-to: [S13]
-supersedes: null
-author: <待填>
-aliases: [S20]
+domains:
+  - typescript
+applies-to:
+  - S13
+supersedes:
+author: heiniao
+aliases:
+  - S20
 ---
 
 # S20 Result.all 组合
@@ -48,4 +51,4 @@ export function all<T, E>(results: readonly Result<T, E>[]): Result<T[], E[]> {
 
 ## 关联
 
-[[S13]] [[S25]]
+[[S13-Smart-Constructor]] [[S25-combineResult-变长元组]]

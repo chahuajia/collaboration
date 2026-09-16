@@ -4,11 +4,15 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [ddd, typescript]
-applies-to: [S13]
-supersedes: null
-author: <待填>
-aliases: [S24]
+domains:
+  - ddd
+  - typescript
+applies-to:
+  - S13
+supersedes:
+author: heiniao
+aliases:
+  - S24
 ---
 
 # S24 create vs of
@@ -44,4 +48,4 @@ aliases: [S24]
 
 ## 关联
 
-[[S13]] [[S24]]
+[[S13-Smart-Constructor]] [[S24-create-vs-of]]

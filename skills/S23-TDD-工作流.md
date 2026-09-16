@@ -4,11 +4,14 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [meta]
-applies-to: [W8]
-supersedes: null
-author: <待填>
-aliases: [S23]
+domains:
+  - meta
+applies-to:
+  - A10-review-前置原则
+supersedes:
+author: heiniao
+aliases:
+  - S23
 ---
 
 # S23 TDD 工作流
@@ -54,4 +57,4 @@ aliases: [S23]
 
 ## 关联
 
-[[W8]] [[S26]]
+[[A10-review-前置原则]] [[S26-测试文件布局]]

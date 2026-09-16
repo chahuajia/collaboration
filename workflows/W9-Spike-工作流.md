@@ -56,4 +56,4 @@ aliases:
 
 ## 关联
 
-[[A10]] [[W8]] [[patterns/design-decision]]
+[[A10]] [[A10-review-前置原则]] [[patterns/design-decision]]

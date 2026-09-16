@@ -4,11 +4,14 @@ type: skill
 status: draft
 created: 2026-09-13
 updated: 2026-09-13
-domains: [typescript]
-applies-to: [S20]
-supersedes: null
-author: <待填>
-aliases: [S25]
+domains:
+  - typescript
+applies-to:
+  - S20
+supersedes:
+author: heiniao
+aliases:
+  - S25
 ---
 
 # S25 combineResult 变长元组
@@ -45,4 +48,4 @@ export function combineResult<T extends readonly unknown[], E>(
 
 ## 关联
 
-[[S20]]
+[[S20-Result-all-组合]]

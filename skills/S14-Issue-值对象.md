@@ -4,11 +4,14 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [ddd]
-applies-to: [W3]
-supersedes: null
-author: <待填>
-aliases: [S14]
+domains:
+  - ddd
+applies-to:
+  - W3
+supersedes:
+author: heiniao
+aliases:
+  - S14
 ---
 
 # S14 Issue 值对象
@@ -39,4 +42,4 @@ aliases: [S14]
 
 ## 关联
 
-[[S13]] [[S17]]
+[[S13-Smart-Constructor]] [[S17-ESLint-工具约束]]

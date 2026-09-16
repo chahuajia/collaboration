@@ -4,11 +4,15 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [ddd, typescript]
-applies-to: [W3]
-supersedes: null
-author: <待填>
-aliases: [S13]
+domains:
+  - ddd
+  - typescript
+applies-to:
+  - W3
+supersedes:
+author: heiniao
+aliases:
+  - S13
 ---
 
 # S13 Smart Constructor
@@ -38,4 +42,4 @@ aliases: [S13]
 
 ## 关联
 
-[[S12]] [[S24]] [[patterns/value-object-as-raw-material]]
+[[S12-边界解析]] [[S24-create-vs-of]] [[patterns/value-object-as-raw-material]]

@@ -29,7 +29,7 @@
 **人**：`ROOT.md` → 按需查 `_index.md` → 读条目。
 **AI**：先读 `AGENTS.md`（自动加载），再按它的路由表按需取 2-3 条，**不要全量读**。
 
-- 需求清晰、要 AI 落地 → [[W8-规格优先的-AI-协作流程]]（内含 [[A10-review-前置原则]] 的 review 上移）
+- 需求清晰、要 AI 落地 → [[A10-review-前置原则]]（review 对象优先级 + 五阶段流程 + 五对策）
 - 需求不清、写不出测试 → 先 [[W9-Spike-工作流]]
 - 任务结束要沉淀 → [[W4-three-question-retro]] → [[W5-update-collaboration]]
 

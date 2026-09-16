@@ -80,7 +80,7 @@ git 是基因库——任何删除都在历史里，随时可复活。所以"退
 
 ## 社区同步策略
 
-- 主干合并后，fork 通过 `collab sync` 拉取。
+- 主干合并后，fork 通过同步拉取（`collab sync` **尚未实现** —— 见 [[S10-collab-cli]]）。
 - 若某条目被 ≥ 3 个 fork 引用 → 提升为独立技能。
 - 若某条目在主干 dormant 但在 ≥ 1 个 fork active → 先讨论再决定（多数派的"没人用"可能是少数派的刚需）。
 - 主干定期扫描 fork，吸收高价值条目（见 `patterns/horizontal-gene-transfer`）。

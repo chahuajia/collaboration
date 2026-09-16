@@ -39,4 +39,4 @@ aliases: [S2]
 
 ## 关联
 
-[[W1]] [[S3]] [[patterns/layered-defense]]
+[[W1-blank-page-triage]] [[S3-env-fail-fast]] [[patterns/layered-defense]]

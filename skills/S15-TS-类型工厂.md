@@ -4,11 +4,14 @@ type: skill
 status: active
 created: 2026-09-13
 updated: 2026-09-13
-domains: [typescript]
-applies-to: [W3]
-supersedes: null
-author: <待填>
-aliases: [S15]
+domains:
+  - typescript
+applies-to:
+  - W3
+supersedes:
+author: heiniao
+aliases:
+  - S15
 ---
 
 # S15 TS 类型工厂
@@ -52,4 +55,4 @@ export function enumOf<T extends Record<string, string>>(
 
 ## 关联
 
-[[S12]] [[S21]]
+[[S12-边界解析]] [[S21-Branded-Type]]

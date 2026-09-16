@@ -53,4 +53,4 @@ supersedes: null
 - 不要滥用 `domains`，只标真正相关的。
 ## 关联
 
-[[S8]] [[patterns/faceted-classification]] [[meta/pruning-policy]]
+[[S8-pattern-language-format]] [[patterns/faceted-classification]] [[meta/pruning-policy]]

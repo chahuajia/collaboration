@@ -28,7 +28,6 @@
 | [[S24-create-vs-of]]           | create vs of                | ddd, typescript              | active |
 | [[S25-combineResult-变长元组]]     | combineResult 变长元组          | typescript                   | draft  |
 | [[S26-测试文件布局]]                 | 测试文件布局                      | meta                         | active |
-| [[S27-规格优先-review]]            | 规格优先 review                 | meta                         | active |
 | [[S28-值对象静态方法用显式类名]]           | 值对象静态方法用显式类名                | typescript, ddd              | active |
 | [[S29-批替换决策]]                  | 批替换决策（脚本 vs IDE）            | meta, tooling                | active |
 | [[S30-批处理脚本骨架]]                | 批处理脚本骨架                     | tooling                      | active |
@@ -43,5 +42,5 @@
 
 | 层 | 技能 | 说明 |
 | :--- | :--- | :--- |
-| 协作机制 | S1, S8-S11, S18, S19, S23, S26, S27, S29, S31-S33 | 管"怎么和人协作" |
+| 协作机制 | S1, S8-S11, S18, S19, S23, S26, S29, S31-S33（原 S27 已并入 A10） | 管"怎么和人协作" |
 | 工程做法 | S2-S7, S12-S17, S20-S22, S24, S25, S28, S30, S34, S35 | 管"代码怎么写" |

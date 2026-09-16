@@ -51,7 +51,6 @@
 | :--- | :--- | :--- |
 | [[patterns/design-decision]] | A8 | 设计决策三问 |
 | [[patterns/dependency-decision]] | 供应链（Make-or-Buy） | 引入三问 + 位置三问 |
-| [[patterns/review-marginal-value]] | 认知心理学 + A10 | Review 边际价值随层次变化 |
 | [[patterns/type-as-design]] | 类型论 | 类型即设计 |
 | [[patterns/parse-dont-validate]] | 函数式编程 | 边界解析 |
 | [[patterns/value-object-as-raw-material]] | 制造业 | 值对象是原料 |

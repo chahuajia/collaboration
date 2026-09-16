@@ -32,4 +32,4 @@ aliases: [S1]
 
 ## 关联
 
-[[A1]] [[ROOT]]
+[[A1-output-format]] [[ROOT]]

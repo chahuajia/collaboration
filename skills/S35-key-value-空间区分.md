@@ -4,10 +4,15 @@ type: skill
 status: active
 created: 2026-09-14
 updated: 2026-09-14
-domains: [typescript, typing]
-applies-to: [S15, S21]
-author: <待填>
-aliases: [S35]
+domains:
+  - typescript
+  - typing
+applies-to:
+  - S15
+  - S21
+author: heiniao
+aliases:
+  - S35
 ---
 
 # S35 key/value 空间区分
@@ -98,4 +103,4 @@ function isEntryKindKey(value: string): value is keyof typeof EntryKindValues {
 
 ## 关联
 
-[[S15]] [[S21]] [[patterns/derivation-over-copy]]
+[[S15-TS-类型工厂]] [[S21-Branded-Type]] [[patterns/derivation-over-copy]]
