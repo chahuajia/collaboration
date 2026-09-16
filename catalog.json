@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T13:37:04.619Z",
+  "generatedAt": "2026-09-16T15:28:53.386Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -417,6 +417,15 @@
       "appliesTo": []
     },
     {
+      "id": "how-as-injected-function",
+      "type": "pattern",
+      "status": "active",
+      "title": "How 以函数注入",
+      "path": "patterns/how-as-injected-function.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
       "id": "knowledge-lifecycle",
       "type": "pattern",
       "status": "active",
@@ -536,20 +545,20 @@
       "appliesTo": []
     },
     {
-      "id": "rfc-process",
-      "type": "pattern",
-      "status": "active",
-      "title": "RFC 流程",
-      "path": "patterns/rfc-process.md",
-      "domains": [],
-      "appliesTo": []
-    },
-    {
       "id": "rooted-graph",
       "type": "pattern",
       "status": "active",
       "title": "有根图",
       "path": "patterns/rooted-graph.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "rule-set-as-subset",
+      "type": "pattern",
+      "status": "active",
+      "title": "规则集分层：子集即契约",
+      "path": "patterns/rule-set-as-subset.md",
       "domains": [],
       "appliesTo": []
     },
@@ -1157,6 +1166,20 @@
       ]
     },
     {
+      "id": "W12",
+      "type": "workflow",
+      "status": "active",
+      "title": "W12 条目合并工作流",
+      "path": "workflows/W12-条目合并.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "entry-merge",
+        "pruning"
+      ]
+    },
+    {
       "id": "W2",
       "type": "workflow",
       "status": "active",
@@ -1253,17 +1276,17 @@
     }
   ],
   "summary": {
-    "total": 110,
+    "total": 112,
     "byType": {
       "agreement": 10,
-      "workflow": 10,
+      "workflow": 11,
       "skill": 34,
-      "pattern": 43,
+      "pattern": 44,
       "adr": 10,
       "integration": 3
     },
     "byStatus": {
-      "active": 97,
+      "active": 99,
       "draft": 3,
       "accepted": 10
     }

@@ -18,6 +18,8 @@
 | [[patterns/domain-purity-is-structural]] | 水利工程 + 洋葱架构 | 领域纯洁性是结构性必然 |
 | [[patterns/higher-order-factory]] | 高阶函数 + 框架设计 | 高阶工厂（回调注入） |
 | [[patterns/what-how-are-projections]] | 投影几何 | What / How 是同一事物的两个投影 |
+| [[patterns/how-as-injected-function]] | 六边形 + 依赖倒置 | 纯计算 How 以函数类型注入领域 |
+| [[patterns/rule-set-as-subset]] | 契约 + 集合论 | 规则集基集⊂扩展；子集即生命周期契约 |
 
 ## 演化与社区
 
@@ -29,7 +31,7 @@
 | [[patterns/catalyst-nodes]] | 化学（催化剂） | 杠杆节点 |
 | [[patterns/distributed-evolution]] | 分布式系统 + 生物 | 社区演化 |
 | [[patterns/peer-review]] | 学术同行评审 | 复核机制 |
-| [[patterns/rfc-process]] | Rust RFC | 约定级变更 |
+| [[patterns/rfc-process]] | Rust RFC | **dormant** → 以 [[W7-rfc-process]] 为准 |
 | [[patterns/horizontal-gene-transfer]] | 生物学 | fork 之间交换条目 |
 | [[patterns/self-bootstrapping-requires-fixed-core]] | Lisp / Git / 哥德尔 | 自举必须固定基座 |
 | [[patterns/knowledge-lifecycle]] | 生态学（营养循环） | 知识的多层循环 |

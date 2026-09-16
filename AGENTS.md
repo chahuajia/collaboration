@@ -43,27 +43,24 @@
 
 ## 症状 → 条目（路由表）
 
-> **本表覆盖"元协作"症状** —— 和 AI 怎么配合、任务怎么推进、什么时候沉淀。
->
-> ⚠️ **它不覆盖"工程 / 领域"症状。** 实测（`evolutionary` 项目第 1 轮，4 个真实需求）：
-> 本表命中 **2/4**，而没命中的那 2 条是"状态机怎么建模""不变量放哪一层"
-> —— 工程类症状在本表里**一条都没有**。
->
-> **遇到工程类症状时**：用 `catalog.json` 做关键词检索；
-> **仍然找不到就明确报告"找不到"** —— 那是一条**有效结论**，不是失败。
-> **不要发明一条规范**：那会把"知识库里没有"变成"我猜的"，而下一个人会把猜测当事实。
+> 按症状组织，不是按条目清单。表里没有 → `catalog.json` 关键词检索 →
+> 仍没有 → **报告"找不到"**，记进 [[known-gaps]]；**不要发明规范**。
 
-| 遇到的情况           | 先读                                                                                  |
-| :-------------- | :---------------------------------------------------------------------------------- |
-| 页面空白 / 数据不出来    | [[W1-blank-page-triage]]                                                            |
-| 要设计一个新结构或抽象     | [[patterns/design-decision]]                                                               |
-| AI 写了大量代码等我确认   | [[A10-review-前置原则]]                                                            |
-| 问题空间不明确，写不出测试   | [[W9-Spike-工作流]]                                                                    |
-| 不确定要不要引入依赖 / 放哪 | [[dependency-decision]]                                                             |
-| 出了故障要定位         | [[W1-blank-page-triage]]                                                            |
-| 任务做完要沉淀         | [[W4-three-question-retro]] → [[W5-update-collaboration]] → [[meta/pruning-policy]] |
-| 想改约定            | [[W7-rfc-process]]                                                                  |
-| 要跨领域找灵感         | [[patterns/cross-domain-borrowing]]                                                                |
+| 遇到的情况 | 先读 |
+| :--- | :--- |
+| 页面空白 / 数据不出来 | [[W1-blank-page-triage]] |
+| 要设计一个新结构或抽象 | [[patterns/design-decision]] |
+| AI 写了大量代码等我确认 | [[A10-review-前置原则]] |
+| 问题空间不明确，写不出测试 | [[W9-Spike-工作流]] |
+| 不确定要不要引入依赖 / 放哪 | [[dependency-decision]] |
+| 出了故障要定位 | [[W1-blank-page-triage]] |
+| 任务做完要沉淀 | [[W4-three-question-retro]] → [[W5-update-collaboration]] → [[meta/pruning-policy]] |
+| 想改约定 | [[W7-rfc-process]] |
+| 多条条目重叠要合并 | [[W12-条目合并]] |
+| 要跨领域找灵感 | [[patterns/cross-domain-borrowing]] |
+| **不变量放哪一层** / 聚合边界 | [[S13-Smart-Constructor]] → [[patterns/parse-dont-validate]]（对象自守；跨对象由聚合操作守） |
+| **领域层能不能碰框架** | [[patterns/domain-purity-is-structural]] |
+| **状态机怎么建模**（领域） | **明确不建专条**（2026-09-16 第 5 轮裁决）→ 复用实体状态机；证伪条件见 `known-gaps` 已关闭行 |
 
 ## 协作规则（摘要）
 
@@ -82,4 +79,4 @@
 
 ## 关联
 
-[[ROOT]] [[S1-h2-output]] [[A6-version-authority]] [[cli-agent-boundaries]] [[patterns/design-decision]] [[patterns/cross-domain-borrowing]] [[A10-review-前置原则]] [[A12-知识笔记返回]] [[A13-AI-入口文件规范]] [[chatgpt-paste-protocol]] [[A16-上下文预算法]] [[W1-blank-page-triage]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[W7-rfc-process]] [[W9-Spike-工作流]]
+[[ROOT]] [[S1-h2-output]] [[A6-version-authority]] [[cli-agent-boundaries]] [[patterns/design-decision]] [[patterns/cross-domain-borrowing]] [[patterns/domain-purity-is-structural]] [[patterns/parse-dont-validate]] [[S13-Smart-Constructor]] [[A10-review-前置原则]] [[A12-知识笔记返回]] [[A13-AI-入口文件规范]] [[chatgpt-paste-protocol]] [[A16-上下文预算法]] [[W1-blank-page-triage]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[W7-rfc-process]] [[W9-Spike-工作流]] [[known-gaps]]
