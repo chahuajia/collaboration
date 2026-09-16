@@ -31,14 +31,15 @@ aliases: [naming-conventions]
 
 ## 链接
 
-**链接按文件名解析，不按 `frontmatter.id` 解析。**（2026-09-16 修正）
+**推荐用 id 作链接锚点** —— 它不可变（[[ADR-0009-id-是不可变快照]]）。
 
-- 条目互链用**双链语法**，内容为**文件名**（去 `.md`）：
-  `[[S1-h2-output]]` `[[S5-null-not-sentinel]]` `[[W2-three-stage-analysis]]`
+- **推荐**：`[[S5]]`（id）—— 语义后缀改名后**链接存活**
+- **也可以**：`[[S5-null-not-sentinel]]`（文件名）—— 更可读，但改名后要跟着改
 - 跨目录链接用 `[[patterns/rooted-graph]]`（完整路径也合法）
-- ❌ **不要用 id 当链接**：`[[S1-h2-output]]`、`[[S5]]` 在渲染层解析不了 —— 那是"工具说合法、人点不开"
+- **`id` 必须出现在 `aliases` 里** —— 渲染层（Obsidian）靠 alias 解析 id 形式的链接。
+  缺失 → 静默断链。由 `ID_NOT_IN_ALIASES` 强制，**不靠自觉**。
 - **`id` 必须是文件名的前缀**：文件要么叫 `<id>.md`，要么叫 `<id>-<slug>.md`。
-  这条由 `collab validate` 的 `ID_FILE_NAME_MISMATCH` 强制，不靠自觉。
+  由 `ID_FILE_NAME_MISMATCH` 强制。
 
 ## 元数据字段（frontmatter）
 
