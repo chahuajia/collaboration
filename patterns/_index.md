@@ -59,6 +59,7 @@
 | [[patterns/structure-over-algorithm]] | 计算机科学（Wirth） | 结构优先 |
 | [[reproducible-verification]] | 工程实践 | 可复现的证据优于手工验证 |
 | [[waiting-is-a-decision-window]] | 人机协作实践 | 等待是决策窗口，不是空隙 |
+| [[parallel-work-needs-delivery-proof]] | 分布式系统 + 人机协作 | 并行不是分派，是让每份分派可确认到达 |
 | [[patterns/three-level-dry]] | 软件工程（DRY） | 不重复的三个层次 |
 | [[value-semantics]] | 工程实践 | 值同不代表语义同（原 A11） |
 | [[patterns/feature-discovery-over-hardcoded-paths]] | 航海导航 | 特征发现优于硬编码 |

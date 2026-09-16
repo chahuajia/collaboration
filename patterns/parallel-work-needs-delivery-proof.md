@@ -1,0 +1,72 @@
+---
+id: parallel-work-needs-delivery-proof
+type: pattern
+status: active
+created: 2026-09-16
+updated: 2026-09-16
+source: 分布式系统（投递语义）+ 人机协作实践
+author: heiniao
+aliases:
+  - parallel-work-needs-delivery-proof
+trigger: 要同时推进多件事、考虑派子 agent 或并行工作流时
+anti-trigger: 单线程串行能做完的事 —— 并行只增加协调开销
+provenance: 2026-09-16 派了 2 个子 agent，两次投递均未送达，它们空转 25 分钟；而父 agent 以为"已派出"
+---
+
+# 并行不是分派，是让每一份分派都能被确认到达
+
+## 上下文
+
+多任务、且任务还会衍生子任务时，直觉是"派出去并行做"。
+本库实测过一次：**投递没有送达，双方都不知道。**
+
+## 问题
+
+- **"派出去" ≠ "已交付"**。没有回执时，"已派出"只是**臆想** —— 与那个永远绿的 `evolution.yml` 同源。
+- **上下文不共享**：子 agent 看到的是**陈旧快照**，它会基于旧状态做决定。
+- **失败不可见**：溢出、崩溃、中断，在父 agent 侧和"正在思考"长得**一模一样**。
+- **协调开销吃掉并行收益**：派 3 个 agent 各做 1 件，若无人能验收，吞吐不升反降。
+
+## 方案
+
+**把"到达"变成文件系统事实**（产物式凭据）。每个派出的任务先落地：
+
+```text
+working-memory/tasks/<task>/
+  brief.md      ← 任务原文（= 契约：范围、验收标准都在这）
+  status.json   ← 机器可读：{ state, heartbeat_at, artifacts, blocker }
+  findings.md   ← 产物（**占位即代表"已接收"**）
+```
+
+> **铁律：没有 `status.json` / 没有占位产物 = 没有送达。** 不要假设，去查。
+
+### 失败模式与处理
+
+| 失败模式 | 怎么发现 | 怎么办 |
+| :--- | :--- | :--- |
+| **投递失败** | 没有 `status.json` | 重派或自己做 —— **不要等** |
+| **上下文溢出 / 中断 / 崩溃** | `heartbeat_at` 停更 | **从产物续做**（不是从对话续做 —— 对话已经丢了） |
+| **做错了** | 父 agent / 人**自己跑验收** | 子 agent 的自述**不算证据** |
+| **范围蔓延** | 与 `brief.md` 比对 + `git status` | brief 里写死"只准改这些路径" |
+
+### 父 agent 在等待时该做什么（不是空转）
+
+三件**不可外包**的事：
+
+1. **验收** —— 子 agent 不能验收自己（实测：它写 README 时把不存在的"退出码 2"写了进去）。
+2. **边界判定** —— 子 agent 看不到全局（实测：它看到的是陈旧快照）。
+3. **集成** —— 把多份产物合成**一致的现状**。
+
+**对称性**：人的等待是**决策窗口**（见 [[patterns/waiting-is-a-decision-window]]）；
+父 agent 的等待是**验收窗口**。两者都不是空隙。
+
+## 反面
+
+- 不要把"派出去"当成"已交付"。
+- 不要用子 agent 的自述当验收证据。
+- 不要并行"写入面重叠"的任务 —— 会互相覆盖，且**没人能复现**。
+- 不要为了"看起来在并行"而拆任务：**协调开销大于收益时，串行更快**。
+
+## 关联
+
+[[patterns/waiting-is-a-decision-window]] [[patterns/reproducible-verification]] [[patterns/hierarchical-actor-collaboration]] [[cli-agent-boundaries]]

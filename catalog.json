@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T08:25:42.947Z",
+  "generatedAt": "2026-09-16T09:20:47.947Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -443,6 +443,17 @@
       "path": "patterns/ooda-loop.md",
       "domains": [],
       "appliesTo": []
+    },
+    {
+      "id": "parallel-work-needs-delivery-proof",
+      "type": "pattern",
+      "status": "active",
+      "title": "并行不是分派，是让每一份分派都能被确认到达",
+      "path": "patterns/parallel-work-needs-delivery-proof.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "要同时推进多件事、考虑派子 agent 或并行工作流时",
+      "antiTrigger": "单线程串行能做完的事 —— 并行只增加协调开销"
     },
     {
       "id": "parse-dont-validate",
@@ -1207,17 +1218,17 @@
     }
   ],
   "summary": {
-    "total": 106,
+    "total": 107,
     "byType": {
       "agreement": 8,
       "workflow": 10,
       "skill": 34,
-      "pattern": 42,
+      "pattern": 43,
       "adr": 9,
       "integration": 3
     },
     "byStatus": {
-      "active": 94,
+      "active": 95,
       "draft": 3,
       "accepted": 9
     }
