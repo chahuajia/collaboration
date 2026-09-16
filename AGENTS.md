@@ -13,6 +13,8 @@
 
 1. `ROOT.md` —— 结构、权限、演化机制（最短总览）
 2. `meta/pruning-policy.md` —— 条目怎么诞生、休眠、退役
+2.5 `meta/base-contract.md` —— **冻结的基座**（目录 / kind / id / frontmatter / 链接 / 生成物）；
+   动它 = 破坏性变更，需要 ADR + 迁移脚本 + `collab validate` 归零
 3. **按需读取条目，不要全量读取**（上下文是预算，不是容器 —— [[A16-上下文预算法]]）：
    - 边界、权限、不可谈判的规则 → `agreements/`
    - 复杂任务的执行剧本 → `workflows/`
