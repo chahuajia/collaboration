@@ -2,7 +2,7 @@
 id: RFC-XXXX
 title: <标题>
 status: draft
-author: <git email>
+author: <git user.name>
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 proposed-by: <git email>

@@ -4,7 +4,7 @@ type: workflow
 status: draft
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-author: <git email 或 heiniao>
+author: <git user.name>
 aliases: [W<n>]
 domains: []
 applies-to: []

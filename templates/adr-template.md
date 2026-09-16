@@ -3,7 +3,7 @@ id: ADR-<4 位数字>
 type: adr
 status: proposed
 date: YYYY-MM-DD
-author: <git email >
+author: <git user.name>
 provenance: <提出这个决策的讨论或事故>
 ---
 

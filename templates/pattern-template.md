@@ -4,7 +4,7 @@ type: pattern
 status: draft
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-author: <git email>
+author: <git user.name>
 source: <领域>
 provenance: <从哪次讨论或事故提炼出来>
 ---

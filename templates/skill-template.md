@@ -4,7 +4,7 @@ type: skill
 status: draft
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-author: <git email>
+author: <git user.name>
 aliases:
   - S<n>
 domains: []

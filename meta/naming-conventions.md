@@ -19,7 +19,7 @@ aliases: [naming-conventions]
 - 领域：`<domain>/_index.md`
 - ADR：`ADR-<4位数字>-<kebab-name>.md`
 
-**硬规则**：文件名里**不允许出现空格**。空格会让 `[[A9]]` 这类链接无法按文件名匹配，
+**硬规则**：文件名里**不允许出现空格**。空格会让链接无法按文件名匹配
 也会让脚本与 shell 处理变复杂（历史上 `A9 ...md`、`A10 Review ....md` 就是这样断链的）。
 
 ## 内容命名
@@ -31,8 +31,14 @@ aliases: [naming-conventions]
 
 ## 链接
 
-- 条目互链用**双链语法**（双方括号包裹 ID），如 `[[A1]]` `[[W2]]` `[[S5]]`
-- 跨目录链接用 `[[patterns/rooted-graph]]`
+**链接按文件名解析，不按 `frontmatter.id` 解析。**（2026-09-16 修正）
+
+- 条目互链用**双链语法**，内容为**文件名**（去 `.md`）：
+  `[[A1-output-format]]` `[[S5-null-not-sentinel]]` `[[W2-three-stage-analysis]]`
+- 跨目录链接用 `[[patterns/rooted-graph]]`（完整路径也合法）
+- ❌ **不要用 id 当链接**：`[[A1]]`、`[[S5]]` 在渲染层解析不了 —— 那是"工具说合法、人点不开"
+- **`id` 必须是文件名的前缀**：文件要么叫 `<id>.md`，要么叫 `<id>-<slug>.md`。
+  这条由 `collab validate` 的 `ID_FILE_NAME_MISMATCH` 强制，不靠自觉。
 
 ## 元数据字段（frontmatter）
 
