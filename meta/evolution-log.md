@@ -35,3 +35,4 @@
 | 2026-09-16 | v4.7.7  | **evolutionary 第 8 轮**：三问后引入 Next.js；UI 仅视图状态（不移植聚合）；CORS+GET+种子补契约缺口；拦截 +0；后端 36 tests / 前端 build 绿 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-8-report.md |
 | 2026-09-17 | v4.7.8  | **evolutionary 第 9 轮**：UI 改走 Next rewrite 同域 `/api`（保留 CorsConfig）；不把换电业务放进 Route Handler；活后端 curl/IRM 验 200/409；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-9-report.md |
 | 2026-09-17 | v4.7.9  | **evolutionary 第 10 轮**：GraphQL **dependency-decision 否决**（REST 已够；证伪条件落规格）；Playwright E2E 用户取消；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-10-report.md |
+| 2026-09-17 | v4.7.10 | **evolutionary 第 11 轮**：`GET /stations` 批量概览 + UI 禁 N+1；W1 式网络错误提示；[[known-gaps]] +1（REST 列表/N+1 无 symptom 路由）；37 tests 绿；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-11-report.md |
