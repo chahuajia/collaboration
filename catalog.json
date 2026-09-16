@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T11:35:02.380Z",
+  "generatedAt": "2026-09-16T12:12:21.657Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -79,6 +79,15 @@
       "status": "accepted",
       "title": "ADR-0009 id 是不可变快照",
       "path": "meta/decision-records/ADR-0009-id-是不可变快照.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0010",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0010 授权边界与记账",
+      "path": "meta/decision-records/ADR-0010-授权边界与记账.md",
       "domains": [],
       "appliesTo": []
     },
@@ -1244,19 +1253,19 @@
     }
   ],
   "summary": {
-    "total": 109,
+    "total": 110,
     "byType": {
       "agreement": 10,
       "workflow": 10,
       "skill": 34,
       "pattern": 43,
-      "adr": 9,
+      "adr": 10,
       "integration": 3
     },
     "byStatus": {
       "active": 97,
       "draft": 3,
-      "accepted": 9
+      "accepted": 10
     }
   }
 }
