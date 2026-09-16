@@ -8,6 +8,8 @@ applies-to: [all]
 supersedes: null
 author: heiniao
 aliases: [A4]
+trigger: 用户明确认可了某个判断 / 某条目真实拦住了一个错误 / 现有条目被证明冲突或过时
+anti-trigger: 日常小改动、单行修复、纯查询 —— "本次不沉淀"是合法产出
 ---
 
 # A4 主动触发知识沉淀

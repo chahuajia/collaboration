@@ -38,6 +38,12 @@ integrations/    meta/           meta/decision-records/
 domains/         rfcs/           profiles/    templates/   inbox/
 ```
 
+> **这份清单的权威在代码里**：`collab-cli` 的 `CONTRACT_DIRS`（`src/application/contractDirs.ts`）。
+> `collab validate` 会在**未声明的顶层目录里出现文件**时报 `UNDECLARED_DIR` ——
+> 换句话说，**想加一个新目录，你必须先改基座**，改不了就说明它不该加。
+>
+> 文档指向代码、而不是各存一份清单：这是"单一真相源"在本页的落地。
+
 ### 二、kind ↔ 目录 ↔ id 前缀
 
 | kind | 目录 | id 前缀 |

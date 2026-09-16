@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T07:00:37.087Z",
+  "generatedAt": "2026-09-16T08:25:42.947Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -91,7 +91,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "要交付一批实现/产物给用户 review 之前；或发现\"用户在读代码\"时",
+      "antiTrigger": "纯查询、单行修复 —— 不构成\"一批产出\"，走流程反而变重"
     },
     {
       "id": "A12",
@@ -102,7 +104,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "一次讨论产生 ≥2 个新条目 / 涉及方法论修正 / 用户说\"学到了\"",
+      "antiTrigger": "简单修复、单行改动、纯查询"
     },
     {
       "id": "A13",
@@ -113,7 +117,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "新建项目入口（AGENTS.md）；或判断\"这条信息该不该写进入口\"",
+      "antiTrigger": "入口已存在，只是往库里加内容"
     },
     {
       "id": "A14",
@@ -124,7 +130,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "判断\"这条知识该写进哪一层\"；或两层内容冲突、要定优先级",
+      "antiTrigger": "只在一个库里工作、不涉及分层判断"
     },
     {
       "id": "A16",
@@ -135,7 +143,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "开始跨会话的任务；或发现\"某条约束只存在于对话里\"",
+      "antiTrigger": "单轮问答"
     },
     {
       "id": "A3",
@@ -146,7 +156,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "写方案/结论时；或对方的表述里出现\"张力\"（问句与断言混用、用词与已有条目冲突、隐含假设未说）",
+      "antiTrigger": "用户只是问事实，或明确要求\"直接给答案\""
     },
     {
       "id": "A4",
@@ -157,7 +169,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "用户明确认可了某个判断 / 某条目真实拦住了一个错误 / 现有条目被证明冲突或过时",
+      "antiTrigger": "日常小改动、单行修复、纯查询 —— \"本次不沉淀\"是合法产出"
     },
     {
       "id": "A6",
@@ -168,7 +182,9 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "准备改条目；或不确定\"这个改动要不要对方确认\"",
+      "antiTrigger": "只读书、不写库时"
     },
     {
       "id": "chatgpt-output-format",
@@ -564,6 +580,17 @@
       "appliesTo": [
         "all"
       ]
+    },
+    {
+      "id": "waiting-is-a-decision-window",
+      "type": "pattern",
+      "status": "active",
+      "title": "等待是决策窗口，不是空隙",
+      "path": "patterns/waiting-is-a-decision-window.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "把任务交给 agent 后，犹豫\"这段时间我该做什么\"；或想把长任务并行化",
+      "antiTrigger": "秒级等待（跑一条命令、写一个文件）—— 那什么都不该做"
     },
     {
       "id": "what-how-are-projections",
@@ -1180,17 +1207,17 @@
     }
   ],
   "summary": {
-    "total": 105,
+    "total": 106,
     "byType": {
       "agreement": 8,
       "workflow": 10,
       "skill": 34,
-      "pattern": 41,
+      "pattern": 42,
       "adr": 9,
       "integration": 3
     },
     "byStatus": {
-      "active": 93,
+      "active": 94,
       "draft": 3,
       "accepted": 9
     }

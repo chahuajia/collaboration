@@ -10,6 +10,8 @@ supersedes:
 author: heiniao
 aliases:
   - A13
+trigger: 新建项目入口（AGENTS.md）；或判断"这条信息该不该写进入口"
+anti-trigger: 入口已存在，只是往库里加内容
 ---
 
 # A13 AI 入口文件规范
