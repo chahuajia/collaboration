@@ -1,0 +1,1180 @@
+{
+  "generatedAt": "2026-09-16T05:54:58.448Z",
+  "entries": [
+    {
+      "id": "ADR-0001",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0001 采用 v3 目录结构",
+      "path": "meta/decision-records/ADR-0001-adopt-v3-structure.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0002",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0002 采用社区化分发模型",
+      "path": "meta/decision-records/ADR-0002-community-distribution.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0003",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0003 采用 Spike 前置阶段",
+      "path": "meta/decision-records/ADR-0003-采用-Spike-前置阶段.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0004",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0004 采用 MCP Server 作为工具桥接方案",
+      "path": "meta/decision-records/ADR-0004-采用-MCP-Server-作为工具桥接方案.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0005",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0005 合并四条 review 规则为 A10",
+      "path": "meta/decision-records/ADR-0005-合并四条-review-规则.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0006",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0006 约定层收窄为协作规则",
+      "path": "meta/decision-records/ADR-0006-约定层收窄为协作规则.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0007",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0007 建立集成层（integrations）",
+      "path": "meta/decision-records/ADR-0007-建立集成层.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0008",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0008 约定层收敛完成：19 → 8",
+      "path": "meta/decision-records/ADR-0008-约定层收敛完成.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "A10",
+      "type": "agreement",
+      "status": "active",
+      "title": "A10 Review 前置原则",
+      "path": "agreements/A10-review-前置原则.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A12",
+      "type": "agreement",
+      "status": "active",
+      "title": "A12 知识笔记返回",
+      "path": "agreements/A12-知识笔记返回.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A13",
+      "type": "agreement",
+      "status": "active",
+      "title": "A13 AI 入口文件规范",
+      "path": "agreements/A13-AI-入口文件规范.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A14",
+      "type": "agreement",
+      "status": "active",
+      "title": "A14 多实体协作原则",
+      "path": "agreements/A14-多实体协作原则.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A16",
+      "type": "agreement",
+      "status": "active",
+      "title": "A16 上下文预算法",
+      "path": "agreements/A16-上下文预算法.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "agreement",
+      "status": "active",
+      "title": "A3 互相批评与主动侦查",
+      "path": "agreements/A3-mutual-critique.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "agreement",
+      "status": "active",
+      "title": "A4 主动触发知识沉淀",
+      "path": "agreements/A4-proactive-update.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "A6",
+      "type": "agreement",
+      "status": "active",
+      "title": "A6 版本与修改权限",
+      "path": "agreements/A6-version-authority.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "chatgpt-output-format",
+      "type": "integration",
+      "status": "active",
+      "title": "chatgpt-like：输出格式约定",
+      "path": "integrations/chatgpt-output-format.md",
+      "domains": [],
+      "appliesTo": [
+        "chatgpt-like"
+      ]
+    },
+    {
+      "id": "chatgpt-paste-protocol",
+      "type": "integration",
+      "status": "active",
+      "title": "chatgpt-like：粘贴交互协议",
+      "path": "integrations/chatgpt-paste-protocol.md",
+      "domains": [],
+      "appliesTo": [
+        "chatgpt-like"
+      ]
+    },
+    {
+      "id": "cli-agent-boundaries",
+      "type": "integration",
+      "status": "active",
+      "title": "cli-agent：写权限与身份边界",
+      "path": "integrations/cli-agent-boundaries.md",
+      "domains": [],
+      "appliesTo": [
+        "cli-agent"
+      ]
+    },
+    {
+      "id": "adapter-internal-structure",
+      "type": "pattern",
+      "status": "active",
+      "title": "适配器内部结构自由",
+      "path": "patterns/adapter-internal-structure.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "allowlist-over-denylist",
+      "type": "pattern",
+      "status": "active",
+      "title": "白名单优于黑名单",
+      "path": "patterns/allowlist-over-denylist.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "catalyst-nodes",
+      "type": "pattern",
+      "status": "active",
+      "title": "杠杆节点",
+      "path": "patterns/catalyst-nodes.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "context-overflow-solved-by-retrieval",
+      "type": "pattern",
+      "status": "active",
+      "title": "上下文溢出用检索",
+      "path": "patterns/context-overflow-solved-by-retrieval.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "cross-domain-borrowing",
+      "type": "pattern",
+      "status": "active",
+      "title": "跨域借鉴五步法",
+      "path": "patterns/cross-domain-borrowing.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "dependency-decision",
+      "type": "pattern",
+      "status": "active",
+      "title": "依赖决策三问 + 位置三问",
+      "path": "patterns/dependency-decision.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "derivation-over-copy",
+      "type": "pattern",
+      "status": "active",
+      "title": "派生优于复制",
+      "path": "patterns/derivation-over-copy.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "design-decision",
+      "type": "pattern",
+      "status": "active",
+      "title": "设计决策三问",
+      "path": "patterns/design-decision.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "distributed-evolution",
+      "type": "pattern",
+      "status": "active",
+      "title": "分布式演化",
+      "path": "patterns/distributed-evolution.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "domain-purity-is-structural",
+      "type": "pattern",
+      "status": "active",
+      "title": "领域纯洁性是结构性必然，不是道德要求",
+      "path": "patterns/domain-purity-is-structural.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ecological-niche",
+      "type": "pattern",
+      "status": "active",
+      "title": "ecological-niche",
+      "path": "patterns/ecological-niche.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "entropy-reduction",
+      "type": "pattern",
+      "status": "active",
+      "title": "熵减机制",
+      "path": "patterns/entropy-reduction.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "evolution-loop",
+      "type": "pattern",
+      "status": "active",
+      "title": "进化闭环",
+      "path": "patterns/evolution-loop.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "faceted-classification",
+      "type": "pattern",
+      "status": "active",
+      "title": "分面分类",
+      "path": "patterns/faceted-classification.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "feature-discovery-over-hardcoded-paths",
+      "type": "pattern",
+      "status": "active",
+      "title": "特征发现优于硬编码路径",
+      "path": "patterns/feature-discovery-over-hardcoded-paths.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "hierarchical-actor-collaboration",
+      "type": "pattern",
+      "status": "active",
+      "title": "人机协作的层级 Actor 系统",
+      "path": "patterns/hierarchical-actor-collaboration.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "higher-order-factory",
+      "type": "pattern",
+      "status": "active",
+      "title": "高阶工厂",
+      "path": "patterns/higher-order-factory.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "horizontal-gene-transfer",
+      "type": "pattern",
+      "status": "active",
+      "title": "水平基因转移",
+      "path": "patterns/horizontal-gene-transfer.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "knowledge-lifecycle",
+      "type": "pattern",
+      "status": "active",
+      "title": "知识的生态循环",
+      "path": "patterns/knowledge-lifecycle.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "law-three-tiers",
+      "type": "pattern",
+      "status": "active",
+      "title": "三层法律结构",
+      "path": "patterns/law-three-tiers.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "layer-vs-context",
+      "type": "pattern",
+      "status": "active",
+      "title": "层 ≠ 上下文",
+      "path": "patterns/layer-vs-context.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "layered-defense",
+      "type": "pattern",
+      "status": "active",
+      "title": "分层防御",
+      "path": "patterns/layered-defense.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "load-bearing-vs-partition",
+      "type": "pattern",
+      "status": "active",
+      "title": "承重墙 vs 隔断",
+      "path": "patterns/load-bearing-vs-partition.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "naming-as-definition",
+      "type": "pattern",
+      "status": "active",
+      "title": "命名即定义",
+      "path": "patterns/naming-as-definition.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ooda-loop",
+      "type": "pattern",
+      "status": "active",
+      "title": "OODA 闭环",
+      "path": "patterns/ooda-loop.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "parse-dont-validate",
+      "type": "pattern",
+      "status": "active",
+      "title": "Parse, don't validate",
+      "path": "patterns/parse-dont-validate.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "pattern-language",
+      "type": "pattern",
+      "status": "active",
+      "title": "模式语言",
+      "path": "patterns/pattern-language.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "peer-review",
+      "type": "pattern",
+      "status": "active",
+      "title": "同行评审",
+      "path": "patterns/peer-review.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "qian-systems-engineering",
+      "type": "pattern",
+      "status": "active",
+      "title": "钱学森系统工程思想",
+      "path": "patterns/qian-systems-engineering.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "rfc-process",
+      "type": "pattern",
+      "status": "active",
+      "title": "RFC 流程",
+      "path": "patterns/rfc-process.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "rooted-graph",
+      "type": "pattern",
+      "status": "active",
+      "title": "有根图",
+      "path": "patterns/rooted-graph.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "self-bootstrapping-requires-fixed-core",
+      "type": "pattern",
+      "status": "active",
+      "title": "自举需要固定核心",
+      "path": "patterns/self-bootstrapping-requires-fixed-core.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "structure-over-algorithm",
+      "type": "pattern",
+      "status": "active",
+      "title": "结构优先",
+      "path": "patterns/structure-over-algorithm.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "three-layer-memory",
+      "type": "pattern",
+      "status": "active",
+      "title": "三层记忆",
+      "path": "patterns/three-layer-memory.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "three-level-dry",
+      "type": "pattern",
+      "status": "active",
+      "title": "不重复原则的三个层次",
+      "path": "patterns/three-level-dry.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "two-dimension-knowledge",
+      "type": "pattern",
+      "status": "draft",
+      "title": "知识的二维空间",
+      "path": "patterns/two-dimension-knowledge.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "type-as-design",
+      "type": "pattern",
+      "status": "active",
+      "title": "类型即设计",
+      "path": "patterns/type-as-design.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "value-object-as-raw-material",
+      "type": "pattern",
+      "status": "active",
+      "title": "值对象是原料",
+      "path": "patterns/value-object-as-raw-material.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "value-semantics",
+      "type": "pattern",
+      "status": "active",
+      "title": "值同不代表语义同",
+      "path": "patterns/value-semantics.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "what-how-are-projections",
+      "type": "pattern",
+      "status": "active",
+      "title": "What / How 是同一事物的两个投影",
+      "path": "patterns/what-how-are-projections.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "S1",
+      "type": "skill",
+      "status": "active",
+      "title": "S1 H2 输出",
+      "path": "skills/S1-h2-output.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S10",
+      "type": "skill",
+      "status": "draft",
+      "title": "S10 collab CLI 使用",
+      "path": "skills/S10-collab-cli.md",
+      "domains": [
+        "meta",
+        "tooling"
+      ],
+      "appliesTo": [
+        "W6"
+      ]
+    },
+    {
+      "id": "S11",
+      "type": "skill",
+      "status": "active",
+      "title": "S11 Profile 声明侧重点",
+      "path": "skills/S11-profile-declaration.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "W6"
+      ]
+    },
+    {
+      "id": "S12",
+      "type": "skill",
+      "status": "active",
+      "title": "S12 边界解析（Parse, don't validate）",
+      "path": "skills/S12-边界解析.md",
+      "domains": [
+        "architecture",
+        "typescript"
+      ],
+      "appliesTo": [
+        "W3"
+      ]
+    },
+    {
+      "id": "S13",
+      "type": "skill",
+      "status": "active",
+      "title": "S13 Smart Constructor",
+      "path": "skills/S13-Smart-Constructor.md",
+      "domains": [
+        "ddd",
+        "typescript"
+      ],
+      "appliesTo": [
+        "W3"
+      ]
+    },
+    {
+      "id": "S14",
+      "type": "skill",
+      "status": "active",
+      "title": "S14 Issue 值对象",
+      "path": "skills/S14-Issue-值对象.md",
+      "domains": [
+        "ddd"
+      ],
+      "appliesTo": [
+        "W3"
+      ]
+    },
+    {
+      "id": "S15",
+      "type": "skill",
+      "status": "active",
+      "title": "S15 TS 类型工厂",
+      "path": "skills/S15-TS-类型工厂.md",
+      "domains": [
+        "typescript"
+      ],
+      "appliesTo": [
+        "W3"
+      ]
+    },
+    {
+      "id": "S16",
+      "type": "skill",
+      "status": "active",
+      "title": "S16 TSDoc 规范",
+      "path": "skills/S16-TSDoc-规范.md",
+      "domains": [
+        "typescript",
+        "documentation"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S17",
+      "type": "skill",
+      "status": "active",
+      "title": "S17 ESLint 工具约束",
+      "path": "skills/S17-ESLint-工具约束.md",
+      "domains": [
+        "typescript",
+        "tooling"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S18",
+      "type": "skill",
+      "status": "active",
+      "title": "S18 演化日志三层身份",
+      "path": "skills/S18-演化日志三层身份.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "W5"
+      ]
+    },
+    {
+      "id": "S19",
+      "type": "skill",
+      "status": "active",
+      "title": "S19 Make-or-Buy（货架商品）",
+      "path": "skills/S19-Make-or-Buy.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S2",
+      "type": "skill",
+      "status": "active",
+      "title": "S2 CSP 报告配置",
+      "path": "skills/S2-csp-reporting.md",
+      "domains": [
+        "security",
+        "nextjs"
+      ],
+      "appliesTo": [
+        "W1"
+      ]
+    },
+    {
+      "id": "S20",
+      "type": "skill",
+      "status": "active",
+      "title": "S20 Result.all 组合",
+      "path": "skills/S20-Result-all-组合.md",
+      "domains": [
+        "typescript"
+      ],
+      "appliesTo": [
+        "S13"
+      ]
+    },
+    {
+      "id": "S21",
+      "type": "skill",
+      "status": "active",
+      "title": "S21 Branded Type",
+      "path": "skills/S21-Branded-Type.md",
+      "domains": [
+        "typescript"
+      ],
+      "appliesTo": [
+        "S13"
+      ]
+    },
+    {
+      "id": "S22",
+      "type": "skill",
+      "status": "active",
+      "title": "S22 路径别名",
+      "path": "skills/S22-路径别名.md",
+      "domains": [
+        "typescript",
+        "tooling"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S23",
+      "type": "skill",
+      "status": "active",
+      "title": "S23 TDD 工作流",
+      "path": "skills/S23-TDD-工作流.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "A10-review-前置原则"
+      ]
+    },
+    {
+      "id": "S24",
+      "type": "skill",
+      "status": "active",
+      "title": "S24 create vs of",
+      "path": "skills/S24-create-vs-of.md",
+      "domains": [
+        "ddd",
+        "typescript"
+      ],
+      "appliesTo": [
+        "S13"
+      ]
+    },
+    {
+      "id": "S25",
+      "type": "skill",
+      "status": "draft",
+      "title": "S25 combineResult 变长元组",
+      "path": "skills/S25-combineResult-变长元组.md",
+      "domains": [
+        "typescript"
+      ],
+      "appliesTo": [
+        "S20"
+      ]
+    },
+    {
+      "id": "S26",
+      "type": "skill",
+      "status": "active",
+      "title": "S26 测试文件布局",
+      "path": "skills/S26-测试文件布局.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S28",
+      "type": "skill",
+      "status": "active",
+      "title": "S28 值对象静态方法用显式类名",
+      "path": "skills/S28-值对象静态方法用显式类名.md",
+      "domains": [
+        "typescript",
+        "ddd"
+      ],
+      "appliesTo": [
+        "S13"
+      ]
+    },
+    {
+      "id": "S29",
+      "type": "skill",
+      "status": "active",
+      "title": "S29 批替换决策（脚本 vs IDE）",
+      "path": "skills/S29-批替换决策.md",
+      "domains": [
+        "meta",
+        "tooling"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "S3",
+      "type": "skill",
+      "status": "active",
+      "title": "S3 环境变量 fail-fast 校验",
+      "path": "skills/S3-env-fail-fast.md",
+      "domains": [
+        "config",
+        "nextjs"
+      ],
+      "appliesTo": [
+        "W1"
+      ]
+    },
+    {
+      "id": "S30",
+      "type": "skill",
+      "status": "active",
+      "title": "S30 批处理脚本骨架",
+      "path": "skills/S30-批处理脚本骨架.md",
+      "domains": [
+        "tooling"
+      ],
+      "appliesTo": [
+        "S29"
+      ]
+    },
+    {
+      "id": "S31",
+      "type": "skill",
+      "status": "active",
+      "title": "S31 测试设计原则",
+      "path": "skills/S31-测试设计原则.md",
+      "domains": [
+        "testing",
+        "methodology"
+      ],
+      "appliesTo": [
+        "A10-review-前置原则",
+        "S23"
+      ]
+    },
+    {
+      "id": "S32",
+      "type": "skill",
+      "status": "active",
+      "title": "S32 数据变更管理原则",
+      "path": "skills/S32-数据变更管理原则.md",
+      "domains": [
+        "methodology",
+        "data"
+      ],
+      "appliesTo": [
+        "W5"
+      ]
+    },
+    {
+      "id": "S33",
+      "type": "skill",
+      "status": "active",
+      "title": "S33 测试数据的契约一致性",
+      "path": "skills/S33-测试数据的契约一致性.md",
+      "domains": [
+        "testing",
+        "methodology"
+      ],
+      "appliesTo": [
+        "A10-review-前置原则",
+        "S23",
+        "S31"
+      ]
+    },
+    {
+      "id": "S34",
+      "type": "skill",
+      "status": "active",
+      "title": "S34 边界层与领域的错误翻译",
+      "path": "skills/S34-边界层与领域的错误翻译.md",
+      "domains": [
+        "architecture",
+        "error-handling"
+      ],
+      "appliesTo": [
+        "W3",
+        "S7",
+        "S12"
+      ]
+    },
+    {
+      "id": "S35",
+      "type": "skill",
+      "status": "active",
+      "title": "S35 key/value 空间区分",
+      "path": "skills/S35-key-value-空间区分.md",
+      "domains": [
+        "typescript",
+        "typing"
+      ],
+      "appliesTo": [
+        "S15",
+        "S21"
+      ]
+    },
+    {
+      "id": "S4",
+      "type": "skill",
+      "status": "active",
+      "title": "S4-setstate-in-render",
+      "path": "skills/S4-setstate-in-render.md",
+      "domains": [
+        "react"
+      ],
+      "appliesTo": [
+        "W1"
+      ]
+    },
+    {
+      "id": "S5",
+      "type": "skill",
+      "status": "active",
+      "title": "S5 哨兵值替换为 null",
+      "path": "skills/S5-null-not-sentinel.md",
+      "domains": [
+        "api",
+        "react",
+        "database"
+      ],
+      "appliesTo": [
+        "W1"
+      ]
+    },
+    {
+      "id": "S6",
+      "type": "skill",
+      "status": "active",
+      "title": "S6 Service Worker 调试",
+      "path": "skills/S6-sw-debugging.md",
+      "domains": [
+        "nextjs"
+      ],
+      "appliesTo": [
+        "W1"
+      ]
+    },
+    {
+      "id": "S7",
+      "type": "skill",
+      "status": "active",
+      "title": "S7 DDD 前端轻量化落地",
+      "path": "skills/S7-ddd-frontend-light.md",
+      "domains": [
+        "architecture"
+      ],
+      "appliesTo": [
+        "W3"
+      ]
+    },
+    {
+      "id": "S8",
+      "type": "skill",
+      "status": "active",
+      "title": "S8-pattern-language-format",
+      "path": "skills/S8-pattern-language-format.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all-entries"
+      ]
+    },
+    {
+      "id": "S9",
+      "type": "skill",
+      "status": "active",
+      "title": "S9 YAML 元数据",
+      "path": "skills/S9-yaml-metadata.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all-entries"
+      ]
+    },
+    {
+      "id": "W1",
+      "type": "workflow",
+      "status": "active",
+      "title": "W1 页面空白/数据不出来的黄金排查路径",
+      "path": "workflows/W1-blank-page-triage.md",
+      "domains": [
+        "react",
+        "nextjs",
+        "graphql",
+        "security"
+      ],
+      "appliesTo": [
+        "blank-page",
+        "data-missing"
+      ]
+    },
+    {
+      "id": "W10",
+      "type": "workflow",
+      "status": "active",
+      "title": "<任务名> Progress",
+      "path": "workflows/W10-working-memory.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "W11",
+      "type": "workflow",
+      "status": "active",
+      "title": "W11 递归式分析",
+      "path": "workflows/W11-递归式分析.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "all"
+      ]
+    },
+    {
+      "id": "W2",
+      "type": "workflow",
+      "status": "active",
+      "title": "W2 复杂问题分析三段式",
+      "path": "workflows/W2-three-stage-analysis.md",
+      "domains": [
+        "all"
+      ],
+      "appliesTo": [
+        "any-technical-question"
+      ]
+    },
+    {
+      "id": "W3",
+      "type": "workflow",
+      "status": "active",
+      "title": "W3 DDD 架构重构工作流",
+      "path": "workflows/W3-ddd-refactor.md",
+      "domains": [
+        "architecture"
+      ],
+      "appliesTo": [
+        "directory-bloat",
+        "module-coupling"
+      ]
+    },
+    {
+      "id": "W4",
+      "type": "workflow",
+      "status": "active",
+      "title": "W4 复盘三问",
+      "path": "workflows/W4-three-question-retro.md",
+      "domains": [
+        "all"
+      ],
+      "appliesTo": [
+        "after-complex-task"
+      ]
+    },
+    {
+      "id": "W5",
+      "type": "workflow",
+      "status": "active",
+      "title": "W5 更新 COLLABORATION",
+      "path": "workflows/W5-update-collaboration.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "new-insight",
+        "conflict",
+        "obsolescence"
+      ]
+    },
+    {
+      "id": "W6",
+      "type": "workflow",
+      "status": "active",
+      "title": "W6 从本地 patch 到社区 PR",
+      "path": "workflows/W6-local-patch-to-community-pr.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "community-contribution"
+      ]
+    },
+    {
+      "id": "W7",
+      "type": "workflow",
+      "status": "active",
+      "title": "W7 RFC 流程（约定级变更）",
+      "path": "workflows/W7-rfc-process.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "agreement-change",
+        "structural-change"
+      ]
+    },
+    {
+      "id": "W9",
+      "type": "workflow",
+      "status": "active",
+      "title": "W9 Spike 工作流",
+      "path": "workflows/W9-Spike-工作流.md",
+      "domains": [
+        "meta"
+      ],
+      "appliesTo": [
+        "A10"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 103,
+    "byType": {
+      "agreement": 8,
+      "workflow": 10,
+      "skill": 34,
+      "pattern": 40,
+      "adr": 8,
+      "integration": 3
+    },
+    "byStatus": {
+      "active": 92,
+      "draft": 3,
+      "accepted": 8
+    }
+  }
+}
