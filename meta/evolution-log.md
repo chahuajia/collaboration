@@ -37,3 +37,4 @@
 | 2026-09-17 | v4.7.9  | **evolutionary 第 10 轮**：GraphQL **dependency-decision 否决**（REST 已够；证伪条件落规格）；Playwright E2E 用户取消；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-10-report.md |
 | 2026-09-17 | v4.7.10 | **evolutionary 第 11 轮**：`GET /stations` 批量概览 + UI 禁 N+1；W1 式网络错误提示；[[known-gaps]] +1（REST 列表/N+1 无 symptom 路由）；37 tests 绿；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-11-report.md |
 | 2026-09-17 | v4.7.11 | **evolutionary 第 12 轮**：`IncomingSwapRequest.parse` 边界 Parse；缺字段 400；38 tests 绿；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-12-report.md |
+| 2026-09-17 | v4.7.12 | **evolutionary 第 13 轮**：`ListStations`/`GetStation` 读用例；Controller 脱离 Repository；纠正第 11 轮读路径不对称；39 tests 绿；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-13-report.md |
