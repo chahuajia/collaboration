@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T07:31:09.287Z",
+  "generatedAt": "2026-09-17T08:43:02.071Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -372,6 +372,15 @@
       "appliesTo": []
     },
     {
+      "id": "extreme-unattended-cluster",
+      "type": "pattern",
+      "status": "active",
+      "title": "极端无人托管集群：每 tick 门禁",
+      "path": "patterns/extreme-unattended-cluster.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
       "id": "faceted-classification",
       "type": "pattern",
       "status": "active",
@@ -386,6 +395,15 @@
       "status": "active",
       "title": "特征发现优于硬编码路径",
       "path": "patterns/feature-discovery-over-hardcoded-paths.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "frontend-ddd-rsc",
+      "type": "pattern",
+      "status": "active",
+      "title": "前端 DDD 与 RSC 渲染边界",
+      "path": "patterns/frontend-ddd-rsc.md",
       "domains": [],
       "appliesTo": []
     },
@@ -586,6 +604,15 @@
       "status": "active",
       "title": "自举需要固定核心",
       "path": "patterns/self-bootstrapping-requires-fixed-core.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "shared-kernel-across-bc",
+      "type": "pattern",
+      "status": "active",
+      "title": "跨 BC 只依赖共享内核，不依赖对方核心聚合",
+      "path": "patterns/shared-kernel-across-bc.md",
       "domains": [],
       "appliesTo": []
     },
@@ -1309,17 +1336,17 @@
     }
   ],
   "summary": {
-    "total": 115,
+    "total": 118,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 35,
-      "pattern": 46,
+      "pattern": 49,
       "adr": 10,
       "integration": 3
     },
     "byStatus": {
-      "active": 102,
+      "active": 105,
       "draft": 3,
       "accepted": 10
     }

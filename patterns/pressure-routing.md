@@ -4,12 +4,12 @@ type: pattern
 status: active
 created: 2026-09-17
 updated: 2026-09-17
-source: 人机协作实践（压测路由误判）
 author: heiniao
+source: 人机协作实践（压测路由误判）
 aliases:
   - pressure-routing
   - P-pressure
-provenance: collab-pressure 17 轮（668 tests 绿、collaboration HEAD 几乎不变）—— 把工具链回归当成 KB 演化压测
+provenance: collab-pressure 17 轮；2026-09-17 极端集群补强交叉引用
 ---
 
 # 压测路由：三层压力与成功判据
@@ -38,6 +38,8 @@ provenance: collab-pressure 17 轮（668 tests 绿、collaboration HEAD 几乎�
 **流向**：L2 撞墙 → harvest 进 L3；L1 只保证工具能服务 L2/L3，**不替代** L3。
 
 **账本落点**：项目轮次/phase 报告**不得**写入 `meta/evolution-log` 正文；L2 拦截先记业务仓候选。详见 [[patterns/project-evidence-vs-kb-ledger]]。
+
+**极端无人托管**：并行 ≥2、超时父接管、L3 连续 3 tick 无增量即停。详见 [[patterns/extreme-unattended-cluster]]。
 
 ### 每 tick 门禁（写进 `loop.md` 首段）
 

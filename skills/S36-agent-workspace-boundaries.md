@@ -14,7 +14,7 @@ domains:
 applies-to:
   - multi-agent
   - monorepo
-provenance: evolutionary phase-7 FE∥BE 集群——子 agent 与父会话共用工作树，无目录沙箱；投递凭据见 parallel-work-needs-delivery-proof
+provenance: evolutionary phase-7 FE∥BE 集群；2026-09-17 极端化无人托管压测补强
 ---
 
 # S36 Agent 工作区边界（FE/BE 集群）
@@ -23,6 +23,8 @@ provenance: evolutionary phase-7 FE∥BE 集群——子 agent 与父会话共�
 
 一人 + 多 agent 在 **monorepo** 上并行。没有独立 `frontend.git` / `backend.git` 时，
 「工作空间」不是再拆远程，而是 **路径权限 + WM 沙箱 + 分支**。
+
+极端无人托管时，本技能是**下限**；完整门禁见 [[patterns/extreme-unattended-cluster]]。
 
 ## 问题
 

@@ -66,6 +66,9 @@
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
 | **FE∥BE 多 agent 工作区怎么划** | [[S36]]（路径约定 + `wm/agents/{fe,be}` + `wip`；不为此拆仓） |
+| **无人托管要极端集群 / 压测 KB 却只涨测试** | [[patterns/extreme-unattended-cluster]] → [[patterns/pressure-routing]] |
+| **Next 全 CSR / 前端也要 DDD** | [[patterns/frontend-ddd-rsc]] |
+| **跨包 import 像有问题（mall→commerce）** | [[patterns/shared-kernel-across-bc]]（先 `mvn compile`；再问是否共享内核） |
 
 ## 协作规则（摘要）
 

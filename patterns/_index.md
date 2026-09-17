@@ -15,8 +15,10 @@
 | [[patterns/ecological-niche]] | 生态学 | 适用边界 |
 | [[patterns/entropy-reduction]] | 物理学（熵增） | 主动修剪 |
 | [[patterns/evolution-loop]] | 生物进化论 | 变异 + 选择 + 遗传 |
+| [[patterns/extreme-unattended-cluster]] | 人机协作实践 | 极端无人托管集群门禁（HEAD/L3 diff/超时接管/停 wake） |
 | [[patterns/faceted-classification]] | 图书馆学 | 多维检索 |
 | [[patterns/feature-discovery-over-hardcoded-paths]] | 航海导航 | 特征发现优于硬编码 |
+| [[patterns/frontend-ddd-rsc]] | 人机协作实践 | 前端 DDD 与 RSC 渲染边界 |
 | [[patterns/hierarchical-actor-collaboration]] | FSM + HSM + Actor | 人机协作的层级 Actor |
 | [[patterns/higher-order-factory]] | 高阶函数 + 框架设计 | 高阶工厂（回调注入） |
 | [[patterns/horizontal-gene-transfer]] | 生物学 | fork 之间交换条目 |
@@ -40,6 +42,7 @@
 | [[patterns/rooted-graph]] | 图论 | 主结构：树 + 横切 + 双向链接 |
 | [[patterns/rule-set-as-subset]] | 契约 + 集合论 | 规则集基集⊂扩展；子集即生命周期契约 |
 | [[patterns/self-bootstrapping-requires-fixed-core]] | Lisp / Git / 哥德尔 | 自举必须固定基座 |
+| [[patterns/shared-kernel-across-bc]] | DDD（共享内核） | 跨 BC 只依赖共享内核，禁止对方核心聚合 |
 | [[patterns/structure-over-algorithm]] | 计算机科学（Wirth） | 结构优先 |
 | [[patterns/three-layer-memory]] | 认知心理学 + 存储分层 | 工作记忆 / 进度 / 长期知识 |
 | [[patterns/three-level-dry]] | 软件工程（DRY） | 不重复的三个层次 |
