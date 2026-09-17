@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T12:53:10.860Z",
+  "generatedAt": "2026-09-17T14:41:16.616Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -395,7 +395,7 @@
       "path": "patterns/extreme-unattended-cluster.md",
       "domains": [],
       "appliesTo": [],
-      "trigger": "无人托管要极端集群；压测 collaboration 却只涨测试/validate；或子代理卡住无人接管；或集群空转/推进过慢；或要用业务仓双轴压 KB"
+      "trigger": "无人托管要极端集群；压测 KB 却只涨测试；子代理卡住；集群空转；主轴/队列积压任务；或用业务仓双轴压 KB"
     },
     {
       "id": "faceted-classification",
