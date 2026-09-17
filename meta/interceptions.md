@@ -3,7 +3,7 @@ id: interceptions
 type: meta
 status: active
 created: 2026-09-15
-updated: 2026-09-16
+updated: 2026-09-17
 author: heiniao
 provenance: ROOT 的"选择压力"缺了收益侧测量——没有它，演化只会优化"便宜"
 aliases: [interceptions]
@@ -23,6 +23,16 @@ aliases: [interceptions]
 - 新条目生来就没有适应度信号，只能靠"写得挺用心"存活。
 
 ## 方案
+
+### 落点（防淹没）
+
+本文件是 **跨项目判决索引**，不是项目运行日志。详见 [[patterns/project-evidence-vs-kb-ledger]]。
+
+| 写这里 | 写业务仓 |
+| :--- | :--- |
+| 一行：条目 · 拦住了什么 · 链接 | 轮次报告全文、候选 interceptions |
+
+L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再追加本表**一行**。
 
 ### 记账格式
 
@@ -68,4 +78,4 @@ aliases: [interceptions]
 
 ## 关联
 
-[[A4-proactive-update]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[meta/pruning-policy]] [[meta/evolution-log]] [[patterns/evolution-loop]]
+[[A4-proactive-update]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[meta/pruning-policy]] [[meta/evolution-log]] [[patterns/evolution-loop]] [[patterns/project-evidence-vs-kb-ledger]]

@@ -3,7 +3,7 @@ id: naming-conventions
 type: meta
 status: active
 created: 2026-09-11
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [naming-conventions]
 ---
@@ -15,12 +15,21 @@ aliases: [naming-conventions]
 - 约定：`A<n>-<kebab-name>.md`，如 `A1-output-format.md`
 - 工作流：`W<n>-<kebab-name>.md`
 - 技能：`S<n>-<kebab-name>.md`
-- 模式：`<kebab-name>.md`
+- 模式：`<kebab-name>.md`（**语义 id**；见下「模式短别名」）
 - 领域：`<domain>/_index.md`
 - ADR：`ADR-<4位数字>-<kebab-name>.md`
 
 **硬规则**：文件名里**不允许出现空格**。空格会让链接无法按文件名匹配
 也会让脚本与 shell 处理变复杂（历史上 `A9 ...md`、`A10 Review ....md` 就是这样断链的）。
+
+### 模式短别名（与 A/W/S 对齐的检索面）
+
+模式层**保留语义文件名作 `id`**（跨 fork 可合并，见下表）。为降低与 `A10`/`S5` 的检索落差：
+
+1. `aliases` **必须**含 `id`（已有强制）。
+2. **新建/改触**模式时，`aliases` **建议**再加一个短别名：`P-<short-kebab>`（如 `P-ledger`），供症状表与口语引用。
+3. **禁止**为补齐短名而批量重命名旧文件（[[ADR-0009-id-是不可变快照]]）；旧条按需改触时补 aliases。
+4. **不**把 `P-<n>` 位置编号定为模式主键——避免与语义 id 双真相；位置编号留给 A/W/S。
 
 ## 内容命名
 

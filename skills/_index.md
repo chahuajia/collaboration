@@ -36,6 +36,7 @@
 | [[S33]]             | 测试数据的契约一致性                  | testing, methodology         | active |
 | [[S34]]            | 边界层与领域的错误翻译                 | architecture, error-handling | active |
 | [[S35]]         | key/value 空间区分              | typescript, typing           | active |
+| [[S36]]         | Agent 工作区边界（FE/BE 集群）     | meta, tooling                | active |
 |                                |                             |                              |        |
 
 ## 分层

@@ -3,7 +3,7 @@ id: evolution-log-format
 type: meta
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 author: heiniao
 aliases: [evolution-log-format]
 ---
@@ -13,6 +13,12 @@ aliases: [evolution-log-format]
 ## 上下文
 
 演化日志记录 COLLABORATION 的所有正式变更。需要明确的字段定义，避免记录退化。
+
+## 范围（防淹没）
+
+`evolution-log.md` **只记 KB 本体变更**（版本、结构、路由、代谢、基座）。  
+项目轮次 / phase 过程日志写业务仓 WM；若必须交叉引用，主表**一行摘要 + 链接**。  
+详见 [[patterns/project-evidence-vs-kb-ledger]]。
 
 ## 方案
 
@@ -51,7 +57,8 @@ aliases: [evolution-log-format]
 - 不用假 email。
 - 不省略确认者。
 - 不把 commit 当成必填（未提交时用 `-`）。
+- **不把**项目轮次/phase 报告正文贴进变更栏。
 
 ## 关联
 
-[[A4-proactive-update]] [[A6-version-authority]] [[meta/evolution-log]]
+[[A4-proactive-update]] [[A6-version-authority]] [[meta/evolution-log]] [[patterns/project-evidence-vs-kb-ledger]] [[S18]]

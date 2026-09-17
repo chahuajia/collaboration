@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T03:53:20.989Z",
+  "generatedAt": "2026-09-17T07:31:09.287Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -536,6 +536,15 @@
       "appliesTo": []
     },
     {
+      "id": "project-evidence-vs-kb-ledger",
+      "type": "pattern",
+      "status": "active",
+      "title": "项目证据 vs KB 账本",
+      "path": "patterns/project-evidence-vs-kb-ledger.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
       "id": "qian-systems-engineering",
       "type": "pattern",
       "status": "active",
@@ -1052,6 +1061,21 @@
       ]
     },
     {
+      "id": "S36",
+      "type": "skill",
+      "status": "active",
+      "title": "S36 Agent 工作区边界（FE/BE 集群）",
+      "path": "skills/S36-agent-workspace-boundaries.md",
+      "domains": [
+        "meta",
+        "tooling"
+      ],
+      "appliesTo": [
+        "multi-agent",
+        "monorepo"
+      ]
+    },
+    {
       "id": "S4",
       "type": "skill",
       "status": "active",
@@ -1285,17 +1309,17 @@
     }
   ],
   "summary": {
-    "total": 113,
+    "total": 115,
     "byType": {
       "agreement": 10,
       "workflow": 11,
-      "skill": 34,
-      "pattern": 45,
+      "skill": 35,
+      "pattern": 46,
       "adr": 10,
       "integration": 3
     },
     "byStatus": {
-      "active": 100,
+      "active": 102,
       "draft": 3,
       "accepted": 10
     }

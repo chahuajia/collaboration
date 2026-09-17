@@ -6,7 +6,7 @@
 ## 项目是什么
 
 本仓库是 **COLLABORATION 知识库本体**（布局 B：**仓库根 = 知识库根**）。
-它把与 AI 长期协作的经验沉淀为五类可检索条目——约定 / 工****作流 / 技能 / 模式 / 领域，
+它把与 AI 长期协作的经验沉淀为五类可检索条目——约定 / 工作流 / 技能 / 模式 / 领域，
 并用生命周期与修剪策略对抗文档腐烂（[[pruning-policy]]）。
 
 ## 阅读顺序
@@ -29,9 +29,9 @@
    - 概念、判据、跨领域借鉴 → `patterns/`
    - 特定环境下的操作手册（对话式 AI / 有 IO 的 agent） → `integrations/`
    - 按领域找入口 → `domains/`
-6. **工作记忆不在本仓库**：本仓库只放**长期知识**。当前进度、决策日志、锚点属于「工作记忆」，
-   实体在 **`collab-cli/working-memory/`**（见 [[W10-working-memory]]）。
-   本仓库内**没有** `working-memory/` 目录 —— 别去找，也别在这里新建。
+6. **工作记忆不在本仓库**：本仓库只放**长期知识**。进度/决策在**各主体仓**的 `working-memory/`
+   （工具链 → `collab-cli`；业务 → 如 `evolutionary`；见 [[W10-working-memory]]）。
+   本仓库内**没有** `working-memory/` —— 别去找，也别在这里新建。
 
 > **路由优先级**（2026-09-16 按实测校正）：
 > 1. **先看下面的症状表** —— 它是"我要做 X → 读 Y"的映射，命中最快
@@ -64,6 +64,8 @@
 | **多资源 REST 读法 / 客户端 N+1** | [[patterns/design-decision]]（batch 端点 vs 循环 GET）；GraphQL 先过 [[dependency-decision]] |
 | **边界错误怎么映射 HTTP**（API/CLI） | [[S34-边界层与领域的错误翻译]]（类型化异常；禁止用领域 message 前缀猜状态码） |
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
+| **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
+| **FE∥BE 多 agent 工作区怎么划** | [[S36]]（路径约定 + `wm/agents/{fe,be}` + `wip`；不为此拆仓） |
 
 ## 协作规则（摘要）
 

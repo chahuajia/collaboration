@@ -4,7 +4,7 @@ type: pattern
 status: active
 source: 认知心理学（工作记忆 / 长期记忆）+ 数据库（缓存 / 主存储 / 冷存储）
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [three-layer-memory]
 ---
@@ -21,6 +21,8 @@ aliases: [three-layer-memory]
 | **工作记忆** | 当前任务状态 | 小时-天 | `working-memory/` | 高 |
 | **进度文档** | 跨对话工作状态 | 天-周 | 同上（含归档） | 中 |
 | **长期知识** | 提炼后的条目 | 月-年 | `COLLABORATION/` | 低 |
+
+账本（evolution-log / interceptions）如何避免被项目证据淹没 → [[patterns/project-evidence-vs-kb-ledger]]。
 ### 核心原则
 - **不同层有不同的"写频率"**：工作记忆频繁重写；长期知识谨慎添加。
 - **不同层有不同的"归档策略"**：工作记忆自动归档；长期知识按 pruning-policy。

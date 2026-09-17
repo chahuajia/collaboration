@@ -3,7 +3,7 @@ id: known-gaps
 type: meta
 status: active
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 author: heiniao
 aliases: [known-gaps]
 provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"找不到"，但这个结论**没有去处** —— 汇报完就随项目归档了
@@ -33,6 +33,15 @@ provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"
 | **本文件** | 条目**没能回答**什么 | **补**哪条 |
 
 两个都是修剪与增补的依据。**只有收益侧没有缺口侧，账本会变成功劳簿。**
+
+## 落点（防淹没）
+
+| 缺口类型 | 记哪 |
+| :--- | :--- |
+| 工具/入口/catalog（跨仓） | **本表**一行 |
+| 单业务域尚未验证的 gap 候选 | 业务仓 WM；≥3 或代谢触发后再入库 |
+
+证据正文留业务仓；本表只留摘要 + 链接。见 [[patterns/project-evidence-vs-kb-ledger]]。
 
 ## 记账格式
 
@@ -65,4 +74,4 @@ provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"
 
 ## 关联
 
-[[interceptions]] [[pruning-policy]] [[A13-AI-入口文件规范]] [[meta/base-contract]]
+[[interceptions]] [[pruning-policy]] [[A13-AI-入口文件规范]] [[meta/base-contract]] [[patterns/project-evidence-vs-kb-ledger]]
