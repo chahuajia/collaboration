@@ -46,7 +46,7 @@ trigger: FE∥BE 多 agent 工作区怎么划；或不想为此拆仓却怕抢�
 | **L0 约定** | `loop.md` 写明：FE 只碰 `frontend/`；BE 只碰 `backend/`（+ 约定包路径） | 每个并行 phase **立即** |
 | **L1 WM 沙箱** | `working-memory/agents/fe/` · `be/` 放该 agent 的 `loop.md` / 笔记（**不**放业务源码） | 下一次并行起强制 |
 | **L2 git** | `wip/pN-fe-*` / `wip/pN-be-*`；父会话 merge | 已有分支约定时强制 |
-| **L3 worktree** | 每 agent 一棵工作树 | 冲突频繁再上 |
+| **L3 worktree** | 每**写者**一棵工作树（或工具链等价隔离 checkout） | **≥2 写者并行时默认**（见 [[patterns/extreme-unattended-cluster]] v8）；不再等「冲突频繁再上」 |
 
 ### 分仓（权限分离）时
 

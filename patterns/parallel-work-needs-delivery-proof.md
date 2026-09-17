@@ -3,14 +3,14 @@ id: parallel-work-needs-delivery-proof
 type: pattern
 status: active
 created: 2026-09-16
-updated: 2026-09-17
-source: 分布式系统（投递语义）+ 人机协作实践
+updated: 2026-09-18
+source: 分布式系统（投递语义）+ 人机协作实践；外源对照：强制回执契约 / 派出会计
 author: heiniao
 aliases:
   - parallel-work-needs-delivery-proof
 trigger: 要同时推进多件事、考虑派子 agent 或并行工作流时
 anti-trigger: 单线程串行能做完的事 —— 并行只增加协调开销
-provenance: 2026-09-16 派了 2 个子 agent，两次投递均未送达，它们空转 25 分钟；而父 agent 以为"已派出"
+provenance: 2026-09-16 派了 2 个子 agent 空转；2026-09-18 补 Return contract + N派=N收
 ---
 
 # 并行不是分派，是让每一份分派都能被确认到达
@@ -63,7 +63,9 @@ working-memory/tasks/<task>/
 
 ### 与极端集群的衔接（加厚切片）
 
-在 [[patterns/extreme-unattended-cluster]] v4 下，并行派出的「可验收投递」默认加厚为：**代码 + 目标测绿证 + status（HEAD）+（若新接通）RUNBOOK 一行**。半截产物不算送达完成。
+在 [[patterns/extreme-unattended-cluster]] v4+ 下，并行派出的「可验收投递」默认加厚为：**代码 + 目标测绿证 + status（HEAD）+（若新接通）RUNBOOK 一行**。半截产物不算送达完成。
+
+**v8**：投递完成还须满足 **Return contract**（最终消息含 `## Result`：status/head/name-status/tests/deferred/blocker/orchestrator）。无契约 = FAILED。父对每一波执行 **派出会计**：派出 N → 收回 N（SUCCESS|FAILED|SKIP|父接管）；M&lt;N 不得开下一波。
 
 ### 挂起与超时（2026-09-16 实测补充）
 
@@ -120,4 +122,4 @@ spawn → short probe（1–2 分钟，查回执在不在）
 
 ## 关联
 
-[[patterns/waiting-is-a-decision-window]] [[patterns/reproducible-verification]] [[patterns/hierarchical-actor-collaboration]] [[cli-agent-boundaries]]
+[[patterns/waiting-is-a-decision-window]] [[patterns/reproducible-verification]] [[patterns/hierarchical-actor-collaboration]] [[cli-agent-boundaries]] [[patterns/extreme-unattended-cluster]] [[S36]]

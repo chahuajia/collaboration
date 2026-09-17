@@ -65,7 +65,7 @@
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
 | **FE∥BE 多 agent 工作区怎么划 / 切片太碎** | [[S36]]（路径沙箱 + 加厚 brief；未达门槛不拆仓） |
-| **无人托管要极端集群 / 压测 KB 却只涨测试 / 集群空转过慢 / 收口后只剩单 agent** | [[patterns/extreme-unattended-cluster]]（v7 收口≠停派·v6 交付凭证·主轴不积压）→ [[patterns/pressure-routing]] |
+| **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执** | [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
 | **前后端仓权限分离怎么协同** | [[S36]]（契约仓 + 中立编排 WM） |
 | **Next 全 CSR / 前端也要 DDD** | [[patterns/frontend-ddd-rsc]] |
 | **跨包 import 像有问题（mall→commerce）** | [[patterns/shared-kernel-across-bc]]（先 `mvn compile`；再问是否共享内核） |
