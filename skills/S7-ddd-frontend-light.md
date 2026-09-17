@@ -3,12 +3,13 @@ id: S7
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [architecture]
 applies-to: [W3]
 supersedes: null
 author: heiniao
 aliases: [S7]
+trigger: 前端要上 DDD 怕过度设计；或不知后端战术怎么映射
 ---
 
 # S7 DDD 前端轻量化落地

@@ -3,12 +3,13 @@ id: S2
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [security, nextjs]
 applies-to: [W1]
 supersedes: null
 author: heiniao
 aliases: [S2]
+trigger: CSP 违规页面空白却无告警；或不知怎么配 report-uri
 ---
 
 # S2 CSP 报告配置

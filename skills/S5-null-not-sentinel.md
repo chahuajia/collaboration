@@ -3,7 +3,7 @@ id: S5
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains:
   - api
   - react
@@ -13,6 +13,7 @@ applies-to:
 supersedes:
 author: heiniao
 aliases: [S5]
+trigger: 用 -1/0,0 当无值；或类型分不清哨兵与真值
 ---
 
 # S5 哨兵值替换为 null

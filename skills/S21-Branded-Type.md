@@ -3,7 +3,7 @@ id: S21
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - typescript
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S21
+trigger: 两个 string 语义不同却能互赋；或要 branded 区分值对象
 ---
 
 # S21 Branded Type

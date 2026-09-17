@@ -3,12 +3,13 @@ id: S3
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [config, nextjs]
 applies-to: [W1]
 supersedes: null
 author: heiniao
 aliases: [S3]
+trigger: env 为空静默降级；或配置错误到运行时才爆
 ---
 
 # S3 环境变量 fail-fast 校验

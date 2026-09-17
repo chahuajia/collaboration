@@ -3,12 +3,13 @@ id: S4
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [react]
 applies-to: [W1]
 supersedes: null
 author: heiniao
 aliases: [S4]
+trigger: 渲染期 setState 报错/死循环；或不知副作用该放哪
 ---
 
 

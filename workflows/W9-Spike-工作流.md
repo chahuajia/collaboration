@@ -3,7 +3,7 @@ id: W9
 type: workflow
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - meta
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - W9
+trigger: 需求不清写不出测试；或强行 TDD 怕失真
 ---
 
 # W9 Spike 工作流

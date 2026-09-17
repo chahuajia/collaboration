@@ -3,7 +3,7 @@ id: S6
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-16
+updated: 2026-09-17
 domains:
   - nextjs
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S6
+trigger: 改代码页面不变怀疑 SW；或不清怎么关掉缓存
 ---
 
 # S6 Service Worker 调试

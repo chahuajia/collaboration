@@ -3,7 +3,7 @@ id: S24
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - ddd
   - typescript
@@ -13,6 +13,7 @@ supersedes:
 author: heiniao
 aliases:
   - S24
+trigger: create/of 命名混乱；或不知工厂会不会失败
 ---
 
 # S24 create vs of

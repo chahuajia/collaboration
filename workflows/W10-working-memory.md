@@ -3,7 +3,7 @@ id: W10
 type: workflow
 status: active
 created: 2026-09-13
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [W10]
 domains:
@@ -12,6 +12,7 @@ applies-to:
   - all
 supersedes: null
 provenance: 跨对话上下文反复丢失——把"当前进度"混进知识库会稀释长期条目
+trigger: 跨对话要续进度；或怕把临时状态混进知识库
 ---
 
 

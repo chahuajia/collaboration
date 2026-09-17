@@ -3,7 +3,7 @@ id: S17
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - typescript
   - tooling
@@ -13,6 +13,7 @@ supersedes:
 author: heiniao
 aliases:
   - S17
+trigger: 口头分层约定总被忘；或想用 ESLint 钉死依赖/类型风格
 ---
 
 # S17 ESLint 工具约束

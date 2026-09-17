@@ -3,7 +3,7 @@ id: S35
 type: skill
 status: active
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 domains:
   - typescript
   - typing
@@ -13,6 +13,7 @@ applies-to:
 author: heiniao
 aliases:
   - S35
+trigger: const enum 的 key/value 空间搞混；或想 value as key 断言
 ---
 
 # S35 key/value 空间区分

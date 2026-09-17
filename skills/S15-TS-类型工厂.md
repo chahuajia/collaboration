@@ -3,7 +3,7 @@ id: S15
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - typescript
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S15
+trigger: 从 const 派生联合类型重复；或 typeof X[keyof typeof X] 写烦了
 ---
 
 # S15 TS 类型工厂

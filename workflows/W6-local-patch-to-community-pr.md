@@ -3,12 +3,13 @@ id: W6
 type: workflow
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [meta]
 applies-to: [community-contribution]
 supersedes: null
 author: heiniao
 aliases: [W6]
+trigger: 本地洞见要贡献回社区；或不知 patch→PR 怎么走
 ---
 
 # W6 从本地 patch 到社区 PR

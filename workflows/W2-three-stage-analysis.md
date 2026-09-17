@@ -3,12 +3,13 @@ id: W2
 type: workflow
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [all]
 applies-to: [any-technical-question]
 supersedes: null
 author: heiniao
 aliases: [W2]
+trigger: 复杂技术问题要结构化分析；或怕只答表面无根因
 ---
 
 # W2 复杂问题分析三段式

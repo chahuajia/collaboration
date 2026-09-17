@@ -3,7 +3,7 @@ id: S25
 type: skill
 status: draft
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - typescript
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S25
+trigger: Result.all 丢元组位置类型；或各 Result 值类型不同要组合
 ---
 
 # S25 combineResult 变长元组

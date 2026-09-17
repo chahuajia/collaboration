@@ -3,12 +3,13 @@ id: S10
 type: skill
 status: draft
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [meta, tooling]
 applies-to: [W6]
 supersedes: null
 author: heiniao
 aliases: [S10]
+trigger: 要用 collab CLI 落盘/校验；或不想给 AI push 权限
 ---
 
 # S10 collab CLI 使用

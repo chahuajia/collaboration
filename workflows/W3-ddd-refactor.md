@@ -3,12 +3,13 @@ id: W3
 type: workflow
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [architecture]
 applies-to: [directory-bloat, module-coupling]
 supersedes: null
 author: heiniao
 aliases: [W3]
+trigger: 目录膨胀/模块耦合要重构；或不清业务边界怎么划
 ---
 
 # W3 DDD 架构重构工作流

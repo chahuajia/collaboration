@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:41:50.444Z",
+  "generatedAt": "2026-09-17T09:57:23.423Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -759,7 +759,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "回答格式不统一；或不知该不该用 H2 起头"
     },
     {
       "id": "S10",
@@ -773,7 +774,8 @@
       ],
       "appliesTo": [
         "W6"
-      ]
+      ],
+      "trigger": "要用 collab CLI 落盘/校验；或不想给 AI push 权限"
     },
     {
       "id": "S11",
@@ -842,7 +844,8 @@
       ],
       "appliesTo": [
         "W3"
-      ]
+      ],
+      "trigger": "从 const 派生联合类型重复；或 typeof X[keyof typeof X] 写烦了"
     },
     {
       "id": "S16",
@@ -870,7 +873,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "口头分层约定总被忘；或想用 ESLint 钉死依赖/类型风格"
     },
     {
       "id": "S18",
@@ -910,7 +914,8 @@
       ],
       "appliesTo": [
         "W1"
-      ]
+      ],
+      "trigger": "CSP 违规页面空白却无告警；或不知怎么配 report-uri"
     },
     {
       "id": "S20",
@@ -936,7 +941,8 @@
       ],
       "appliesTo": [
         "S13"
-      ]
+      ],
+      "trigger": "两个 string 语义不同却能互赋；或要 branded 区分值对象"
     },
     {
       "id": "S22",
@@ -977,7 +983,8 @@
       ],
       "appliesTo": [
         "S13"
-      ]
+      ],
+      "trigger": "create/of 命名混乱；或不知工厂会不会失败"
     },
     {
       "id": "S25",
@@ -990,7 +997,8 @@
       ],
       "appliesTo": [
         "S20"
-      ]
+      ],
+      "trigger": "Result.all 丢元组位置类型；或各 Result 值类型不同要组合"
     },
     {
       "id": "S26",
@@ -1017,7 +1025,8 @@
       ],
       "appliesTo": [
         "S13"
-      ]
+      ],
+      "trigger": "值对象静态方法用 this 丢绑定；或不知该不该写显式类名"
     },
     {
       "id": "S29",
@@ -1031,7 +1040,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "批替换不知脚本还是 IDE；或改太多怕误匹配"
     },
     {
       "id": "S3",
@@ -1045,7 +1055,8 @@
       ],
       "appliesTo": [
         "W1"
-      ]
+      ],
+      "trigger": "env 为空静默降级；或配置错误到运行时才爆"
     },
     {
       "id": "S30",
@@ -1058,7 +1069,8 @@
       ],
       "appliesTo": [
         "S29"
-      ]
+      ],
+      "trigger": "要写跨文件批替换脚本；或 PowerShell replace 踩编码/边界坑"
     },
     {
       "id": "S31",
@@ -1135,7 +1147,8 @@
       "appliesTo": [
         "S15",
         "S21"
-      ]
+      ],
+      "trigger": "const enum 的 key/value 空间搞混；或想 value as key 断言"
     },
     {
       "id": "S36",
@@ -1164,7 +1177,8 @@
       ],
       "appliesTo": [
         "W1"
-      ]
+      ],
+      "trigger": "渲染期 setState 报错/死循环；或不知副作用该放哪"
     },
     {
       "id": "S5",
@@ -1179,7 +1193,8 @@
       ],
       "appliesTo": [
         "W1"
-      ]
+      ],
+      "trigger": "用 -1/0,0 当无值；或类型分不清哨兵与真值"
     },
     {
       "id": "S6",
@@ -1192,7 +1207,8 @@
       ],
       "appliesTo": [
         "W1"
-      ]
+      ],
+      "trigger": "改代码页面不变怀疑 SW；或不清怎么关掉缓存"
     },
     {
       "id": "S7",
@@ -1205,7 +1221,8 @@
       ],
       "appliesTo": [
         "W3"
-      ]
+      ],
+      "trigger": "前端要上 DDD 怕过度设计；或不知后端战术怎么映射"
     },
     {
       "id": "S8",
@@ -1262,7 +1279,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "跨对话要续进度；或怕把临时状态混进知识库"
     },
     {
       "id": "W11",
@@ -1275,7 +1293,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "分析停在浅层要递归加深；或讨论完不知怎么沉淀复用"
     },
     {
       "id": "W12",
@@ -1303,7 +1322,8 @@
       ],
       "appliesTo": [
         "any-technical-question"
-      ]
+      ],
+      "trigger": "复杂技术问题要结构化分析；或怕只答表面无根因"
     },
     {
       "id": "W3",
@@ -1317,7 +1337,8 @@
       "appliesTo": [
         "directory-bloat",
         "module-coupling"
-      ]
+      ],
+      "trigger": "目录膨胀/模块耦合要重构；或不清业务边界怎么划"
     },
     {
       "id": "W4",
@@ -1360,7 +1381,8 @@
       ],
       "appliesTo": [
         "community-contribution"
-      ]
+      ],
+      "trigger": "本地洞见要贡献回社区；或不知 patch→PR 怎么走"
     },
     {
       "id": "W7",
@@ -1388,7 +1410,8 @@
       ],
       "appliesTo": [
         "A10"
-      ]
+      ],
+      "trigger": "需求不清写不出测试；或强行 TDD 怕失真"
     }
   ],
   "summary": {
