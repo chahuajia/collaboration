@@ -3,7 +3,7 @@ id: parallel-work-needs-delivery-proof
 type: pattern
 status: active
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 source: 分布式系统（投递语义）+ 人机协作实践
 author: heiniao
 aliases:
@@ -59,6 +59,11 @@ working-memory/tasks/<task>/
 
 **对称性**：人的等待是**决策窗口**（见 [[patterns/waiting-is-a-decision-window]]）；
 父 agent 的等待是**验收窗口**。两者都不是空隙。
+
+
+### 与极端集群的衔接（加厚切片）
+
+在 [[patterns/extreme-unattended-cluster]] v4 下，并行派出的「可验收投递」默认加厚为：**代码 + 目标测绿证 + status（HEAD）+（若新接通）RUNBOOK 一行**。半截产物不算送达完成。
 
 ### 挂起与超时（2026-09-16 实测补充）
 
