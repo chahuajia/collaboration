@@ -9,6 +9,7 @@ author: heiniao
 aliases:
   - extreme-unattended-cluster
   - P-extreme-cluster
+trigger: 无人托管要极端集群；压测 collaboration 却只涨测试/validate；或子代理卡住无人接管
 provenance: 2026-09-17 用户要求「更加极端化」压测 collaboration
 ---
 

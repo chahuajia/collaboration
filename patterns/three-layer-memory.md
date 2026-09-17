@@ -7,6 +7,7 @@ created: 2026-09-15
 updated: 2026-09-17
 author: heiniao
 aliases: [three-layer-memory]
+trigger: 设计 AI/系统知识存储却只问"上下文够不够"；或想把一切塞进上下文/全扔进知识库
 ---
 # 三层记忆
 ## 上下文

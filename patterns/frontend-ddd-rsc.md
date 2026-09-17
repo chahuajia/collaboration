@@ -9,6 +9,7 @@ source: 人机协作实践（Next 壳偏移）
 aliases:
   - frontend-ddd-rsc
   - P-fe-ddd
+trigger: Next 页面全 use client；或前端也要 DDD；或服务端状态与本地状态搅在一起；或缺请求缓存/弱网策略
 provenance: evolutionary 用了 Next 15 却全 CSR useEffect；用户指出缺 RSC/服务端状态/请求层/前端 DDD
 ---
 

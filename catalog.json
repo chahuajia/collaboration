@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T08:43:02.071Z",
+  "generatedAt": "2026-09-17T08:53:50.142Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -306,7 +306,8 @@
       "title": "依赖决策三问 + 位置三问",
       "path": "patterns/dependency-decision.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "不确定要不要引入依赖 / 放哪一层；或差点把框架塞进领域"
     },
     {
       "id": "derivation-over-copy",
@@ -324,7 +325,8 @@
       "title": "设计决策三问",
       "path": "patterns/design-decision.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "要设计一个新结构或抽象；或说不清不做会怎样/收益/成本"
     },
     {
       "id": "distributed-evolution",
@@ -342,7 +344,8 @@
       "title": "领域纯洁性是结构性必然，不是道德要求",
       "path": "patterns/domain-purity-is-structural.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "领域层能不能碰框架；或差点把 Spring/JPA 注解标进 domain"
     },
     {
       "id": "ecological-niche",
@@ -378,7 +381,8 @@
       "title": "极端无人托管集群：每 tick 门禁",
       "path": "patterns/extreme-unattended-cluster.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "无人托管要极端集群；压测 collaboration 却只涨测试/validate；或子代理卡住无人接管"
     },
     {
       "id": "faceted-classification",
@@ -405,7 +409,8 @@
       "title": "前端 DDD 与 RSC 渲染边界",
       "path": "patterns/frontend-ddd-rsc.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "Next 页面全 use client；或前端也要 DDD；或服务端状态与本地状态搅在一起；或缺请求缓存/弱网策略"
     },
     {
       "id": "hierarchical-actor-collaboration",
@@ -524,7 +529,8 @@
       "title": "Parse, don't validate",
       "path": "patterns/parse-dont-validate.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "边界上拿 raw/unknown 做校验；或领域层在解析字符串协议"
     },
     {
       "id": "pattern-language",
@@ -551,7 +557,8 @@
       "title": "压测路由：三层压力与成功判据",
       "path": "patterns/pressure-routing.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "压测放哪一层；长运行空转；测数涨但 KB 不涨；不确定本 tick 该变哪个仓的 HEAD"
     },
     {
       "id": "project-evidence-vs-kb-ledger",
@@ -560,7 +567,8 @@
       "title": "项目证据 vs KB 账本",
       "path": "patterns/project-evidence-vs-kb-ledger.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "项目日志要不要进 evolution-log / interceptions；或担心巨量轮次报告淹没 KB 账本"
     },
     {
       "id": "qian-systems-engineering",
@@ -614,7 +622,8 @@
       "title": "跨 BC 只依赖共享内核，不依赖对方核心聚合",
       "path": "patterns/shared-kernel-across-bc.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "跨包 import 像有问题（如 mall→commerce）；或不确定跨 BC 能否共用 Money/Account/Ledger"
     },
     {
       "id": "structure-over-algorithm",
@@ -632,7 +641,8 @@
       "title": "三层记忆",
       "path": "patterns/three-layer-memory.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "设计 AI/系统知识存储却只问\"上下文够不够\"；或想把一切塞进上下文/全扔进知识库"
     },
     {
       "id": "three-level-dry",

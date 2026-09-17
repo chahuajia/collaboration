@@ -7,6 +7,7 @@ created: 2026-09-15
 updated: 2026-09-15
 author: heiniao
 aliases: [domain-purity-is-structural]
+trigger: 领域层能不能碰框架；或差点把 Spring/JPA 注解标进 domain
 ---
 
 # 领域纯洁性是结构性必然，不是道德要求
