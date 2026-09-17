@@ -39,3 +39,4 @@
 | 2026-09-17 | v4.7.11 | **evolutionary 第 12 轮**：`IncomingSwapRequest.parse` 边界 Parse；缺字段 400；38 tests 绿；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-12-report.md |
 | 2026-09-17 | v4.7.12 | **evolutionary 第 13 轮**：`ListStations`/`GetStation` 读用例；Controller 脱离 Repository；纠正第 11 轮读路径不对称；39 tests 绿；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-13-report.md |
 | 2026-09-17 | v4.7.13 | **evolutionary 第 14 轮**：S34 错误翻译；`UnknownStationException` + `SwapApiErrorTranslator`；409 带 suggestion；[[S34]] 记入 interceptions（**5**）；41 tests 绿 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/round-14-report.md |
+| 2026-09-17 | v4.7.14 | **evolutionary 第 15 轮 / W4 阶段复盘**：`pressure-test-retro.md` 汇总 4–14 轮；W4 三问 + 5 行动项；压测阶段暂停建议；拦截 +0 | AI（执行） | heiniao（待确认） | - | evolutionary/specs/pressure-test-retro.md |
