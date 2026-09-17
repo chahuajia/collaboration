@@ -4,9 +4,10 @@ type: pattern
 status: draft
 source: 城市规划（分区）+ 图书馆学（分面分类）
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [two-dimension-knowledge]
+trigger: 知识分类只做成临时→长期一维；或分不清个人/项目/组织知识该放哪；或想上二维却不知现在够不够一维
 ---
 
 # 知识的二维空间

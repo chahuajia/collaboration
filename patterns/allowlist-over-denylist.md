@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 安全工程
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [allowlist-over-denylist]
+trigger: 分层约束写了一长串禁止 import；或新增依赖时忘了补黑名单；或不确定某层到底能碰什么
 ---
 
 # 白名单优于黑名单

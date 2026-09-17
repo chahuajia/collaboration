@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 图论
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [rooted-graph]
+trigger: 纯树找不到横切概念；或同一概念多分支重复；或不确定要不要加双链
 ---
 
 # 有根图

@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: "计算机科学（Wirth: 程序 = 数据结构 + 算法）"
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [structure-over-algorithm]
+trigger: 复杂逻辑第一反应是把算法写聪明；或在错误结构上继续打补丁；或 if-else/状态变量越堆越长
 ---
 # 结构优先
 ## 上下文

@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 语言哲学（命名即定义）
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [naming-as-definition]
+trigger: 想命名却怕撞 TS/框架全局名；或名字读不出它代表什么；或单一值/集合该用哪种命名形态
 ---
 
 # 命名即定义

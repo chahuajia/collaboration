@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: Lisp / Git / 哥德尔不完备定理
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [self-bootstrapping-requires-fixed-core]
+trigger: 设计"一切皆插件/条目"却找不到启动点；或核心也能被自己改；或自举陷入无限递归
 ---
 
 # 自举需要固定核心

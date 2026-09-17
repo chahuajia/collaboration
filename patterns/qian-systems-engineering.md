@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 钱学森《组织管理的技术——系统工程》
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [qian-systems-engineering]
+trigger: 每个部件差不多能用但整体没人负责；或只追局部最优；或拆太碎看不见整体
 ---
 
 # 钱学森系统工程思想

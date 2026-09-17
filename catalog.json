@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T08:54:52.957Z",
+  "generatedAt": "2026-09-17T09:09:08.625Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -261,7 +261,8 @@
       "title": "适配器内部结构自由",
       "path": "patterns/adapter-internal-structure.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "不知道 commands/lib 该放哪一层；或想把 CLI 工具塞进 src 顶层；或担心未来 HTTP 和 commands 抢名"
     },
     {
       "id": "allowlist-over-denylist",
@@ -270,7 +271,8 @@
       "title": "白名单优于黑名单",
       "path": "patterns/allowlist-over-denylist.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "分层约束写了一长串禁止 import；或新增依赖时忘了补黑名单；或不确定某层到底能碰什么"
     },
     {
       "id": "catalyst-nodes",
@@ -279,7 +281,8 @@
       "title": "杠杆节点",
       "path": "patterns/catalyst-nodes.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "条目太多平均用力；或不知道先维护哪几条；或杠杆条目换来换去"
     },
     {
       "id": "context-overflow-solved-by-retrieval",
@@ -288,7 +291,8 @@
       "title": "上下文溢出用检索",
       "path": "patterns/context-overflow-solved-by-retrieval.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "上下文放不下就想往知识库塞；或知识库越寄越重每次全读；或分不清该寄放还是该检索"
     },
     {
       "id": "cross-domain-borrowing",
@@ -297,7 +301,8 @@
       "title": "跨域借鉴五步法",
       "path": "patterns/cross-domain-borrowing.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "工程思路穷尽却只会堆技术；或跨域借鉴变成引用名言；或类比听起来对却落不到设计"
     },
     {
       "id": "dependency-decision",
@@ -316,7 +321,8 @@
       "title": "派生优于复制",
       "path": "patterns/derivation-over-copy.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "多处手写同一组默认值/目录；或改一处忘了另一处；或觉得复制成本为零"
     },
     {
       "id": "design-decision",
@@ -335,7 +341,8 @@
       "title": "分布式演化",
       "path": "patterns/distributed-evolution.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "社区规范多人改却挤在主干；或 fork 永久漂移回不来；或想用投票替代讨论"
     },
     {
       "id": "domain-purity-is-structural",
@@ -354,7 +361,8 @@
       "title": "ecological-niche",
       "path": "patterns/ecological-niche.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "技能什么时候都能用；或条目只写正面不写反面；或误用比没有更糟却说不清边界"
     },
     {
       "id": "entropy-reduction",
@@ -363,7 +371,8 @@
       "title": "熵减机制",
       "path": "patterns/entropy-reduction.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "知识库只增不减开始烂；或不舍得删曾经有用的；或找一条要翻很久"
     },
     {
       "id": "evolution-loop",
@@ -392,7 +401,8 @@
       "title": "分面分类",
       "path": "patterns/faceted-classification.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "只能按路径找条目；或想按领域/状态横切却没标签；或标签只标了一个维度"
     },
     {
       "id": "feature-discovery-over-hardcoded-paths",
@@ -401,7 +411,8 @@
       "title": "特征发现优于硬编码路径",
       "path": "patterns/feature-discovery-over-hardcoded-paths.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "用 ../../.. 找项目根；或目录一挪路径就崩；或硬编码仓库/配置路径"
     },
     {
       "id": "frontend-ddd-rsc",
@@ -420,7 +431,8 @@
       "title": "人机协作的层级 Actor 系统",
       "path": "patterns/hierarchical-actor-collaboration.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "人机协作只用 FSM 建模；或人和 AI 并行却被画成同步状态机；或丢了层级/异步还觉得流程完整"
     },
     {
       "id": "higher-order-factory",
@@ -429,7 +441,8 @@
       "title": "高阶工厂",
       "path": "patterns/higher-order-factory.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "通用工厂只服务最简场景；或例外只能绕过工厂；或想让用户注入 before/after 却不知怎么切"
     },
     {
       "id": "horizontal-gene-transfer",
@@ -438,7 +451,8 @@
       "title": "水平基因转移",
       "path": "patterns/horizontal-gene-transfer.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "有价值条目必须先过主干；或 fork 之间想直接换却怕丢来源；或局部经验被主干忽略"
     },
     {
       "id": "how-as-injected-function",
@@ -447,7 +461,8 @@
       "title": "How 以函数注入",
       "path": "patterns/how-as-injected-function.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "领域要算哈希却不能 import crypto；或差点把算哈希拆成两步端口；或想在领域里重写一份算法"
     },
     {
       "id": "knowledge-lifecycle",
@@ -456,7 +471,8 @@
       "title": "知识的生态循环",
       "path": "patterns/knowledge-lifecycle.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "把对话/WM/KB 想成互斥三态；或觉得做完一层才能做下一层；或分不清各知识实体怎么互相喂养"
     },
     {
       "id": "law-three-tiers",
@@ -465,7 +481,8 @@
       "title": "三层法律结构",
       "path": "patterns/law-three-tiers.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "所有规则平级太僵或太随意；或用技能挑战约定；或不确定约定/工作流/技能谁改谁"
     },
     {
       "id": "layer-vs-context",
@@ -474,7 +491,8 @@
       "title": "层 ≠ 上下文",
       "path": "patterns/layer-vs-context.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "把 domain 层当成限界上下文；或分不清层和上下文；或跨包关系用上下层说话"
     },
     {
       "id": "layered-defense",
@@ -483,7 +501,8 @@
       "title": "分层防御",
       "path": "patterns/layered-defense.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "只在一层做防护就觉得够了；或同一检查在多层重复；或不知道编译期/启动期/请求期该拦什么"
     },
     {
       "id": "load-bearing-vs-partition",
@@ -492,7 +511,8 @@
       "title": "承重墙 vs 隔断",
       "path": "patterns/load-bearing-vs-partition.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "不确定改的是约定还是技能；或把技能当承重墙改不动；或约定被当隔断随便改"
     },
     {
       "id": "naming-as-definition",
@@ -501,7 +521,8 @@
       "title": "命名即定义",
       "path": "patterns/naming-as-definition.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "想命名却怕撞 TS/框架全局名；或名字读不出它代表什么；或单一值/集合该用哪种命名形态"
     },
     {
       "id": "ooda-loop",
@@ -510,7 +531,8 @@
       "title": "OODA 闭环",
       "path": "patterns/ooda-loop.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "复盘停在观察不决策；或只写\"下次注意\"没有行动项；或决策了却不执行更新"
     },
     {
       "id": "parallel-work-needs-delivery-proof",
@@ -540,7 +562,8 @@
       "title": "模式语言",
       "path": "patterns/pattern-language.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "只写怎么做却说不清适用场景；或缺反面案例；或条目读起来像定义不像模式"
     },
     {
       "id": "peer-review",
@@ -549,7 +572,8 @@
       "title": "同行评审",
       "path": "patterns/peer-review.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "约定级变更要不要别人复核；或差点自审自合；或复核变成橡皮图章/拖慢简单改动"
     },
     {
       "id": "pressure-routing",
@@ -578,7 +602,8 @@
       "title": "钱学森系统工程思想",
       "path": "patterns/qian-systems-engineering.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "每个部件差不多能用但整体没人负责；或只追局部最优；或拆太碎看不见整体"
     },
     {
       "id": "reproducible-verification",
@@ -597,7 +622,8 @@
       "title": "有根图",
       "path": "patterns/rooted-graph.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "纯树找不到横切概念；或同一概念多分支重复；或不确定要不要加双链"
     },
     {
       "id": "rule-set-as-subset",
@@ -606,7 +632,8 @@
       "title": "规则集分层：子集即契约",
       "path": "patterns/rule-set-as-subset.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "contentRules 和 standardRules 两套清单在漂移；或新条目因索引规则误红；或全量/落盘该跑哪套规则"
     },
     {
       "id": "self-bootstrapping-requires-fixed-core",
@@ -615,7 +642,8 @@
       "title": "自举需要固定核心",
       "path": "patterns/self-bootstrapping-requires-fixed-core.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "设计\"一切皆插件/条目\"却找不到启动点；或核心也能被自己改；或自举陷入无限递归"
     },
     {
       "id": "shared-kernel-across-bc",
@@ -634,7 +662,8 @@
       "title": "结构优先",
       "path": "patterns/structure-over-algorithm.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "复杂逻辑第一反应是把算法写聪明；或在错误结构上继续打补丁；或 if-else/状态变量越堆越长"
     },
     {
       "id": "three-layer-memory",
@@ -653,7 +682,8 @@
       "title": "不重复原则的三个层次",
       "path": "patterns/three-level-dry.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "把看起来相同的代码强行合并；或已有 Result 又写 Either；或新问题不先查现成方案就从零造"
     },
     {
       "id": "two-dimension-knowledge",
@@ -662,7 +692,8 @@
       "title": "知识的二维空间",
       "path": "patterns/two-dimension-knowledge.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "知识分类只做成临时→长期一维；或分不清个人/项目/组织知识该放哪；或想上二维却不知现在够不够一维"
     },
     {
       "id": "type-as-design",
@@ -671,7 +702,8 @@
       "title": "类型即设计",
       "path": "patterns/type-as-design.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "类型退化成 string 注释；或重复 typeof/keyof 到处复制；或 DTO/Input 混进 domain"
     },
     {
       "id": "value-object-as-raw-material",
@@ -680,7 +712,8 @@
       "title": "值对象是原料",
       "path": "patterns/value-object-as-raw-material.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "值对象被当成 DTO/数据容器；或不变量不知道归谁；或差点给无行为 DTO 写工厂"
     },
     {
       "id": "value-semantics",
@@ -691,7 +724,8 @@
       "domains": [],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "想跨域共享通用 0/空串常量；或同一个值在不同业务含义不清；或常量名读不出业务语义"
     },
     {
       "id": "waiting-is-a-decision-window",
@@ -711,7 +745,8 @@
       "title": "What / How 是同一事物的两个投影",
       "path": "patterns/what-how-are-projections.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "纠结这是 What 还是 How；或把意图/实现当成绝对两类；或边界一换就分不清该站哪边"
     },
     {
       "id": "S1",

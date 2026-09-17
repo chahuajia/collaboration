@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 军事纵深防御
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [layered-defense]
+trigger: 只在一层做防护就觉得够了；或同一检查在多层重复；或不知道编译期/启动期/请求期该拦什么
 ---
 
 # 分层防御

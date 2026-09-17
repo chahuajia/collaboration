@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 数据库规范化 + 供应链管理（派生 vs 复制）
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [derivation-over-copy]
+trigger: 多处手写同一组默认值/目录；或改一处忘了另一处；或觉得复制成本为零
 ---
 
 # 派生优于复制

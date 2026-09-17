@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 分布式系统 + 生物进化
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [distributed-evolution]
+trigger: 社区规范多人改却挤在主干；或 fork 永久漂移回不来；或想用投票替代讨论
 ---
 # 分布式演化
 ## 上下文

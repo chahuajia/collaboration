@@ -50,12 +50,12 @@ provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"
 | 日期 | 缺口 | 谁撞到的 | 检索路径 | 现状 | 关闭条件 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 
-### 真实记录（当前 3 条）
+### 真实记录（开 1 / 关 3）
 
 | 日期 | 缺口 | 谁撞到的 | 检索路径 | 现状 | 关闭条件 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-16 | ~~路由表不覆盖「工程 / 领域」类症状~~ | 第 1 轮；D r1/r3；第 4 轮命中路由 | 症状表工程行 | **已关闭**（2026-09-16 第 5 轮）：路由半截在第 4 轮关闭；状态机**明确不建**（复用实体状态机），证据见 `evolutionary/specs/round-5-report.md` Q5 | — |
-| 2026-09-16 | `catalog.json` 的 `trigger` 覆盖不足；直接依赖它会漏大量条目 | 同上 | 按 `trigger` 检索 | **进行中**（2026-09-17 extreme L3：热门 pattern 补 trigger + domains 症状表；覆盖率仍 <80%） | `trigger` 覆盖率 ≥ 80% **或** 正式降级 catalog 为纯目录（需 ADR） |
+| 2026-09-16 | ~~`catalog.json` 的 `trigger` 覆盖不足~~ | 同上 | 按 `trigger` 检索 | **已关闭**（2026-09-17 extreme L3）：patterns 50/50 有 `trigger`；catalog active patterns 全覆盖（≥80%） | — |
 | 2026-09-16 | **工作记忆没有新鲜度检测** | 换会话交接盘点 | 无 | 已加 `check-freshness.mjs` | 连续两个会话交接通过自检 |
 | 2026-09-17 | ~~REST 列表 / 客户端 N+1~~ | evolutionary 第 11 轮 | 症状表 → 无；catalog「N+1」→ GraphQL 域 | **已关闭**（2026-09-17）：`AGENTS.md` 症状表加工程行 → design-decision；证据 `evolutionary/specs/round-11-report.md` L5 | — |
 

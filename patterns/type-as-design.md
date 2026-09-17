@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 类型论
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [type-as-design]
+trigger: 类型退化成 string 注释；或重复 typeof/keyof 到处复制；或 DTO/Input 混进 domain
 ---
 
 # 类型即设计

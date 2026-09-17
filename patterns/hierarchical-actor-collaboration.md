@@ -3,10 +3,11 @@ id: hierarchical-actor-collaboration
 type: pattern
 status: active
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 source: 计算机科学（FSM + HSM + Actor 模型）
 author: heiniao
 aliases: [hierarchical-actor-collaboration]
+trigger: 人机协作只用 FSM 建模；或人和 AI 并行却被画成同步状态机；或丢了层级/异步还觉得流程完整
 ---
 # 人机协作的层级 Actor 系统
 ## 上下文

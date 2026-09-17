@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: 化学（催化剂）
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [catalyst-nodes]
+trigger: 条目太多平均用力；或不知道先维护哪几条；或杠杆条目换来换去
 ---
 
 # 杠杆节点

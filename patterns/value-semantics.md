@@ -3,7 +3,7 @@ id: value-semantics
 type: pattern
 status: active
 created: 2026-09-13
-updated: 2026-09-16
+updated: 2026-09-17
 applies-to:
   - all
 supersedes:
@@ -12,6 +12,7 @@ source: 工程实践（值语义）
 aliases:
   - value-semantics
   - A11
+trigger: 想跨域共享通用 0/空串常量；或同一个值在不同业务含义不清；或常量名读不出业务语义
 provenance: 2026-09-16 从 agreements/ 降级为 pattern —— 它是通用的设计判据，不是"人和 AI 怎么协作"的规则
 ---
 

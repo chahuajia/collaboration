@@ -4,9 +4,10 @@ type: pattern
 status: active
 source: A9
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 author: heiniao
 aliases: [cross-domain-borrowing]
+trigger: 工程思路穷尽却只会堆技术；或跨域借鉴变成引用名言；或类比听起来对却落不到设计
 ---
 
 # 跨域借鉴五步法
