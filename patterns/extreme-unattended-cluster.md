@@ -43,7 +43,7 @@ provenance: 2026-09-17 用户要求「更加极端化」压测 collaboration
 | **期望 HEAD** | 每 tick 显式声明目标仓 | 停本 tick；改声明或改层 |
 | **L3 成功判据** | 自称 L3 / KB 压测 → **必须**有 `collaboration` **条目 diff**（新/改 pattern·skill·workflow 等）或主表 `interceptions`/`known-gaps` **+1 行**；仅 validate 归零 / 仅 CLI 绿 **不算** | 不得开下一 wake；W4 复盘 |
 | **子代理超时** | 派出时写死外部超时；`status`/`heartbeat` 停更或无回执 → **父接管**（续做 / 重派 / 收窄），禁止干等 | 见 [[patterns/parallel-work-needs-delivery-proof]] |
-| **连续空转** | 连续 N tick（默认 L3：**5**）期望仓无声明增量 → **停 wake**，不降间隔硬跑 | 收口 + W4 |
+| **连续空转** | 连续 N tick（极端 L3 默认：**3**，严于 [[patterns/pressure-routing]] 基线 5）期望仓无声明增量 → **停 wake**，不降间隔硬跑 | 收口 + W4 |
 | **代谢配额** | 新增条目达阈 → 先处理（dormant/合并/修剪）再继续堆；「暂不入库」**不算**产出 | 见 [[meta/pruning-policy]] |
 | **工作区** | FE/BE 等角色遵守 [[S36]] 路径与 `wm/agents/{role}`；不越权抢文件 | 父合并前拒收越权 diff |
 | **账本** | 项目轮次/phase 报告只进业务仓 WM；KB 只记本体里程碑与主表一行 | 见 [[patterns/project-evidence-vs-kb-ledger]] |
