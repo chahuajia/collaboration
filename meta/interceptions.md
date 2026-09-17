@@ -38,13 +38,13 @@ aliases: [interceptions]
 
 **当前条数：5。**
 
-| 日期 | 条目 | 拦住了什么 | 如果不拦，后果 | 证据 |
-| :--- | :--- | :--- | :--- | :--- |
-| 2026-09-16 | [[S13-Smart-Constructor]] | 差点把「至少 1 块 AVAILABLE 才能换出」写成 **Station 构造不变量** | 空站 / 全在充电的站无法存在；配电池与真实运营被构造器挡掉 | `evolutionary` 第 4 轮：症状表「不变量放哪一层」→ S13；不变量落在 `Station.swap`。见 `evolutionary/specs/round-4-report.md` P5 |
-| 2026-09-16 | [[dependency-decision]] | 差点在薄应用层一出现就引入 **Spring Boot** | 无具体问题却上框架；测试变重；领域被间接污染风险 | 第 5 轮 Q2 三问书面否定；`pom.xml` 仍仅 JUnit。见 `evolutionary/specs/round-5-report.md` |
-| 2026-09-16 | [[domain-purity-is-structural]] | 差点把 Spring 注解/import 放进 domain 或 application | 「分层」变成口号；领域测被迫起容器 | 第 6 轮引入 Spring 后加 `DomainFrameworkFreeTest` 钉死；34 测绿。见 `evolutionary/specs/round-6-report.md` R5 |
-| 2026-09-16 | [[domain-purity-is-structural]] | 差点把 `@Entity` 直接标在领域 `Station` 上 | 领域模型绑死 JPA；换仓储/换 ORM 牵动核心；架构测试形同虚设 | 第 7 轮改用 `StationJpaEntity` 映射；架构测试扩禁 `jakarta.persistence`/`org.hibernate`；35 测绿。见 `evolutionary/specs/round-7-report.md` J4 |
-| 2026-09-17 | [[S34-边界层与领域的错误翻译]] | 差点继续用 `msg.startsWith("unknown station")` 在 Controller 判 404 | 改仓储文案即错 HTTP；边界重复「解析」领域消息，S34 反面 | 第 14 轮：`UnknownStationException` + `SwapApiErrorTranslator`；41 测绿。见 `evolutionary/specs/round-14-report.md` T4 |
+| 日期         | 条目                              | 拦住了什么                                                        | 如果不拦，后果                            | 证据                                                                                                                           |
+| :--------- | :------------------------------ | :----------------------------------------------------------- | :--------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| 2026-09-16 | [[S13-Smart-Constructor]]       | 差点把「至少 1 块 AVAILABLE 才能换出」写成 **Station 构造不变量**               | 空站 / 全在充电的站无法存在；配电池与真实运营被构造器挡掉     | `evolutionary` 第 4 轮：症状表「不变量放哪一层」→ S13；不变量落在 `Station.swap`。见 `evolutionary/specs/round-4-report.md` P5                      |
+| 2026-09-16 | [[dependency-decision]]         | 差点在薄应用层一出现就引入 **Spring Boot**                                | 无具体问题却上框架；测试变重；领域被间接污染风险           | 第 5 轮 Q2 三问书面否定；`pom.xml` 仍仅 JUnit。见 `evolutionary/specs/round-5-report.md`                                                  |
+| 2026-09-16 | [[domain-purity-is-structural]] | 差点把 Spring 注解/import 放进 domain 或 application                 | 「分层」变成口号；领域测被迫起容器                  | 第 6 轮引入 Spring 后加 `DomainFrameworkFreeTest` 钉死；34 测绿。见 `evolutionary/specs/round-6-report.md` R5                             |
+| 2026-09-16 | [[domain-purity-is-structural]] | 差点把 `@Entity` 直接标在领域 `Station` 上                             | 领域模型绑死 JPA；换仓储/换 ORM 牵动核心；架构测试形同虚设 | 第 7 轮改用 `StationJpaEntity` 映射；架构测试扩禁 `jakarta.persistence`/`org.hibernate`；35 测绿。见 `evolutionary/specs/round-7-report.md` J4 |
+| 2026-09-17 | [[S34-边界层与领域的错误翻译]]             | 差点继续用 `msg.startsWith("unknown station")` 在 Controller 判 404 | 改仓储文案即错 HTTP；边界重复「解析」领域消息，S34 反面   | 第 14 轮：`UnknownStationException` + `SwapApiErrorTranslator`；41 测绿。见 `evolutionary/specs/round-14-report.md` T4               |
 
 ### 判据
 

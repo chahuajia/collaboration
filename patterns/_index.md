@@ -32,6 +32,7 @@
 | [[patterns/parse-dont-validate]] | 函数式编程 | 边界解析 |
 | [[patterns/pattern-language]] | 建筑（Alexander） | 条目五段式格式 |
 | [[patterns/peer-review]] | 学术同行评审 | 复核机制 |
+| [[patterns/pressure-routing]] | 人机协作实践 | L1/L2/L3 压测路由与成功判据 |
 | [[patterns/qian-systems-engineering]] | 钱学森《系统工程》 | 总体设计部 |
 | [[patterns/reproducible-verification]] | 工程实践 | 可复现的证据优于手工验证 |
 | [[patterns/rfc-process]] | Rust RFC | **dormant** → 以 [[W7]] 为准 |

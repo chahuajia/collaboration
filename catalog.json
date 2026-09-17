@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T15:28:53.386Z",
+  "generatedAt": "2026-09-17T03:53:20.989Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -523,6 +523,15 @@
       "status": "active",
       "title": "同行评审",
       "path": "patterns/peer-review.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "pressure-routing",
+      "type": "pattern",
+      "status": "active",
+      "title": "压测路由：三层压力与成功判据",
+      "path": "patterns/pressure-routing.md",
       "domains": [],
       "appliesTo": []
     },
@@ -1276,17 +1285,17 @@
     }
   ],
   "summary": {
-    "total": 112,
+    "total": 113,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 34,
-      "pattern": 44,
+      "pattern": 45,
       "adr": 10,
       "integration": 3
     },
     "byStatus": {
-      "active": 99,
+      "active": 100,
       "draft": 3,
       "accepted": 10
     }
