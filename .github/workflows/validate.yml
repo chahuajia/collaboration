@@ -1,0 +1,38 @@
+# collaboration 真 CI —— 用 collab-cli 跑 validate（非手写假绿灯）
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: collaboration
+
+      - uses: actions/checkout@v4
+        with:
+          repository: chahuajia/collab-cli
+          path: collab-cli
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: collab-cli/package-lock.json
+
+      - name: Install collab-cli
+        working-directory: collab-cli
+        run: npm ci
+
+      - name: Build collab-cli
+        working-directory: collab-cli
+        run: npm run build
+
+      - name: collab validate
+        run: node collab-cli/dist/cli/index.js --dir collaboration validate
