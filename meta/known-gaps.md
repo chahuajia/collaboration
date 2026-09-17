@@ -48,7 +48,7 @@ provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"
 | 2026-09-16 | ~~路由表不覆盖「工程 / 领域」类症状~~ | 第 1 轮；D r1/r3；第 4 轮命中路由 | 症状表工程行 | **已关闭**（2026-09-16 第 5 轮）：路由半截在第 4 轮关闭；状态机**明确不建**（复用实体状态机），证据见 `evolutionary/specs/round-5-report.md` Q5 | — |
 | 2026-09-16 | `catalog.json` 的 `trigger` 只覆盖 **11/108** 条；直接依赖它，等于把 97 条当不存在 | 同上 | 按 `trigger` 检索 | 已知（`AGENTS.md` 已写明"填充 `trigger` 是待办"）；**不批量填**（无使用数据） | `trigger` 覆盖率 ≥ 80% **或** 正式降级 catalog 为纯目录（需 ADR） |
 | 2026-09-16 | **工作记忆没有新鲜度检测** | 换会话交接盘点 | 无 | 已加 `check-freshness.mjs` | 连续两个会话交接通过自检 |
-| 2026-09-17 | **REST 列表 / 客户端 N+1**：多资源概览该批量端点还是循环 GET？症状表无行；catalog 只指向 GraphQL 域 N+1 | evolutionary 第 11 轮 | 症状表 → 无；catalog「N+1」→ `domains/graphql/_index` | 本轮用 `design-decision` 自裁决 batch；**入口仍缺** | 症状表加工程行 **或** 独立 pattern 经 ≥2 轮独立命中 |
+| 2026-09-17 | ~~REST 列表 / 客户端 N+1~~ | evolutionary 第 11 轮 | 症状表 → 无；catalog「N+1」→ GraphQL 域 | **已关闭**（2026-09-17）：`AGENTS.md` 症状表加工程行 → design-decision；证据 `evolutionary/specs/round-11-report.md` L5 | — |
 
 ## 判据
 

@@ -61,6 +61,8 @@
 | **不变量放哪一层** / 聚合边界 | [[S13-Smart-Constructor]] → [[patterns/parse-dont-validate]]（对象自守；跨对象由聚合操作守） |
 | **领域层能不能碰框架** | [[patterns/domain-purity-is-structural]] |
 | **状态机怎么建模**（领域） | **明确不建专条**（2026-09-16 第 5 轮裁决）→ 复用实体状态机；证伪条件见 `known-gaps` 已关闭行 |
+| **多资源 REST 读法 / 客户端 N+1** | [[patterns/design-decision]]（batch 端点 vs 循环 GET）；GraphQL 先过 [[dependency-decision]] |
+| **边界错误怎么映射 HTTP**（API/CLI） | [[S34-边界层与领域的错误翻译]]（类型化异常；禁止用领域 message 前缀猜状态码） |
 
 ## 协作规则（摘要）
 
