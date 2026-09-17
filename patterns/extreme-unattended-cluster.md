@@ -10,7 +10,7 @@ aliases:
   - extreme-unattended-cluster
   - P-extreme-cluster
 trigger: 无人托管要极端集群；压测 collaboration 却只涨测试/validate；或子代理卡住无人接管；或要用业务仓双轴压 KB
-provenance: 2026-09-17 用户要求「更加极端化」；同日二次加码：双轴 + 强制集群 + ≤300ms wake
+provenance: 2026-09-17 用户要求「更加极端化」；二次加码双轴/集群/≤300ms；三次加码：同 tick 双证明 + 父验绿
 ---
 
 # 极端无人托管集群：每 tick 门禁
@@ -37,7 +37,7 @@ provenance: 2026-09-17 用户要求「更加极端化」；同日二次加码：
 
 答完再动手。未写入 `loop.md` / `status.md` 的期望 = 未声明 = 本 tick 无效。
 
-### 集群门禁表（v2 · 更极端）
+### 集群门禁表（v3 · 再极端）
 
 | 门禁 | 规则 | 违反时 |
 | :--- | :--- | :--- |
@@ -50,7 +50,7 @@ provenance: 2026-09-17 用户要求「更加极端化」；同日二次加码：
 | **wake 上限** | 无人托管动态 wake **≤300ms**（心跳）；禁止为「看起来在跑」拉长间隔 | 降回 ≤300ms 或停 |
 | **代谢配额** | 新增条目达阈 → 先处理再堆；「暂不入库」**不算**产出 | 见 [[meta/pruning-policy]] |
 | **工作区** | 遵守 [[S36]]；越权 diff **拒收** | 父合并前拒收 |
-| **账本** | 轮次报告只进业务仓 WM；KB 只记本体里程碑 / 主表一行 | 见 [[patterns/project-evidence-vs-kb-ledger]] |
+| **同 tick 双证明** | 自称双轴成功的 tick：须同 tick 留下 **evolutionary commit** 与 **collaboration 条目/主表 diff**（或显式单轴+计 idle） | 不得宣称双轴完成；记 idle |\n| **父验绿** | 合并/收口前须有测绿证据（本地 mvn/npm 或子代理 status 写明 Tests run） | 拒收无证据 HEAD 登记 |\n| **账本** | 轮次报告只进业务仓 WM；KB 只记本体里程碑 / 主表一行 | 见 [[patterns/project-evidence-vs-kb-ledger]] |
 
 ### 与既有条目的分工
 
