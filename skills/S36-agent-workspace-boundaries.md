@@ -15,6 +15,7 @@ applies-to:
   - multi-agent
   - monorepo
 provenance: evolutionary phase-7 FE∥BE 集群；2026-09-17 极端化无人托管压测补强
+trigger: FE∥BE 多 agent 工作区怎么划；或不想为此拆仓却怕抢文件
 ---
 
 # S36 Agent 工作区边界（FE/BE 集群）

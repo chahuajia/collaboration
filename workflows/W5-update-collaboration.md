@@ -9,6 +9,7 @@ applies-to: [new-insight, conflict, obsolescence]
 supersedes: null
 author: heiniao
 aliases: [W5]
+trigger: 有新洞见/冲突/过时要写进知识库；或不知该改哪类条目
 ---
 
 # W5 更新 COLLABORATION

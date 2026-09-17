@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:09:08.625Z",
+  "generatedAt": "2026-09-17T09:41:50.444Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -800,7 +800,8 @@
       ],
       "appliesTo": [
         "W3"
-      ]
+      ],
+      "trigger": "边界上要用 zod 解析外部输入；或差点把解析库 import 进 domain"
     },
     {
       "id": "S13",
@@ -814,7 +815,8 @@
       ],
       "appliesTo": [
         "W3"
-      ]
+      ],
+      "trigger": "不变量放哪一层；或差点把可用性守在构造器上"
     },
     {
       "id": "S14",
@@ -1117,7 +1119,8 @@
         "W3",
         "S7",
         "S12"
-      ]
+      ],
+      "trigger": "边界错误怎么映射 HTTP；或想用领域 message 前缀猜状态码"
     },
     {
       "id": "S35",
@@ -1147,7 +1150,8 @@
       "appliesTo": [
         "multi-agent",
         "monorepo"
-      ]
+      ],
+      "trigger": "FE∥BE 多 agent 工作区怎么划；或不想为此拆仓却怕抢文件"
     },
     {
       "id": "S4",
@@ -1244,7 +1248,8 @@
       "appliesTo": [
         "blank-page",
         "data-missing"
-      ]
+      ],
+      "trigger": "页面空白/数据不出来；或线上故障不知从哪层查起"
     },
     {
       "id": "W10",
@@ -1284,7 +1289,8 @@
       "appliesTo": [
         "entry-merge",
         "pruning"
-      ]
+      ],
+      "trigger": "多条条目重叠要合并；或合并怕死链/双真相源"
     },
     {
       "id": "W2",
@@ -1324,7 +1330,8 @@
       ],
       "appliesTo": [
         "after-complex-task"
-      ]
+      ],
+      "trigger": "复杂任务刚结束要沉淀；或复盘只有反思没有行动项"
     },
     {
       "id": "W5",
@@ -1339,7 +1346,8 @@
         "new-insight",
         "conflict",
         "obsolescence"
-      ]
+      ],
+      "trigger": "有新洞见/冲突/过时要写进知识库；或不知该改哪类条目"
     },
     {
       "id": "W6",
@@ -1366,7 +1374,8 @@
       "appliesTo": [
         "agreement-change",
         "structural-change"
-      ]
+      ],
+      "trigger": "想改约定/agreements；或不确定该不该走 RFC"
     },
     {
       "id": "W9",

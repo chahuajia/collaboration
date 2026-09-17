@@ -13,6 +13,7 @@ supersedes:
 author: heiniao
 aliases:
   - S13
+trigger: 不变量放哪一层；或差点把可用性守在构造器上
 ---
 
 # S13 Smart Constructor
