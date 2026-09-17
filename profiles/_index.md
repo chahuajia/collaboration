@@ -16,8 +16,10 @@
 
 ## 当前 profiles
 
-黑鸟
+| 文件 | 人 |
+| :--- | :--- |
+| [[heiniao]] | 黑鸟（偏好：中文 commit/注释、H2 开头回复） |
 
 ## 关联
 
-[[cli-agent-boundaries]] [[S10-collab-cli]] [[S11-profile-declaration]]
+[[cli-agent-boundaries]] [[S10-collab-cli]] [[S11-profile-declaration]] [[S1-h2-output]]

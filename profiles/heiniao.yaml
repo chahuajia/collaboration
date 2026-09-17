@@ -1,0 +1,29 @@
+# 复制本文件为 <username>.yaml 并填写 — heiniao（黑鸟）
+
+identity:
+  git: heiniao
+  display: 黑鸟
+
+# AI / 人机协作偏好（本项目强制遵守）
+preferences:
+  language: zh-CN
+  git_commit_messages: zh-CN
+  code_comments: zh-CN
+  working_memory: zh-CN
+  reply_format: h2-first   # 回答从 H2 开始，见 S1-h2-output
+  unattended: prefer-cluster-and-wake
+
+focus:
+  domains: [ddd, commerce, operator, collaboration]
+  workflows: [W4, W5, W10]
+  skills: [S1, S11, S13]
+  patterns: [pressure-routing, design-decision, parse-dont-validate]
+
+exclude:
+  domains: []
+  skills: []
+
+fork-policy:
+  sync-upstream: weekly
+  auto-prune-dormant: true
+  contribute-back: true
