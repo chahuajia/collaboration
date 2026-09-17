@@ -46,7 +46,7 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 
 ### 真实记录
 
-**当前条数：6。**
+**当前条数：7。**
 
 | 日期         | 条目                              | 拦住了什么                                                        | 如果不拦，后果                            | 证据                                                                                                                           |
 | :--------- | :------------------------------ | :----------------------------------------------------------- | :--------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
@@ -56,6 +56,7 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 | 2026-09-16 | [[domain-purity-is-structural]] | 差点把 `@Entity` 直接标在领域 `Station` 上                             | 领域模型绑死 JPA；换仓储/换 ORM 牵动核心；架构测试形同虚设 | 第 7 轮改用 `StationJpaEntity` 映射；架构测试扩禁 `jakarta.persistence`/`org.hibernate`；35 测绿。见 `evolutionary/specs/round-7-report.md` J4 |
 | 2026-09-17 | [[patterns/frontend-ddd-rsc]] | 差点继续换电首页全 `use client`+`useEffect` 拉站列表 | 首屏空、与 `/credit` RSC 不一致、无服务端读模型 | `topic/fe-ddd-rsc` `b20f899`：RSC+station-gateway+swap 岛 |
 | 2026-09-17 | [[S34-边界层与领域的错误翻译]]             | 差点继续用 `msg.startsWith("unknown station")` 在 Controller 判 404 | 改仓储文案即错 HTTP；边界重复「解析」领域消息，S34 反面   | 第 14 轮：`UnknownStationException` + `SwapApiErrorTranslator`；41 测绿。见 `evolutionary/specs/round-14-report.md` T4               |
+| 2026-09-17 | [[S34-边界层与领域的错误翻译]] | 差点复用站级/笼统 Commerce 翻译器把 ENTITLEMENT_* 映射成 409，或用 message 嗅探判状态码 | 权益用户不匹配被客户端当冲突重试；改文案即错 HTTP；S34 反面 | evo-collab-extreme 切片4：EntitledSwapApiErrorTranslator 按 DomainErrorCode→422/409；EntitledSwapControllerTest 3/0；evolutionary 90b4e89+89426a7 |
 
 ### 判据
 
