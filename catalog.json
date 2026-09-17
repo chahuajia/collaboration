@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T16:54:41.243Z",
+  "generatedAt": "2026-09-17T17:10:00.340Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -577,6 +577,16 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "约定级变更要不要别人复核；或差点自审自合；或复核变成橡皮图章/拖慢简单改动"
+    },
+    {
+      "id": "policy-without-mechanism",
+      "type": "pattern",
+      "status": "active",
+      "title": "无机制的政策是负优化",
+      "path": "patterns/policy-without-mechanism.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "加了规则/版本/门禁却更慢；优化像负优化；政策很多基础设施没有；docs 与派工热闹 feat 不涨"
     },
     {
       "id": "pressure-routing",
@@ -1432,17 +1442,17 @@
     }
   ],
   "summary": {
-    "total": 118,
+    "total": 119,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 35,
-      "pattern": 49,
+      "pattern": 50,
       "adr": 10,
       "integration": 3
     },
     "byStatus": {
-      "active": 105,
+      "active": 106,
       "draft": 3,
       "accepted": 10
     }
