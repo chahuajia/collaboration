@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T08:53:50.142Z",
+  "generatedAt": "2026-09-17T08:54:52.957Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -372,7 +372,8 @@
       "title": "进化闭环",
       "path": "patterns/evolution-loop.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "知识库只增不减开始腐烂；或缺变异/选择/遗传任一环；或经验只留在对话里带不走"
     },
     {
       "id": "extreme-unattended-cluster",
@@ -586,7 +587,8 @@
       "title": "可复现的证据优于手工验证",
       "path": "patterns/reproducible-verification.md",
       "domains": [],
-      "appliesTo": []
+      "appliesTo": [],
+      "trigger": "本机/编辑器里\"试过觉得对\"却进不了 CI；或用手工验证当规则前提；或别人工具行为在决定你的规则"
     },
     {
       "id": "rooted-graph",
