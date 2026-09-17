@@ -3,7 +3,7 @@ id: chatgpt-paste-protocol
 type: integration
 status: active
 created: 2026-09-13
-updated: 2026-09-16
+updated: 2026-09-17
 applies-to:
   - chatgpt-like
 supersedes:
@@ -12,6 +12,7 @@ aliases:
   - chatgpt-paste-protocol
   - A15
 provenance: 2026-09-16 从 agreements/ 迁入 integrations/ —— 它假设"AI 无 IO、靠用户粘贴"，那只在对话式环境成立
+trigger: 对话式 AI 无 IO 要粘贴；或逐文件粘贴/多轮猜需求
 ---
 
 # chatgpt-like：粘贴交互协议

@@ -3,7 +3,7 @@ id: cli-agent-boundaries
 type: integration
 status: active
 created: 2026-09-11
-updated: 2026-09-16
+updated: 2026-09-17
 applies-to:
   - cli-agent
 author: heiniao
@@ -11,6 +11,7 @@ aliases:
   - cli-agent-boundaries
   - A7
 provenance: 2026-09-16 由 A7-distribution-and-community 拆出：只保留"AI 写权限边界"这一半（可执行、今天在用）；社区治理那半面向 0 人社群，已归档（见 ADR-0007）
+trigger: AI 有写权限不知边界；或不该 commit/push 却做了
 ---
 
 # cli-agent：写权限与身份边界

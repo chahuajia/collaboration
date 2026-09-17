@@ -3,7 +3,7 @@ id: S23
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - meta
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S23
+trigger: 后写测试漏边界；或不知红→绿→重构怎么走
 ---
 
 # S23 TDD 工作流

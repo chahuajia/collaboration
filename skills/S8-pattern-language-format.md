@@ -3,12 +3,13 @@ id: S8
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [meta]
 applies-to: [all-entries]
 supersedes: null
 author: heiniao
 aliases: [S8]
+trigger: 写条目只有方案不知何时用；或缺上下文/反面读者看不出边界
 ---
 
 

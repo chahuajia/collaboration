@@ -3,7 +3,7 @@ id: S19
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - meta
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S19
+trigger: 新问题不知引依赖还是自研；或怕盲目造轮子/堆依赖
 ---
 
 # S19 Make-or-Buy（货架商品）

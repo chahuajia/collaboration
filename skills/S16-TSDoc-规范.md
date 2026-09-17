@@ -3,7 +3,7 @@ id: S16
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - typescript
   - documentation
@@ -13,6 +13,7 @@ supersedes:
 author: heiniao
 aliases:
   - S16
+trigger: 公开 API 注释乱/缺失；或只写怎么做不写为什么
 ---
 
 

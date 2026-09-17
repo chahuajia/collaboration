@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:57:23.423Z",
+  "generatedAt": "2026-09-17T10:08:41.312Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -230,7 +230,8 @@
       "domains": [],
       "appliesTo": [
         "chatgpt-like"
-      ]
+      ],
+      "trigger": "ChatGPT 输出格式乱难复制；或文件边界/包裹层分不清"
     },
     {
       "id": "chatgpt-paste-protocol",
@@ -241,7 +242,8 @@
       "domains": [],
       "appliesTo": [
         "chatgpt-like"
-      ]
+      ],
+      "trigger": "对话式 AI 无 IO 要粘贴；或逐文件粘贴/多轮猜需求"
     },
     {
       "id": "cli-agent-boundaries",
@@ -252,7 +254,8 @@
       "domains": [],
       "appliesTo": [
         "cli-agent"
-      ]
+      ],
+      "trigger": "AI 有写权限不知边界；或不该 commit/push 却做了"
     },
     {
       "id": "adapter-internal-structure",
@@ -788,7 +791,8 @@
       ],
       "appliesTo": [
         "W6"
-      ]
+      ],
+      "trigger": "全量 fork 噪音大；或 AI 不知该为谁的侧重点优化"
     },
     {
       "id": "S12",
@@ -831,7 +835,8 @@
       ],
       "appliesTo": [
         "W3"
-      ]
+      ],
+      "trigger": "Issue 用 DTO 丢行为；或散落 severity 字面量"
     },
     {
       "id": "S15",
@@ -859,7 +864,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "公开 API 注释乱/缺失；或只写怎么做不写为什么"
     },
     {
       "id": "S17",
@@ -887,7 +893,8 @@
       ],
       "appliesTo": [
         "W5"
-      ]
+      ],
+      "trigger": "演化日志不知谁提议谁确认；或审计找不到 commit/作者"
     },
     {
       "id": "S19",
@@ -900,7 +907,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "新问题不知引依赖还是自研；或怕盲目造轮子/堆依赖"
     },
     {
       "id": "S2",
@@ -928,7 +936,8 @@
       ],
       "appliesTo": [
         "S13"
-      ]
+      ],
+      "trigger": "多个 Result 要组合；或手动 if ok 冗长/用 as 绕过"
     },
     {
       "id": "S21",
@@ -956,7 +965,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "相对路径 `../../../` 难读；或移动目录 import 失效"
     },
     {
       "id": "S23",
@@ -969,7 +979,8 @@
       ],
       "appliesTo": [
         "A10-review-前置原则"
-      ]
+      ],
+      "trigger": "后写测试漏边界；或不知红→绿→重构怎么走"
     },
     {
       "id": "S24",
@@ -1011,7 +1022,8 @@
       ],
       "appliesTo": [
         "all"
-      ]
+      ],
+      "trigger": "测试该放 test/ 还是 __tests__/；或与源码分离不同步"
     },
     {
       "id": "S28",
@@ -1085,7 +1097,8 @@
       "appliesTo": [
         "A10-review-前置原则",
         "S23"
-      ]
+      ],
+      "trigger": "测试冗余断言/封装了 Act；或不知 What/How 该封装啥"
     },
     {
       "id": "S32",
@@ -1099,7 +1112,8 @@
       ],
       "appliesTo": [
         "W5"
-      ]
+      ],
+      "trigger": "规则收紧旧数据不合法；或不知要不要盘库/漏测数据"
     },
     {
       "id": "S33",
@@ -1115,7 +1129,8 @@
         "A10-review-前置原则",
         "S23",
         "S31"
-      ]
+      ],
+      "trigger": "fixture 用 as 绕过缺字段；或契约变严测试数据过时"
     },
     {
       "id": "S34",
@@ -1235,7 +1250,8 @@
       ],
       "appliesTo": [
         "all-entries"
-      ]
+      ],
+      "trigger": "写条目只有方案不知何时用；或缺上下文/反面读者看不出边界"
     },
     {
       "id": "S9",
@@ -1248,7 +1264,8 @@
       ],
       "appliesTo": [
         "all-entries"
-      ]
+      ],
+      "trigger": "条目多了只能按路径翻；或要按域/状态横切检索"
     },
     {
       "id": "W1",

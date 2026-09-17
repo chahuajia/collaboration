@@ -3,12 +3,13 @@ id: S11
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [meta]
 applies-to: [W6]
 supersedes: null
 author: heiniao
 aliases: [S11]
+trigger: 全量 fork 噪音大；或 AI 不知该为谁的侧重点优化
 ---
 # S11 Profile 声明侧重点
 ## 上下文

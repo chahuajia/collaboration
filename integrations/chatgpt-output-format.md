@@ -3,7 +3,7 @@ id: chatgpt-output-format
 type: integration
 status: active
 created: 2026-09-15
-updated: 2026-09-16
+updated: 2026-09-17
 applies-to:
   - chatgpt-like
 supersedes:
@@ -12,6 +12,7 @@ aliases:
   - chatgpt-output-format
   - A17
 provenance: 2026-09-16 从 agreements/ 迁入 integrations/ —— 它是对话式 AI 的适配层，不是跨环境不变的协作规则
+trigger: ChatGPT 输出格式乱难复制；或文件边界/包裹层分不清
 ---
 # chatgpt-like：输出格式约定
 

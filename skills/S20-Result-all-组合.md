@@ -3,7 +3,7 @@ id: S20
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - typescript
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S20
+trigger: 多个 Result 要组合；或手动 if ok 冗长/用 as 绕过
 ---
 
 # S20 Result.all 组合

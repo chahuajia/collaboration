@@ -3,12 +3,13 @@ id: S9
 type: skill
 status: active
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 domains: [meta]
 applies-to: [all-entries]
 supersedes: null
 author: heiniao
 aliases: [S9]
+trigger: 条目多了只能按路径翻；或要按域/状态横切检索
 ---
 
 # S9 YAML 元数据

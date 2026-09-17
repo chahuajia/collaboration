@@ -3,7 +3,7 @@ id: S14
 type: skill
 status: active
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-17
 domains:
   - ddd
 applies-to:
@@ -12,6 +12,7 @@ supersedes:
 author: heiniao
 aliases:
   - S14
+trigger: Issue 用 DTO 丢行为；或散落 severity 字面量
 ---
 
 # S14 Issue 值对象
