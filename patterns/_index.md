@@ -1,25 +1,52 @@
 # 模式索引
 
-跨领域借鉴的思想，作为结构与方法论的基础（40 条）。
-**模式回答"为什么这样设计"**；具体做法在 `skills/`，不可谈判的规则在 `agreements/`。
-
-## 结构与组织
-
 | 模式 | 来源 | 用途 |
 | :--- | :--- | :--- |
-| [[patterns/rooted-graph]] | 图论 | 主结构：树 + 横切 + 双向链接 |
-| [[patterns/faceted-classification]] | 图书馆学 | 多维检索 |
-| [[patterns/law-three-tiers]] | 法律 | 三层结构（约定/工作流/技能） |
-| [[patterns/load-bearing-vs-partition]] | 建筑 | 承重墙 vs 隔断（变更权限） |
-| [[patterns/pattern-language]] | 建筑（Alexander） | 条目五段式格式 |
 | [[patterns/adapter-internal-structure]] | 六边形架构 | 适配器内部结构自由 |
-| [[patterns/hierarchical-actor-collaboration]] | FSM + HSM + Actor | 人机协作的层级 Actor |
-| [[patterns/layer-vs-context]] | DDD + 六边形架构 | **层 ≠ 上下文** |
+| [[patterns/allowlist-over-denylist]] |  |  |
+| [[patterns/catalyst-nodes]] |  |  |
+| [[patterns/context-overflow-solved-by-retrieval]] |  |  |
+| [[patterns/cross-domain-borrowing]] |  |  |
+| [[patterns/dependency-decision]] |  |  |
+| [[patterns/derivation-over-copy]] |  |  |
+| [[patterns/design-decision]] |  |  |
+| [[patterns/distributed-evolution]] |  |  |
 | [[patterns/domain-purity-is-structural]] | 水利工程 + 洋葱架构 | 领域纯洁性是结构性必然 |
+| [[patterns/ecological-niche]] |  |  |
+| [[patterns/entropy-reduction]] |  |  |
+| [[patterns/evolution-loop]] |  |  |
+| [[patterns/faceted-classification]] | 图书馆学 | 多维检索 |
+| [[patterns/feature-discovery-over-hardcoded-paths]] |  |  |
+| [[patterns/hierarchical-actor-collaboration]] | FSM + HSM + Actor | 人机协作的层级 Actor |
 | [[patterns/higher-order-factory]] | 高阶函数 + 框架设计 | 高阶工厂（回调注入） |
-| [[patterns/what-how-are-projections]] | 投影几何 | What / How 是同一事物的两个投影 |
+| [[patterns/horizontal-gene-transfer]] |  |  |
 | [[patterns/how-as-injected-function]] | 六边形 + 依赖倒置 | 纯计算 How 以函数类型注入领域 |
+| [[patterns/knowledge-lifecycle]] |  |  |
+| [[patterns/law-three-tiers]] | 法律 | 三层结构（约定/工作流/技能） |
+| [[patterns/layer-vs-context]] | DDD + 六边形架构 | **层 ≠ 上下文** |
+| [[patterns/layered-defense]] |  |  |
+| [[patterns/load-bearing-vs-partition]] | 建筑 | 承重墙 vs 隔断（变更权限） |
+| [[patterns/naming-as-definition]] |  |  |
+| [[patterns/ooda-loop]] |  |  |
+| [[patterns/parallel-work-needs-delivery-proof]] |  |  |
+| [[patterns/parse-dont-validate]] |  |  |
+| [[patterns/pattern-language]] | 建筑（Alexander） | 条目五段式格式 |
+| [[patterns/peer-review]] |  |  |
+| [[patterns/qian-systems-engineering]] |  |  |
+| [[patterns/reproducible-verification]] |  |  |
+| [[patterns/rfc-process]] |  |  |
+| [[patterns/rooted-graph]] | 图论 | 主结构：树 + 横切 + 双向链接 |
 | [[patterns/rule-set-as-subset]] | 契约 + 集合论 | 规则集基集⊂扩展；子集即生命周期契约 |
+| [[patterns/self-bootstrapping-requires-fixed-core]] |  |  |
+| [[patterns/structure-over-algorithm]] |  |  |
+| [[patterns/three-layer-memory]] |  |  |
+| [[patterns/three-level-dry]] |  |  |
+| [[patterns/two-dimension-knowledge]] |  |  |
+| [[patterns/type-as-design]] |  |  |
+| [[patterns/value-object-as-raw-material]] |  |  |
+| [[patterns/value-semantics]] |  |  |
+| [[patterns/waiting-is-a-decision-window]] |  |  |
+| [[patterns/what-how-are-projections]] | 投影几何 | What / How 是同一事物的两个投影 |
 
 ## 演化与社区
 
