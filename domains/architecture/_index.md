@@ -11,6 +11,7 @@
 - [[patterns/load-bearing-vs-partition]] 承重墙 vs 隔断
 - [[patterns/rooted-graph]] 有根图
 - [[patterns/extreme-unattended-cluster]] 极端无人托管集群
+- [[patterns/policy-without-mechanism]] 无机制的政策是负优化
 - [[patterns/pressure-routing]] L1/L2/L3 压测落点
 
 ## 症状 → 先读
@@ -21,6 +22,7 @@
 | 领域层碰了框架 | [[patterns/domain-purity-is-structural]] |
 | 压测 KB 却只改 CLI 测试 | [[patterns/pressure-routing]] |
 | 多 agent 无沙箱 / 空转 | [[patterns/extreme-unattended-cluster]] · [[S36]] |
+| 加规则反而更慢 / 政策不落地 | [[patterns/policy-without-mechanism]] |
 
 ## 常见问题
 

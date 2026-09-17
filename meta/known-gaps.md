@@ -3,10 +3,10 @@ id: known-gaps
 type: meta
 status: active
 created: 2026-09-16
-updated: 2026-09-17
+updated: 2026-09-18
 author: heiniao
 aliases: [known-gaps]
-provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"找不到"，但这个结论**没有去处** —— 汇报完就随项目归档了
+provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有政策无机制」缺口
 ---
 
 # 缺口账本
@@ -58,6 +58,8 @@ provenance: 第 3 轮对照实验（D）：被试按正确路径检索后回报"
 | 2026-09-16 | ~~`catalog.json` 的 `trigger` 覆盖不足~~ | 同上 | 按 `trigger` 检索 | **已关闭**（2026-09-17 extreme L3）：patterns 50/50 有 `trigger`；catalog active patterns 全覆盖（≥80%） | — |
 | 2026-09-16 | **工作记忆没有新鲜度检测** | 换会话交接盘点 | 无 | 已加 `check-freshness.mjs` | 连续两个会话交接通过自检 |
 | 2026-09-17 | ~~REST 列表 / 客户端 N+1~~ | evolutionary 第 11 轮 | 症状表 → 无；catalog「N+1」→ GraphQL 域 | **已关闭**（2026-09-17）：`AGENTS.md` 症状表加工程行 → design-decision；证据 `evolutionary/specs/round-11-report.md` L5 | — |
+| 2026-09-18 | **修剪政策的可达性扫描未自动化** | 读 [[meta/pruning-policy]]：时间规则曾「从未执行」同构 | 政策 → 无定期 mark-sweep 产物 | **开**：有政策、缺机制（[[patterns/policy-without-mechanism]]） | 有可复现脚本/CI 步骤产出「不可达候选列表」并至少跑通 1 次 |
+| 2026-09-18 | **集群派工未默认建 worktree** | evo-collab-extreme 同树四写 | S36 曾写「冲突频繁再上」 | **部分关**：v8 已改默认；**关死条件**=下一波 ≥2 写者实际用隔离 checkout | 下一波并行有 worktree/分支名写进 loop |
 
 ## 判据
 

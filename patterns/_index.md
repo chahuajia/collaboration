@@ -15,7 +15,7 @@
 | [[patterns/ecological-niche]] | 生态学 | 适用边界 |
 | [[patterns/entropy-reduction]] | 物理学（熵增） | 主动修剪 |
 | [[patterns/evolution-loop]] | 生物进化论 | 变异 + 选择 + 遗传 |
-| [[patterns/extreme-unattended-cluster]] | 人机协作实践 | 极端无人托管集群门禁（HEAD/L3 diff/超时接管/停 wake） |
+| [[patterns/extreme-unattended-cluster]] | 人机协作实践 | 极端无人托管集群门禁（v8：worktree·回执·会计） |
 | [[patterns/faceted-classification]] | 图书馆学 | 多维检索 |
 | [[patterns/feature-discovery-over-hardcoded-paths]] | 航海导航 | 特征发现优于硬编码 |
 | [[patterns/frontend-ddd-rsc]] | 人机协作实践 | 前端 DDD 与 RSC 渲染边界 |
@@ -34,6 +34,7 @@
 | [[patterns/parse-dont-validate]] | 函数式编程 | 边界解析 |
 | [[patterns/pattern-language]] | 建筑（Alexander） | 条目五段式格式 |
 | [[patterns/peer-review]] | 学术同行评审 | 复核机制 |
+| [[patterns/policy-without-mechanism]] | 人机协作实践 | 无机制的政策是负优化（政策通胀 / 活动≠产出） |
 | [[patterns/pressure-routing]] | 人机协作实践 | L1/L2/L3 压测路由与成功判据 |
 | [[patterns/project-evidence-vs-kb-ledger]] | 人机协作实践 | 项目证据 vs KB 账本分层 |
 | [[patterns/qian-systems-engineering]] | 钱学森《系统工程》 | 总体设计部 |

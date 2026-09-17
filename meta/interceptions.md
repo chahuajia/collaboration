@@ -57,6 +57,7 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 | 2026-09-17 | [[patterns/frontend-ddd-rsc]] | 差点继续换电首页全 `use client`+`useEffect` 拉站列表 | 首屏空、与 `/credit` RSC 不一致、无服务端读模型 | `topic/fe-ddd-rsc` `b20f899`：RSC+station-gateway+swap 岛 |
 | 2026-09-17 | [[S34-边界层与领域的错误翻译]]             | 差点继续用 `msg.startsWith("unknown station")` 在 Controller 判 404 | 改仓储文案即错 HTTP；边界重复「解析」领域消息，S34 反面   | 第 14 轮：`UnknownStationException` + `SwapApiErrorTranslator`；41 测绿。见 `evolutionary/specs/round-14-report.md` T4               |
 | 2026-09-17 | [[S34-边界层与领域的错误翻译]] | 差点复用站级/笼统 Commerce 翻译器把 ENTITLEMENT_* 映射成 409，或用 message 嗅探判状态码 | 权益用户不匹配被客户端当冲突重试；改文案即错 HTTP；S34 反面 | evo-collab-extreme 切片4：EntitledSwapApiErrorTranslator 按 DomainErrorCode→422/409；EntitledSwapControllerTest 3/0；evolutionary 90b4e89+89426a7 |
+| 2026-09-18 | [[patterns/policy-without-mechanism]] | 差点继续只堆 extreme v5–v7 条文、不装 worktree/回执/会计，并宣称「已按最新门禁优化」 | 集群净吞吐低于单主轴；docs/派工假繁荣；feat 滞后 | evo-collab-extreme 复盘；v8 起机制入库；见 `patterns/policy-without-mechanism.md` |
 
 ### 判据
 

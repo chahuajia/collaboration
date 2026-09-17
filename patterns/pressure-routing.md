@@ -77,6 +77,7 @@ provenance: collab-pressure 17 轮；2026-09-17 极端集群补强交叉引用
 ## 反面
 
 - 不要把「collaboration validate 113/0」当成 KB 演化成果 —— 那是 L1 门禁，不是 L3 产出。
+- 不要用「再加一层压测仪式」代替改正确的仓 —— 见 [[patterns/policy-without-mechanism]]。
 - 不要在 L1 任务名里写「Collaboration 复杂场景压测」却不改 collaboration 条目。
 - 不要用 wake 间隔掩盖「无 KB 增量」—— **无增量就停**，不要降间隔硬跑。
 - 不要把 L2 的规格堆叠（61 AC、0 行业务代码）当成「已经压过 KB」—— 规格在 WM，条目在 collaboration。

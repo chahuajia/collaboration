@@ -153,8 +153,8 @@ provenance: 2026-09-17→v7 收口≠停派；v8 基础设施——worktree 隔�
 - **不要在共主 checkout 上开 ≥2 写者**（v8：先 worktree）。
 - **不要接受无 `## Result` 的子代理收尾**（v8：当 FAILED）。
 - **不要派出 N 却只收回 M&lt;N 就开下一波**（v8：会计）。
-- **不要只堆政策版本（v5–v7）而不改隔离/回执基础设施**——那是负优化。
+- **不要只堆政策版本（v5–v7）而不改隔离/回执基础设施**——那是负优化；元规则见 [[patterns/policy-without-mechanism]]。
 
 ## 关联
 
-[[patterns/pressure-routing]] [[patterns/project-evidence-vs-kb-ledger]] [[S36]] [[patterns/parallel-work-needs-delivery-proof]] [[patterns/waiting-is-a-decision-window]] [[meta/pruning-policy]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[W10-working-memory]]
+[[patterns/pressure-routing]] [[patterns/project-evidence-vs-kb-ledger]] [[S36]] [[patterns/parallel-work-needs-delivery-proof]] [[patterns/policy-without-mechanism]] [[patterns/waiting-is-a-decision-window]] [[meta/pruning-policy]] [[W4-three-question-retro]] [[W5-update-collaboration]] [[W10-working-memory]]
