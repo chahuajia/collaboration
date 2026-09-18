@@ -64,6 +64,7 @@ provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有�
 | 2026-09-18 | ~~修剪政策的可达性扫描未自动化~~ | 读 [[meta/pruning-policy]]：时间规则曾「从未执行」同构 | 政策 → 无定期 mark-sweep 产物 | **已关闭**（2026-09-19）：`collab retire --candidates` 产出孤岛候选列表；裁决了种子/边歧义（见 [[meta/pruning-policy]] 的「读法歧义」）——字面读法是**空操作**（实测 0 条），改为「种子=根文档 + 无向」。真库实测扫出 5 条 | — |
 | 2026-09-18 | ~~集群派工未默认建 worktree~~ | evo-collab-extreme 同树四写 | S36 曾写「冲突频繁再上」 | **已关闭**（2026-09-18）：v8/v9 + wave20–22 均独立 worktree 写进 loop | — |
 | 2026-09-18 | ~~多门户×审批权无条目~~（总后台批商家 ≠ 运营商批下线 ≠ 店主≠电池运维） | evo 四端校正；用户纠角色串味 | catalog「portal/角色/入驻」→ 无；extreme 只治空转 | **已关闭**（2026-09-18）：[[patterns/multi-portal-capability-gate]] + AGENTS 症状行 | — |
+| 2026-09-19 | **「种子时机 / 初始化顺序」无条目** —— bean 构造时读数据的组件，其数据源必须在**同一时机**就绪；`ApplicationRunner` 晚于所有 bean 创建 | 接手 evo 做 operator JPA 化时撞到（`OrgAuthorization` 构造时快照组织表） | 症状表查「种子/初始化/启动/bean/构造/生命周期」→ **无行**；catalog 关键词 → 命中 `self-bootstrapping-requires-fixed-core`（**假阳性**：讲的是「一切皆 X」的递归自举，撞上它先例表里的 Bean 一词）与 `layered-defense`（讲编译/启动/请求三层防御，无关） | **不开条目**：判据是「不读它，称职模型会做错吗」——本项目代码里已有注释 + `HANDOVER.md` 明写，且这是本项目种子惯例，属**项目决定不是通用 pattern**。按 [[patterns/project-evidence-vs-kb-ledger]] 留业务仓 | — |
 
 ## 判据
 
