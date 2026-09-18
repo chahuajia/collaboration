@@ -57,11 +57,11 @@
 | 想改约定 | [[W7-rfc-process]] |
 | 多条条目重叠要合并 | [[W12-条目合并]] |
 | 要跨领域找灵感 | [[patterns/cross-domain-borrowing]] |
-| **不变量放哪一层** / 聚合边界 | [[S13-Smart-Constructor]] → [[patterns/parse-dont-validate]]（对象自守；跨对象由聚合操作守） |
-| **领域层能不能碰框架** | [[patterns/domain-purity-is-structural]] |
+| **不变量放哪一层** / 聚合边界 | [[patterns/parse-dont-validate]]（对象自守；跨对象由聚合操作守）。~~[[S13-Smart-Constructor]]~~ **已毕业** → `StationTest.emptyCannotSwap` 已在跑，读条目是多余的 |
+| **领域层能不能碰框架** | ~~[[patterns/domain-purity-is-structural]]~~ **已毕业** → `DomainFrameworkFreeTest` 跑测试即判据 |
 | **状态机怎么建模**（领域） | **明确不建专条**（2026-09-16 第 5 轮裁决）→ 复用实体状态机；证伪条件见 `known-gaps` 已关闭行 |
 | **多资源 REST 读法 / 客户端 N+1** | [[patterns/design-decision]]（batch 端点 vs 循环 GET）；GraphQL 先过 [[dependency-decision]] |
-| **边界错误怎么映射 HTTP**（API/CLI） | [[S34-边界层与领域的错误翻译]]（类型化异常；禁止用领域 message 前缀猜状态码） |
+| **边界错误怎么映射 HTTP**（API/CLI） | ~~[[S34-边界层与领域的错误翻译]]~~ **已毕业** → `SwapApiErrorTranslatorTest` 已在跑（禁止用领域 message 前缀猜状态码） |
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
 | **FE∥BE 多 agent 工作区怎么划 / 切片太碎** | [[S36]]（路径沙箱 + 加厚 brief；未达门槛不拆仓） |
@@ -71,8 +71,10 @@
 | **前后端仓权限分离怎么协同** | [[S36]]（契约仓 + 中立编排 WM） |
 | **Next 全 CSR / 前端也要 DDD** | [[patterns/frontend-ddd-rsc]] |
 | **跨包 import 像有问题（mall→commerce）** | [[patterns/shared-kernel-across-bc]]（先 `mvn compile`；再问是否共享内核） |
+| **不知道哪条条目该退休**（定期体检） | `collab retire --candidates`（孤岛候选，只报告不写盘；默认 30 天宽限）→ [[meta/pruning-policy]] |
 | **要删/降级一条条目**（0 引用、说不清拦住了什么） | `collab retire <id> --dormant --reason "<过时\|重复\|表达差\|未成熟>: <证据>"` → [[meta/pruning-policy]] |
 | **某条已被测试/工具固化，不必再被读** | `collab retire <id> --enforced <路径> --confirm`（**毕业**，退出路由索引）→ [[ADR-0011]] |
+| **新条目要入库**（draft → active） | 必须填 `falsifier`：**不读它，模型会照着本地哪个模式写错？** 写不出 → 不该入库（`FALSIFIER_REQUIRED`，2026-09-19 起） |
 
 ## 协作规则（摘要）
 

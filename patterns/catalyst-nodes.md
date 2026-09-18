@@ -1,7 +1,7 @@
 ---
 id: catalyst-nodes
 type: pattern
-status: active
+status: dormant
 source: 化学（催化剂）
 created: 2026-09-15
 updated: 2026-09-17

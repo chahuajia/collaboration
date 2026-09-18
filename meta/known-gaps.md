@@ -61,7 +61,7 @@ provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有�
 | 2026-09-16 | ~~`catalog.json` 的 `trigger` 覆盖不足~~ | 同上 | 按 `trigger` 检索 | **已关闭**（2026-09-17 extreme L3）：patterns 50/50 有 `trigger`；catalog active patterns 全覆盖（≥80%） | — |
 | 2026-09-16 | **工作记忆没有新鲜度检测** | 换会话交接盘点 | 无 | 已加 `check-freshness.mjs` | 连续两个会话交接通过自检 |
 | 2026-09-17 | ~~REST 列表 / 客户端 N+1~~ | evolutionary 第 11 轮 | 症状表 → 无；catalog「N+1」→ GraphQL 域 | **已关闭**（2026-09-17）：`AGENTS.md` 症状表加工程行 → design-decision；证据 `evolutionary/specs/round-11-report.md` L5 | — |
-| 2026-09-18 | **修剪政策的可达性扫描未自动化** | 读 [[meta/pruning-policy]]：时间规则曾「从未执行」同构 | 政策 → 无定期 mark-sweep 产物 | **开**：有政策、缺机制（[[patterns/policy-without-mechanism]]） | 有可复现脚本/CI 步骤产出「不可达候选列表」并至少跑通 1 次 |
+| 2026-09-18 | ~~修剪政策的可达性扫描未自动化~~ | 读 [[meta/pruning-policy]]：时间规则曾「从未执行」同构 | 政策 → 无定期 mark-sweep 产物 | **已关闭**（2026-09-19）：`collab retire --candidates` 产出孤岛候选列表；裁决了种子/边歧义（见 [[meta/pruning-policy]] 的「读法歧义」）——字面读法是**空操作**（实测 0 条），改为「种子=根文档 + 无向」。真库实测扫出 5 条 | — |
 | 2026-09-18 | ~~集群派工未默认建 worktree~~ | evo-collab-extreme 同树四写 | S36 曾写「冲突频繁再上」 | **已关闭**（2026-09-18）：v8/v9 + wave20–22 均独立 worktree 写进 loop | — |
 | 2026-09-18 | ~~多门户×审批权无条目~~（总后台批商家 ≠ 运营商批下线 ≠ 店主≠电池运维） | evo 四端校正；用户纠角色串味 | catalog「portal/角色/入驻」→ 无；extreme 只治空转 | **已关闭**（2026-09-18）：[[patterns/multi-portal-capability-gate]] + AGENTS 症状行 | — |
 

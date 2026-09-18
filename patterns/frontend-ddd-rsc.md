@@ -11,6 +11,7 @@ aliases:
   - P-fe-ddd
 trigger: Next 页面全 use client；或前端也要 DDD；或服务端状态与本地状态搅在一起；或缺请求缓存/弱网策略
 provenance: evolutionary 用了 Next 15 却全 CSR useEffect；用户指出缺 RSC/服务端状态/请求层/前端 DDD
+falsifier: 会照着项目里已有的 CSR 页面（use client + useEffect 拉数据）继续写新列表页 —— 账本原文记的是「差点**继续**」
 enforced: null
 ---
 

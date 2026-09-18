@@ -19,7 +19,7 @@
 | 症状 | 条目 |
 | :--- | :--- |
 | 跨包 import「看起来不对」但能编译 | [[patterns/shared-kernel-across-bc]] |
-| 领域层碰了框架 | [[patterns/domain-purity-is-structural]] |
+| 领域层碰了框架 | [[patterns/domain-purity-is-structural]] 已毕业 → `DomainFrameworkFreeTest`（架构测试即判据，不必再读条目） |
 | 压测 KB 却只改 CLI 测试 | [[patterns/pressure-routing]] |
 | 多 agent 无沙箱 / 空转 | [[patterns/extreme-unattended-cluster]] · [[S36]] |
 | 加规则反而更慢 / 政策不落地 | [[patterns/policy-without-mechanism]] |

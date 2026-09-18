@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T14:21:53.861Z",
+  "generatedAt": "2026-09-18T16:48:46.094Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -285,16 +285,6 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "分层约束写了一长串禁止 import；或新增依赖时忘了补黑名单；或不确定某层到底能碰什么"
-    },
-    {
-      "id": "catalyst-nodes",
-      "type": "pattern",
-      "status": "active",
-      "title": "杠杆节点",
-      "path": "patterns/catalyst-nodes.md",
-      "domains": [],
-      "appliesTo": [],
-      "trigger": "条目太多平均用力；或不知道先维护哪几条；或杠杆条目换来换去"
     },
     {
       "id": "context-overflow-solved-by-retrieval",
@@ -829,21 +819,6 @@
       "trigger": "边界上要用 zod 解析外部输入；或差点把解析库 import 进 domain"
     },
     {
-      "id": "S13",
-      "type": "skill",
-      "status": "active",
-      "title": "S13 Smart Constructor",
-      "path": "skills/S13-Smart-Constructor.md",
-      "domains": [
-        "ddd",
-        "typescript"
-      ],
-      "appliesTo": [
-        "W3"
-      ],
-      "trigger": "不变量放哪一层；或差点把可用性守在构造器上"
-    },
-    {
       "id": "S14",
       "type": "skill",
       "status": "active",
@@ -1152,23 +1127,6 @@
       "trigger": "fixture 用 as 绕过缺字段；或契约变严测试数据过时"
     },
     {
-      "id": "S34",
-      "type": "skill",
-      "status": "active",
-      "title": "S34 边界层与领域的错误翻译",
-      "path": "skills/S34-边界层与领域的错误翻译.md",
-      "domains": [
-        "architecture",
-        "error-handling"
-      ],
-      "appliesTo": [
-        "W3",
-        "S7",
-        "S12"
-      ],
-      "trigger": "边界错误怎么映射 HTTP；或想用领域 message 前缀猜状态码"
-    },
-    {
       "id": "S35",
       "type": "skill",
       "status": "active",
@@ -1451,17 +1409,17 @@
     }
   ],
   "summary": {
-    "total": 120,
+    "total": 117,
     "byType": {
       "agreement": 10,
       "workflow": 11,
-      "skill": 35,
-      "pattern": 50,
+      "skill": 33,
+      "pattern": 49,
       "adr": 11,
       "integration": 3
     },
     "byStatus": {
-      "active": 106,
+      "active": 103,
       "draft": 3,
       "accepted": 10,
       "proposed": 1
