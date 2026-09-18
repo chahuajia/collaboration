@@ -10,7 +10,7 @@ aliases:
   - extreme-unattended-cluster
   - P-extreme-cluster
 trigger: 无人托管要极端集群；压测 KB 却只涨测试；子代理卡住；集群空转；主轴/队列积压任务；或用业务仓双轴压 KB
-provenance: 2026-09-17→v7 收口≠停派；v8 基础设施——worktree 隔离 + 回执契约 + 派出会计（N 派=N 收）+ 沉默即失败
+provenance: 2026-09-17→v7 收口≠停派；v8 基础设施——worktree 隔离 + 回执契约 + 派出会计（N 派=N 收）+ 沉默即失败；v9 冷启动分级——按实测吞吐缩尺，勿为「最大规模」负优化
 ---
 # 极端无人托管集群：每 tick 门禁
 
@@ -70,6 +70,7 @@ provenance: 2026-09-17→v7 收口≠停派；v8 基础设施——worktree 隔�
 | **缺口表驱动（v7）** | 每 tick 打开 `RUNBOOK`「尚未接通」或等价列表；路径沙箱不冲突的项 **按最大规模全派**（受同路径写锁 / worktree 约束） | 有缺口却单会话空转 → 无效 tick |
 | **worktree 隔离（v8）** | ≥2 **写者**并行 → 默认 **每写者一 worktree**（或等价隔离 checkout）；合并进主任务分支由**父**做；见 [[S36]] L3 | 同树多写 → 拒收；改隔离或改串行 |
 | **派出会计（v8）** | **派出 N = 收回 N**（每路 SUCCESS / FAILED / SKIP / 父接管）；缺席=未解决；未对账不得宣称波次完成或开下一波 | 记会计失败；补收回或接管 |
+| **冷启动缩尺（v9）** | 默认派出 ≤2；仅当上波 ≥2 路 60s 内均有工具写盘，才升到 3–4 | 4 路空转 → 无效 tick；降回 ≤2 |
 | **回执契约（v8）** | brief **必须**含强制 `## Result` 模板（见下）；禁止一句 Done/空结束；见 [[patterns/parallel-work-needs-delivery-proof]] | 无契约回报 → 当 FAILED；父接管 |
 | **沉默即失败（v8）** | transcript 仅 user、或超时无工具调用 → **FAILED（未启动）**，不是「进行中」；禁 loop 🔄 | 父接管；禁再派旁路 |
 | **子代理超时** | 外部硬超时默认 **≤60s**；无回执 → **父立刻接管**（续做/重派/收窄），禁止干等下一 wake | 见 [[patterns/parallel-work-needs-delivery-proof]] |
@@ -130,6 +131,7 @@ provenance: 2026-09-17→v7 收口≠停派；v8 基础设施——worktree 隔�
 8. **v6**：收口前无本切片未提交业务 WIP  
 9. **v7**：`RUNBOOK` 有缺口 → 同 tick 续派  
 10. **v8**：loop 头写 `dispatched=N recovered=M`；M&lt;N 不得收口本波  
+11. **v9 冷启动分级（实测）**：默认 **≤2 写者**；BE 常先有工具写盘、FE 易 60s 沉默。优先 **BE 先派 → FE 等 BE feat sha 或同 tick 父影子写 FE**；勿为「最大规模」固定 4 路空转  
 
 ## 反面
 
