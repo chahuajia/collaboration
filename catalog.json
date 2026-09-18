@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T17:14:20.760Z",
+  "generatedAt": "2026-09-18T17:42:43.498Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -305,6 +305,16 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "工程思路穷尽却只会堆技术；或跨域借鉴变成引用名言；或类比听起来对却落不到设计"
+    },
+    {
+      "id": "delete-beats-automate",
+      "type": "pattern",
+      "status": "active",
+      "title": "删掉优于自动化",
+      "path": "patterns/delete-beats-automate.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "文档里有个数/清单总要手工同步；想给它写个生成器或新鲜度检查；或\"这段信息该放哪\""
     },
     {
       "id": "dependency-decision",
@@ -1419,17 +1429,17 @@
     }
   ],
   "summary": {
-    "total": 118,
+    "total": 119,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 50,
+      "pattern": 51,
       "adr": 11,
       "integration": 3
     },
     "byStatus": {
-      "active": 104,
+      "active": 105,
       "draft": 3,
       "accepted": 10,
       "proposed": 1

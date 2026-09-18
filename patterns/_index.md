@@ -7,6 +7,7 @@
 | [[patterns/catalyst-nodes]] | 化学（催化剂） | 杠杆节点 |
 | [[patterns/context-overflow-solved-by-retrieval]] | 数据库 / 检索 | 溢出的解法是检索，不是寄放 |
 | [[patterns/cross-domain-borrowing]] | A9 | 跨域借鉴五步法 |
+| [[patterns/delete-beats-automate]] | 软件工程 + 实测（手写计数腐烂） | 先问该不该存在，再问怎么保持新鲜 |
 | [[patterns/dependency-decision]] | 供应链（Make-or-Buy） | 引入三问 + 位置三问 |
 | [[patterns/derivation-over-copy]] | 数据库规范化 | 派生优于复制 |
 | [[patterns/design-decision]] | A8 | 设计决策三问 |
