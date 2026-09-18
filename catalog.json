@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T16:48:46.094Z",
+  "generatedAt": "2026-09-18T17:14:20.760Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -676,6 +676,16 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "复杂逻辑第一反应是把算法写聪明；或在错误结构上继续打补丁；或 if-else/状态变量越堆越长"
+    },
+    {
+      "id": "tests-encode-assumptions",
+      "type": "pattern",
+      "status": "active",
+      "title": "测试复制假设，真库证伪假设",
+      "path": "patterns/tests-encode-assumptions.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "测试全绿但真数据/真库报错；或刚写完一条校验规则准备收工；或 fixture 与真实产物形态可能不一致"
     },
     {
       "id": "three-layer-memory",
@@ -1409,17 +1419,17 @@
     }
   ],
   "summary": {
-    "total": 117,
+    "total": 118,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 49,
+      "pattern": 50,
       "adr": 11,
       "integration": 3
     },
     "byStatus": {
-      "active": 103,
+      "active": 104,
       "draft": 3,
       "accepted": 10,
       "proposed": 1

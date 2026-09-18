@@ -28,6 +28,7 @@
 | [[patterns/layer-vs-context]] | DDD + 六边形架构 | **层 ≠ 上下文** |
 | [[patterns/layered-defense]] | 军事纵深防御 | 分层拦截 |
 | [[patterns/load-bearing-vs-partition]] | 建筑 | 承重墙 vs 隔断（变更权限） |
+| [[patterns/multi-portal-capability-gate]] | 人机协作实践 | 多门户 × 能力门禁（错误端放错能力=拒收） |
 | [[patterns/naming-as-definition]] | 语言哲学 | 命名即定义 |
 | [[patterns/ooda-loop]] | 军事（OODA） | 复盘闭环 |
 | [[patterns/parallel-work-needs-delivery-proof]] | 分布式系统 + 人机协作 | 并行不是分派，是让每份分派可确认到达 |
@@ -35,7 +36,6 @@
 | [[patterns/pattern-language]] | 建筑（Alexander） | 条目五段式格式 |
 | [[patterns/peer-review]] | 学术同行评审 | 复核机制 |
 | [[patterns/policy-without-mechanism]] | 人机协作实践 | 无机制的政策是负优化（政策通胀 / 活动≠产出） |
-| [[patterns/multi-portal-capability-gate]] | 人机协作实践 | 多门户 × 能力门禁（错误端放错能力=拒收） |
 | [[patterns/pressure-routing]] | 人机协作实践 | L1/L2/L3 压测路由与成功判据 |
 | [[patterns/project-evidence-vs-kb-ledger]] | 人机协作实践 | 项目证据 vs KB 账本分层 |
 | [[patterns/qian-systems-engineering]] | 钱学森《系统工程》 | 总体设计部 |
@@ -46,6 +46,7 @@
 | [[patterns/self-bootstrapping-requires-fixed-core]] | Lisp / Git / 哥德尔 | 自举必须固定基座 |
 | [[patterns/shared-kernel-across-bc]] | DDD（共享内核） | 跨 BC 只依赖共享内核，禁止对方核心聚合 |
 | [[patterns/structure-over-algorithm]] | 计算机科学（Wirth） | 结构优先 |
+| [[patterns/tests-encode-assumptions]] | 测试理论 + 实测（一晚四条规则） | 单测会复制作者的假设；真产物才证伪它 |
 | [[patterns/three-layer-memory]] | 认知心理学 + 存储分层 | 工作记忆 / 进度 / 长期知识 |
 | [[patterns/three-level-dry]] | 软件工程（DRY） | 不重复的三个层次 |
 | [[patterns/two-dimension-knowledge]] | 城市规划 + 图书馆学 | 成熟度 × 范围 |

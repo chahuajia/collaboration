@@ -75,6 +75,7 @@
 | **要删/降级一条条目**（0 引用、说不清拦住了什么） | `collab retire <id> --dormant --reason "<过时\|重复\|表达差\|未成熟>: <证据>"` → [[meta/pruning-policy]] |
 | **某条已被测试/工具固化，不必再被读** | `collab retire <id> --enforced <路径> --confirm`（**毕业**，退出路由索引）→ [[ADR-0011]] |
 | **新条目要入库**（draft → active） | 必须填 `falsifier`：**不读它，模型会照着本地哪个模式写错？** 写不出 → 不该入库（`FALSIFIER_REQUIRED`，2026-09-19 起） |
+| **单测全绿但真库/真数据报错** | [[patterns/tests-encode-assumptions]] —— 先怀疑 fixture 与真产物的形态差异，**不要先怀疑真产物**；拿真产物跑一遍再收工 |
 
 ## 协作规则（摘要）
 
