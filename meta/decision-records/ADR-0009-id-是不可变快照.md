@@ -8,6 +8,7 @@ created: 2026-09-16
 updated: 2026-09-16
 aliases: [ADR-0009]
 provenance: 用户问"删除/转移时 id 要不要变？id 应该是快照、不可修改？"—— 这是基座问题，不是实现问题
+enforced: null
 ---
 
 # ADR-0009 id 是不可变快照

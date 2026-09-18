@@ -14,6 +14,7 @@ author: heiniao
 aliases:
   - S16
 trigger: 公开 API 注释乱/缺失；或只写怎么做不写为什么
+enforced: null
 ---
 
 

@@ -11,6 +11,7 @@ aliases:
   - P-pressure
 trigger: 压测放哪一层；长运行空转；测数涨但 KB 不涨；不确定本 tick 该变哪个仓的 HEAD
 provenance: collab-pressure 17 轮；2026-09-17 极端集群补强交叉引用
+enforced: null
 ---
 
 # 压测路由：三层压力与成功判据

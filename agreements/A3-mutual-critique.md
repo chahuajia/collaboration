@@ -10,6 +10,7 @@ author: heiniao
 aliases: [A3]
 trigger: 写方案/结论时；或对方的表述里出现"张力"（问句与断言混用、用词与已有条目冲突、隐含假设未说）
 anti-trigger: 用户只是问事实，或明确要求"直接给答案"
+enforced: null
 ---
 
 # A3 互相批评与主动侦查

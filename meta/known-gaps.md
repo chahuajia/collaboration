@@ -50,7 +50,10 @@ provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有�
 | 日期 | 缺口 | 谁撞到的 | 检索路径 | 现状 | 关闭条件 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 
-### 真实记录（开 1 / 关 3）
+### 真实记录
+
+> 开 / 关的条数不写死在这里（原因同 [[meta/interceptions]] 的说明）。
+> 关闭的行以 `~~删除线~~` 标出，数一下即知。
 
 | 日期 | 缺口 | 谁撞到的 | 检索路径 | 现状 | 关闭条件 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -60,7 +63,7 @@ provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有�
 | 2026-09-17 | ~~REST 列表 / 客户端 N+1~~ | evolutionary 第 11 轮 | 症状表 → 无；catalog「N+1」→ GraphQL 域 | **已关闭**（2026-09-17）：`AGENTS.md` 症状表加工程行 → design-decision；证据 `evolutionary/specs/round-11-report.md` L5 | — |
 | 2026-09-18 | **修剪政策的可达性扫描未自动化** | 读 [[meta/pruning-policy]]：时间规则曾「从未执行」同构 | 政策 → 无定期 mark-sweep 产物 | **开**：有政策、缺机制（[[patterns/policy-without-mechanism]]） | 有可复现脚本/CI 步骤产出「不可达候选列表」并至少跑通 1 次 |
 | 2026-09-18 | ~~集群派工未默认建 worktree~~ | evo-collab-extreme 同树四写 | S36 曾写「冲突频繁再上」 | **已关闭**（2026-09-18）：v8/v9 + wave20–22 均独立 worktree 写进 loop | — |
-| 2026-09-18 | **多门户×审批权无条目**（总后台批商家 ≠ 运营商批下线 ≠ 店主≠电池运维） | evo 四端校正；用户纠角色串味 | catalog「portal/角色/入驻」→ 无；extreme 只治空转 | **开**：缺 multi-portal×capability 门禁 | 有 pattern 或 AGENTS 症状行：错误端放错能力=拒收 |
+| 2026-09-18 | ~~多门户×审批权无条目~~（总后台批商家 ≠ 运营商批下线 ≠ 店主≠电池运维） | evo 四端校正；用户纠角色串味 | catalog「portal/角色/入驻」→ 无；extreme 只治空转 | **已关闭**（2026-09-18）：[[patterns/multi-portal-capability-gate]] + AGENTS 症状行 | — |
 
 ## 判据
 

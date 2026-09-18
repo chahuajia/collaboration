@@ -9,6 +9,7 @@ source: 契约设计 + 集合论
 aliases: [rule-set-as-subset]
 trigger: contentRules 和 standardRules 两套清单在漂移；或新条目因索引规则误红；或全量/落盘该跑哪套规则
 provenance: collab apply 门禁 —— contentRules ⊂ standardRules；刚落盘的条目还不满足索引不变量
+enforced: null
 ---
 
 # 规则集分层：子集即契约

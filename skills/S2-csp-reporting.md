@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S2]
 trigger: CSP 违规页面空白却无告警；或不知怎么配 report-uri
+enforced: null
 ---
 
 # S2 CSP 报告配置

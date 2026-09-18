@@ -10,6 +10,7 @@ aliases:
   - reproducible-verification
 trigger: 本机/编辑器里"试过觉得对"却进不了 CI；或用手工验证当规则前提；或别人工具行为在决定你的规则
 provenance: 2026-09-16 链接锚点的三次反复 —— "我在 Obsidian 里测过改名不断链"这条证据真实，但无法进 CI
+enforced: null
 ---
 
 # 可复现的证据优于手工验证

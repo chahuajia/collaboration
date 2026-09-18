@@ -57,7 +57,11 @@ domains/         rfcs/           profiles/    templates/   inbox/
 
 ### 三、frontmatter 必填字段
 
-`id` · `type` · `status` · `created` · `updated` · `author` · `aliases`
+`id` · `type` · `status` · `created` · `updated` · `author` · `aliases` · `enforced`
+
+> `enforced` 为 `string | null`（**可空但必填**，对齐 `supersedes`）：
+> 非空 = 该条目已被测试/工具固化，**退出路由索引**（见 [[ADR-0011]]）。
+> 缺失它不会解析失败（parser 有 `.default(null)`），但新条目由 `collab new` 发出。
 
 ### 四、id 规则（不可变快照）
 

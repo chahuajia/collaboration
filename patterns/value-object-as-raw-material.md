@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [value-object-as-raw-material]
 trigger: 值对象被当成 DTO/数据容器；或不变量不知道归谁；或差点给无行为 DTO 写工厂
+enforced: null
 ---
 
 # 值对象是原料

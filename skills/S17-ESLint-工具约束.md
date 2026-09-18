@@ -14,6 +14,7 @@ author: heiniao
 aliases:
   - S17
 trigger: 口头分层约定总被忘；或想用 ESLint 钉死依赖/类型风格
+enforced: null
 ---
 
 # S17 ESLint 工具约束

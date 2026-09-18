@@ -12,6 +12,7 @@ aliases:
   - A7
 provenance: 2026-09-16 由 A7-distribution-and-community 拆出：只保留"AI 写权限边界"这一半（可执行、今天在用）；社区治理那半面向 0 人社群，已归档（见 ADR-0007）
 trigger: AI 有写权限不知边界；或不该 commit/push 却做了
+enforced: null
 ---
 
 # cli-agent：写权限与身份边界

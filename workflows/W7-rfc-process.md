@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [W7]
 trigger: 想改约定/agreements；或不确定该不该走 RFC
+enforced: null
 ---
 
 # W7 RFC 流程（约定级变更）

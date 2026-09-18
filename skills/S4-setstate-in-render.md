@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S4]
 trigger: 渲染期 setState 报错/死循环；或不知副作用该放哪
+enforced: null
 ---
 
 

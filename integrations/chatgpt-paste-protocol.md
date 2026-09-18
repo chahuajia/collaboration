@@ -13,6 +13,7 @@ aliases:
   - A15
 provenance: 2026-09-16 从 agreements/ 迁入 integrations/ —— 它假设"AI 无 IO、靠用户粘贴"，那只在对话式环境成立
 trigger: 对话式 AI 无 IO 要粘贴；或逐文件粘贴/多轮猜需求
+enforced: null
 ---
 
 # chatgpt-like：粘贴交互协议

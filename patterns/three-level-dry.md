@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [three-level-dry]
 trigger: 把看起来相同的代码强行合并；或已有 Result 又写 Either；或新问题不先查现成方案就从零造
+enforced: null
 ---
 
 # 不重复原则的三个层次

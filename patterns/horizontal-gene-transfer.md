@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [horizontal-gene-transfer]
 trigger: 有价值条目必须先过主干；或 fork 之间想直接换却怕丢来源；或局部经验被主干忽略
+enforced: null
 ---
 
 # 水平基因转移

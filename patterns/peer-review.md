@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [peer-review]
 trigger: 约定级变更要不要别人复核；或差点自审自合；或复核变成橡皮图章/拖慢简单改动
+enforced: null
 ---
 
 # 同行评审

@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [higher-order-factory]
 trigger: 通用工厂只服务最简场景；或例外只能绕过工厂；或想让用户注入 before/after 却不知怎么切
+enforced: null
 ---
 # 高阶工厂
 ## 上下文

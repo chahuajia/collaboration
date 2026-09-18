@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [law-three-tiers]
 trigger: 所有规则平级太僵或太随意；或用技能挑战约定；或不确定约定/工作流/技能谁改谁
+enforced: null
 ---
 
 # 三层法律结构

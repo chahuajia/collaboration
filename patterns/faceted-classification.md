@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [faceted-classification]
 trigger: 只能按路径找条目；或想按领域/状态横切却没标签；或标签只标了一个维度
+enforced: null
 ---
 
 # 分面分类

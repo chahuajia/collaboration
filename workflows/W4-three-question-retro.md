@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [W4]
 trigger: 复杂任务刚结束要沉淀；或复盘只有反思没有行动项
+enforced: null
 ---
 
 # W4 复盘三问

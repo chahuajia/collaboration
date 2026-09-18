@@ -9,6 +9,7 @@ source: Rust RFC 流程
 aliases: [rfc-process]
 trigger: 约定级变更要不要走 RFC；或怕快速合并漏反对意见；或讨论散不开收不拢
 provenance: 与 [[W7-rfc-process]] 重叠 ≥50% —— 2026-09-16 代谢：退出路由索引，保留文件作基因
+enforced: null
 ---
 
 # RFC 流程（已休眠）

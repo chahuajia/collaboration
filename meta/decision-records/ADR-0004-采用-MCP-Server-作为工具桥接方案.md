@@ -7,6 +7,7 @@ author: <待填>
 created: 2026-09-15
 updated: 2026-09-15
 aliases: [ADR-0004]
+enforced: null
 ---
 
 # ADR-0004 采用 MCP Server 作为工具桥接方案

@@ -11,6 +11,7 @@ aliases:
   - P-extreme-cluster
 trigger: 无人托管要极端集群；压测 KB 却只涨测试；子代理卡住；集群空转；主轴/队列积压任务；或用业务仓双轴压 KB
 provenance: 2026-09-17→v7 收口≠停派；v8 基础设施——worktree 隔离 + 回执契约 + 派出会计（N 派=N 收）+ 沉默即失败；v9 冷启动分级——按实测吞吐缩尺，勿为「最大规模」负优化
+enforced: null
 ---
 # 极端无人托管集群：每 tick 门禁
 

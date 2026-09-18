@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S15
 trigger: 从 const 派生联合类型重复；或 typeof X[keyof typeof X] 写烦了
+enforced: null
 ---
 
 # S15 TS 类型工厂

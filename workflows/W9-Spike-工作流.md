@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - W9
 trigger: 需求不清写不出测试；或强行 TDD 怕失真
+enforced: null
 ---
 
 # W9 Spike 工作流

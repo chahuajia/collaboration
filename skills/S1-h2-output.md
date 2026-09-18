@@ -11,6 +11,7 @@ aliases: [S1]
 updated: 2026-09-17
 provenance: 2026-09-16 吸收 A1-output-format —— 两条讲的是同一件事（H2 输出），逐字重复
 trigger: 回答格式不统一；或不知该不该用 H2 起头
+enforced: null
 ---
 
 # S1 H2 输出

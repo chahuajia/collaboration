@@ -35,6 +35,7 @@
 | [[patterns/pattern-language]] | 建筑（Alexander） | 条目五段式格式 |
 | [[patterns/peer-review]] | 学术同行评审 | 复核机制 |
 | [[patterns/policy-without-mechanism]] | 人机协作实践 | 无机制的政策是负优化（政策通胀 / 活动≠产出） |
+| [[patterns/multi-portal-capability-gate]] | 人机协作实践 | 多门户 × 能力门禁（错误端放错能力=拒收） |
 | [[patterns/pressure-routing]] | 人机协作实践 | L1/L2/L3 压测路由与成功判据 |
 | [[patterns/project-evidence-vs-kb-ledger]] | 人机协作实践 | 项目证据 vs KB 账本分层 |
 | [[patterns/qian-systems-engineering]] | 钱学森《系统工程》 | 总体设计部 |

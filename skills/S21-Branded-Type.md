@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S21
 trigger: 两个 string 语义不同却能互赋；或要 branded 区分值对象
+enforced: null
 ---
 
 # S21 Branded Type

@@ -11,6 +11,7 @@ aliases:
   - P-ledger
 trigger: 项目日志要不要进 evolution-log / interceptions；或担心巨量轮次报告淹没 KB 账本
 provenance: evolutionary 0→7 复盘——meta/evolution-log 与 interceptions 行级证据几乎全绑换电压测，读起来像项目日记进了公共库
+enforced: null
 ---
 
 # 项目证据 vs KB 账本

@@ -13,6 +13,7 @@ applies-to:
 supersedes: null
 provenance: 跨对话上下文反复丢失——把"当前进度"混进知识库会稀释长期条目
 trigger: 跨对话要续进度；或怕把临时状态混进知识库
+enforced: null
 ---
 
 

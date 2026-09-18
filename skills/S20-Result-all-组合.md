@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S20
 trigger: 多个 Result 要组合；或手动 if ok 冗长/用 as 绕过
+enforced: null
 ---
 
 # S20 Result.all 组合

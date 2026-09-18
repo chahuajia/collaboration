@@ -9,6 +9,7 @@ source: 六边形架构 + 依赖倒置
 aliases: [how-as-injected-function]
 trigger: 领域要算哈希却不能 import crypto；或差点把算哈希拆成两步端口；或想在领域里重写一份算法
 provenance: collab apply 的内容哈希 —— 领域既不能 import node:crypto，又不能把"算哈希"拆成两步推迟到外层
+enforced: null
 ---
 
 # How 以函数注入

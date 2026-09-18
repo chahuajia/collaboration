@@ -8,6 +8,7 @@ updated: 2026-09-15
 author: heiniao
 aliases: [parse-dont-validate]
 trigger: 边界上拿 raw/unknown 做校验；或领域层在解析字符串协议
+enforced: null
 ---
 # Parse, don't validate
 ## 上下文

@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [knowledge-lifecycle]
 trigger: 把对话/WM/KB 想成互斥三态；或觉得做完一层才能做下一层；或分不清各知识实体怎么互相喂养
+enforced: null
 ---
 # 知识的生态循环
 ## 上下文

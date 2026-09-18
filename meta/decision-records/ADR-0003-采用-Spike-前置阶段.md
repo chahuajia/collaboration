@@ -7,6 +7,7 @@ author: <待填>
 created: 2026-09-15
 updated: 2026-09-15
 aliases: [ADR-0003]
+enforced: null
 ---
 # ADR-0003 采用 Spike 前置阶段
 ## 背景

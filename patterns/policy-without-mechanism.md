@@ -12,6 +12,7 @@ aliases:
   - P-neg-opt
 trigger: 加了规则/版本/门禁却更慢；优化像负优化；政策很多基础设施没有；docs 与派工热闹 feat 不涨
 provenance: 2026-09-18 evo-collab-extreme——条文迭代快于 worktree/回执/会计落地，集群净效率低于单主轴
+enforced: null
 ---
 
 # 无机制的政策是负优化

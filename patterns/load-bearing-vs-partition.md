@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [load-bearing-vs-partition]
 trigger: 不确定改的是约定还是技能；或把技能当承重墙改不动；或约定被当隔断随便改
+enforced: null
 ---
 
 # 承重墙 vs 隔断

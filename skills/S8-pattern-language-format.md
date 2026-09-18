@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S8]
 trigger: 写条目只有方案不知何时用；或缺上下文/反面读者看不出边界
+enforced: null
 ---
 
 

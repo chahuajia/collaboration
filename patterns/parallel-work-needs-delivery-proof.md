@@ -11,6 +11,7 @@ aliases:
 trigger: 要同时推进多件事、考虑派子 agent 或并行工作流时
 anti-trigger: 单线程串行能做完的事 —— 并行只增加协调开销
 provenance: 2026-09-16 派了 2 个子 agent 空转；2026-09-18 补 Return contract + N派=N收
+enforced: null
 ---
 
 # 并行不是分派，是让每一份分派都能被确认到达

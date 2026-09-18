@@ -14,6 +14,7 @@ supersedes:
 author: heiniao
 aliases: [S5]
 trigger: 用 -1/0,0 当无值；或类型分不清哨兵与真值
+enforced: null
 ---
 
 # S5 哨兵值替换为 null

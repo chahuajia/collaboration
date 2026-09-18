@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S14
 trigger: Issue 用 DTO 丢行为；或散落 severity 字面量
+enforced: null
 ---
 
 # S14 Issue 值对象

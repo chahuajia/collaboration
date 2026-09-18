@@ -67,9 +67,12 @@
 | **FE∥BE 多 agent 工作区怎么划 / 切片太碎** | [[S36]]（路径沙箱 + 加厚 brief；未达门槛不拆仓） |
 | **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执** | [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
 | **加了规则反而更慢 / 政策很多不落地 / docs 热闹 feat 不涨** | [[patterns/policy-without-mechanism]] → 先装机制再写门禁；对照 [[patterns/pressure-routing]] · [[patterns/project-evidence-vs-kb-ledger]] |
+| **四端角色串味 / 错端放审批权**（总后台≠运营商≠商家≠电池） | [[patterns/multi-portal-capability-gate]]（错误端放错能力=拒收） |
 | **前后端仓权限分离怎么协同** | [[S36]]（契约仓 + 中立编排 WM） |
 | **Next 全 CSR / 前端也要 DDD** | [[patterns/frontend-ddd-rsc]] |
 | **跨包 import 像有问题（mall→commerce）** | [[patterns/shared-kernel-across-bc]]（先 `mvn compile`；再问是否共享内核） |
+| **要删/降级一条条目**（0 引用、说不清拦住了什么） | `collab retire <id> --dormant --reason "<过时\|重复\|表达差\|未成熟>: <证据>"` → [[meta/pruning-policy]] |
+| **某条已被测试/工具固化，不必再被读** | `collab retire <id> --enforced <路径> --confirm`（**毕业**，退出路由索引）→ [[ADR-0011]] |
 
 ## 协作规则（摘要）
 

@@ -13,6 +13,7 @@ aliases:
   - A17
 provenance: 2026-09-16 从 agreements/ 迁入 integrations/ —— 它是对话式 AI 的适配层，不是跨环境不变的协作规则
 trigger: ChatGPT 输出格式乱难复制；或文件边界/包裹层分不清
+enforced: null
 ---
 # chatgpt-like：输出格式约定
 

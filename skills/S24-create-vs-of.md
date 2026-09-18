@@ -14,6 +14,7 @@ author: heiniao
 aliases:
   - S24
 trigger: create/of 命名混乱；或不知工厂会不会失败
+enforced: null
 ---
 
 # S24 create vs of

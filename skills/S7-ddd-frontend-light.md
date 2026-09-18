@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S7]
 trigger: 前端要上 DDD 怕过度设计；或不知后端战术怎么映射
+enforced: null
 ---
 
 # S7 DDD 前端轻量化落地

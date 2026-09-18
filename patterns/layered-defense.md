@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [layered-defense]
 trigger: 只在一层做防护就觉得够了；或同一检查在多层重复；或不知道编译期/启动期/请求期该拦什么
+enforced: null
 ---
 
 # 分层防御

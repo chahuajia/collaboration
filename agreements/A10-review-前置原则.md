@@ -11,6 +11,7 @@ aliases: [A10, W8, S27, review-marginal-value]
 provenance: 2026-09-16 合并 A10 / W8 / S27 / patterns/review-marginal-value —— 四条 320 行讲同一件事，是本库第一次真正的"选择"事件（见 ADR-0005）
 trigger: 要交付一批实现/产物给用户 review 之前；或发现"用户在读代码"时
 anti-trigger: 纯查询、单行修复 —— 不构成"一批产出"，走流程反而变重
+enforced: null
 ---
 
 # A10 Review 前置原则

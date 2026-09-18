@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [W3]
 trigger: 目录膨胀/模块耦合要重构；或不清业务边界怎么划
+enforced: null
 ---
 
 # W3 DDD 架构重构工作流

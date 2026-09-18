@@ -8,6 +8,7 @@ updated: 2026-09-15
 author: heiniao
 aliases: [dependency-decision]
 trigger: 不确定要不要引入依赖 / 放哪一层；或差点把框架塞进领域
+enforced: null
 ---
 
 # 依赖决策三问 + 位置三问

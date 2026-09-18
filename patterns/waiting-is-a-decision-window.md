@@ -11,6 +11,7 @@ aliases:
 trigger: 把任务交给 agent 后，犹豫"这段时间我该做什么"；或想把长任务并行化
 anti-trigger: 秒级等待（跑一条命令、写一个文件）—— 那什么都不该做
 provenance: 2026-09-16 用户提问"agent 的等待时间是真实存在的，这时用户能做些什么"
+enforced: null
 ---
 
 # 等待是决策窗口，不是空隙

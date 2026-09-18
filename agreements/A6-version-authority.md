@@ -10,6 +10,7 @@ author: heiniao
 aliases: [A6]
 trigger: 准备改条目；或不确定"这个改动要不要对方确认"
 anti-trigger: 只读书、不写库时
+enforced: null
 ---
 
 # A6 版本与修改权限

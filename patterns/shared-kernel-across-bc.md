@@ -11,6 +11,7 @@ aliases:
   - P-shared-kernel
 trigger: 跨包 import 像有问题（如 mall→commerce）；或不确定跨 BC 能否共用 Money/Account/Ledger
 provenance: 2026-09-17 IDE/架构疑问 mall import commerce
+enforced: null
 ---
 
 # 跨 BC 只依赖共享内核，不依赖对方核心聚合

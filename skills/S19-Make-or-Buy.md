@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S19
 trigger: 新问题不知引依赖还是自研；或怕盲目造轮子/堆依赖
+enforced: null
 ---
 
 # S19 Make-or-Buy（货架商品）

@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [entropy-reduction]
 trigger: 知识库只增不减开始烂；或不舍得删曾经有用的；或找一条要翻很久
+enforced: null
 ---
 
 # 熵减机制

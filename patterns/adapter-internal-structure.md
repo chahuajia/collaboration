@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [adapter-internal-structure]
 trigger: 不知道 commands/lib 该放哪一层；或想把 CLI 工具塞进 src 顶层；或担心未来 HTTP 和 commands 抢名
+enforced: null
 ---
 # 适配器内部结构自由
 ## 上下文

@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S3]
 trigger: env 为空静默降级；或配置错误到运行时才爆
+enforced: null
 ---
 
 # S3 环境变量 fail-fast 校验

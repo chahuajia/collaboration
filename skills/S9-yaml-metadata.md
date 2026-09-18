@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S9]
 trigger: 条目多了只能按路径翻；或要按域/状态横切检索
+enforced: null
 ---
 
 # S9 YAML 元数据

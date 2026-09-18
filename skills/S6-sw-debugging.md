@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S6
 trigger: 改代码页面不变怀疑 SW；或不清怎么关掉缓存
+enforced: null
 ---
 
 # S6 Service Worker 调试

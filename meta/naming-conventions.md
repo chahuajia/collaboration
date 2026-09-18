@@ -61,6 +61,8 @@ aliases: [naming-conventions]
 | `author` | 是 | git email 或 `heiniao` |
 | `aliases` | 建议 | 填 `[<id>]`，让 Obsidian 也能按 ID 解析双链 |
 | `provenance` | 建议 | **这条目来自哪次真实事故/需求**。写不出来，说明它不该存在（见 pruning-policy） |
+| `enforced` | 是（可空） | 已把这条内容机械化的**测试/工具/规则路径**。非空 = 已毕业，**退出路由索引**（见 [[ADR-0011]]）。不知道就填 `null` |
+| `falsifier` | 入库时 | 不读它，模型会照着**本地哪个模式**写错？必须是**模仿类**反事实 —— 不是"模型不知道 X"（D 实验六跑已证伪后者） |
 | `applies-to` / `domains` / `supersedes` | 按类型 | 见各自的模板 |
 
 ## 模板位置

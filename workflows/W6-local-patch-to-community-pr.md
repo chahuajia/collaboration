@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [W6]
 trigger: 本地洞见要贡献回社区；或不知 patch→PR 怎么走
+enforced: null
 ---
 
 # W6 从本地 patch 到社区 PR

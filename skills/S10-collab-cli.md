@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S10]
 trigger: 要用 collab CLI 落盘/校验；或不想给 AI push 权限
+enforced: null
 ---
 
 # S10 collab CLI 使用

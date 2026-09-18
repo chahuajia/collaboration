@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [layer-vs-context]
 trigger: 把 domain 层当成限界上下文；或分不清层和上下文；或跨包关系用上下层说话
+enforced: null
 ---
 
 # 层 ≠ 上下文

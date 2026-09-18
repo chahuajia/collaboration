@@ -14,6 +14,7 @@ author: heiniao
 aliases:
   - S35
 trigger: const enum 的 key/value 空间搞混；或想 value as key 断言
+enforced: null
 ---
 
 # S35 key/value 空间区分

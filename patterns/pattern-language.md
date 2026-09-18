@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [pattern-language]
 trigger: 只写怎么做却说不清适用场景；或缺反面案例；或条目读起来像定义不像模式
+enforced: null
 ---
 
 # 模式语言

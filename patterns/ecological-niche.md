@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [ecological-niche]
 trigger: 技能什么时候都能用；或条目只写正面不写反面；或误用比没有更糟却说不清边界
+enforced: null
 ---
 
 

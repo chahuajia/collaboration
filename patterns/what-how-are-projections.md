@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [what-how-are-projections]
 trigger: 纠结这是 What 还是 How；或把意图/实现当成绝对两类；或边界一换就分不清该站哪边
+enforced: null
 ---
 
 # What / How 是同一事物的两个投影

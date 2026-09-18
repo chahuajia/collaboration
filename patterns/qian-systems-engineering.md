@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [qian-systems-engineering]
 trigger: 每个部件差不多能用但整体没人负责；或只追局部最优；或拆太碎看不见整体
+enforced: null
 ---
 
 # 钱学森系统工程思想

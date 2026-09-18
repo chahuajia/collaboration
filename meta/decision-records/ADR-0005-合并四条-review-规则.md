@@ -8,6 +8,7 @@ created: 2026-09-16
 updated: 2026-09-16
 aliases: [ADR-0005]
 provenance: 五份外部评估独立指出 A10 / W8 / S27 / review-marginal-value 四条讲同一件事（320 行）
+enforced: null
 ---
 
 # ADR-0005 合并四条 review 规则为 A10

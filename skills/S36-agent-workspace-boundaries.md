@@ -16,6 +16,7 @@ applies-to:
   - monorepo
 provenance: evolutionary phase-7 FE∥BE；极端无人托管；v4 吞吐：加厚 brief / 分仓契约 / 目标测
 trigger: FE∥BE 多 agent 工作区怎么划；或不想为此拆仓却怕抢文件；或前后端仓权限分离怎么协同；或集群切片太碎推进慢
+enforced: null
 ---
 
 # S36 Agent 工作区边界（FE/BE 集群）

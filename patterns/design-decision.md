@@ -8,6 +8,7 @@ source: 工程方法论（源自 A8 设计不是可选项）
 author: heiniao
 aliases: [design-decision]
 trigger: 要设计一个新结构或抽象；或说不清不做会怎样/收益/成本
+enforced: null
 ---
 
 # 设计决策三问

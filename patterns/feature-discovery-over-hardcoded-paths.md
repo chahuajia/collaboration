@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [feature-discovery-over-hardcoded-paths]
 trigger: 用 ../../.. 找项目根；或目录一挪路径就崩；或硬编码仓库/配置路径
+enforced: null
 ---
 
 # 特征发现优于硬编码路径

@@ -10,6 +10,7 @@ supersedes: null
 author: heiniao
 aliases: [S11]
 trigger: 全量 fork 噪音大；或 AI 不知该为谁的侧重点优化
+enforced: null
 ---
 # S11 Profile 声明侧重点
 ## 上下文

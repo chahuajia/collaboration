@@ -7,6 +7,7 @@ created: 2026-09-15
 updated: 2026-09-15
 author: heiniao
 aliases: [ADR-0002]
+enforced: null
 ---
 
 # ADR-0002 采用社区化分发模型

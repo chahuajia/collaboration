@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T00:59:34.824Z",
+  "generatedAt": "2026-09-18T14:21:53.861Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -88,6 +88,15 @@
       "status": "accepted",
       "title": "ADR-0010 授权边界与记账",
       "path": "meta/decision-records/ADR-0010-授权边界与记账.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0011",
+      "type": "adr",
+      "status": "proposed",
+      "title": "ADR-0011 新增 `enforced`：让条目能\"毕业\"",
+      "path": "meta/decision-records/ADR-0011-新增-enforced-退出路由索引.md",
       "domains": [],
       "appliesTo": []
     },
@@ -348,16 +357,6 @@
       "trigger": "社区规范多人改却挤在主干；或 fork 永久漂移回不来；或想用投票替代讨论"
     },
     {
-      "id": "domain-purity-is-structural",
-      "type": "pattern",
-      "status": "active",
-      "title": "领域纯洁性是结构性必然，不是道德要求",
-      "path": "patterns/domain-purity-is-structural.md",
-      "domains": [],
-      "appliesTo": [],
-      "trigger": "领域层能不能碰框架；或差点把 Spring/JPA 注解标进 domain"
-    },
-    {
       "id": "ecological-niche",
       "type": "pattern",
       "status": "active",
@@ -516,6 +515,16 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "不确定改的是约定还是技能；或把技能当承重墙改不动；或约定被当隔断随便改"
+    },
+    {
+      "id": "multi-portal-capability-gate",
+      "type": "pattern",
+      "status": "active",
+      "title": "多门户 × 能力门禁",
+      "path": "patterns/multi-portal-capability-gate.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "总后台批商家；运营商批下线；店主改商城；电池运维进错端；或四端角色串味"
     },
     {
       "id": "naming-as-definition",
@@ -1442,19 +1451,20 @@
     }
   ],
   "summary": {
-    "total": 119,
+    "total": 120,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 35,
       "pattern": 50,
-      "adr": 10,
+      "adr": 11,
       "integration": 3
     },
     "byStatus": {
       "active": 106,
       "draft": 3,
-      "accepted": 10
+      "accepted": 10,
+      "proposed": 1
     }
   }
 }

@@ -13,6 +13,7 @@ author: heiniao
 aliases:
   - S23
 trigger: 后写测试漏边界；或不知红→绿→重构怎么走
+enforced: null
 ---
 
 # S23 TDD 工作流

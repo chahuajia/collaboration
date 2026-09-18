@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [context-overflow-solved-by-retrieval]
 trigger: 上下文放不下就想往知识库塞；或知识库越寄越重每次全读；或分不清该寄放还是该检索
+enforced: null
 ---
 
 # 上下文溢出用检索

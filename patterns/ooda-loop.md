@@ -8,6 +8,7 @@ updated: 2026-09-17
 author: heiniao
 aliases: [ooda-loop]
 trigger: 复盘停在观察不决策；或只写"下次注意"没有行动项；或决策了却不执行更新
+enforced: null
 ---
 
 # OODA 闭环

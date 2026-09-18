@@ -8,6 +8,7 @@ updated: 2026-09-15
 author: heiniao
 aliases: [evolution-loop]
 trigger: 知识库只增不减开始腐烂；或缺变异/选择/遗传任一环；或经验只留在对话里带不走
+enforced: null
 ---
 
 # 进化闭环
