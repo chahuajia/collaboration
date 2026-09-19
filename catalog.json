@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T07:57:22.063Z",
+  "generatedAt": "2026-09-19T11:29:56.856Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -717,7 +717,7 @@
       "path": "patterns/tests-encode-assumptions.md",
       "domains": [],
       "appliesTo": [],
-      "trigger": "测试全绿但真数据/真库报错；或刚写完一条校验规则准备收工；或 fixture 与真实产物形态可能不一致"
+      "trigger": "测试全绿但真数据/真库报错；或刚写完一条校验规则准备收工；或 fixture 与真实产物形态可能不一致；或**动手/下令前核实过前提、却仍漏了一整类**"
     },
     {
       "id": "three-layer-memory",
