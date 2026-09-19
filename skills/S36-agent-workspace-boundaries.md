@@ -3,7 +3,7 @@ id: S36
 type: skill
 status: active
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-19
 author: heiniao
 aliases:
   - S36
@@ -47,7 +47,26 @@ enforced: null
 | **L0 约定** | `loop.md` 写明：FE 只碰 `frontend/`；BE 只碰 `backend/`（+ 约定包路径） | 每个并行 phase **立即** |
 | **L1 WM 沙箱** | `working-memory/agents/fe/` · `be/` 放该 agent 的 `loop.md` / 笔记（**不**放业务源码） | 下一次并行起强制 |
 | **L2 git** | `wip/pN-fe-*` / `wip/pN-be-*`；父会话 merge | 已有分支约定时强制 |
-| **L3 worktree** | 每**写者**一棵工作树（或工具链等价隔离 checkout） | **≥2 写者并行时默认**（见 [[patterns/extreme-unattended-cluster]] v8）；不再等「冲突频繁再上」 |
+| **L3 worktree** | 每**写者**一棵工作树（或工具链等价隔离 checkout）。**用前重新基线**（见下） | **≥2 写者并行时默认**（见 [[patterns/extreme-unattended-cluster]] v8）；不再等「冲突频繁再上」 |
+
+### worktree 的固有代价：它不是"副本"，是"某个 commit 的检出"
+
+**worktree 看不见分岔之后的任何提交。** 复用旧 worktree 而不重新基线时，
+子代理拿到的是**过期快照** —— 旧代码、旧 `working-memory/`、旧契约，
+而且**它不会报错**，只会照着旧的做。
+
+两类看似无关的症状，同一个根因：
+
+| 症状 | 真相 |
+| :--- | :--- |
+| 「某文件明明刚写好，这个 worktree 里却找不到」 | 该 worktree 停在更早的 commit |
+| 「旧 worktree 硬 merge 会痛」（如缺 enum 内嵌重构） | **同上** —— 基线过期 |
+
+⇒ **重新基线是派工前置的一部分，不是可选的准备动作。**
+
+```bash
+git -C <worktree> reset --hard $(git -C <主树> rev-parse HEAD)
+```
 
 ### 分仓（权限分离）时
 
@@ -93,6 +112,10 @@ working-memory/agents/<role>/
 - 不要用「再派一个 agent」代替写清路径边界。
 - 不要分仓后仍让 FE 克隆 BE 源码当「类型来源」。
 - 不要把半截岛当成一次集群交付。
+- **不要直接复用旧 worktree 而不重新基线** —— 它看不见分岔之后的提交，
+  子代理会在一份**过期快照**上工作，而且不会报错。
+- **不要把 worktree 当成"主工作区的副本"** —— 它是"某个 commit 的检出"。
+  这个区别在它过期时才显形，而那时代价已经付了。
 
 ## 关联
 

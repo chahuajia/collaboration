@@ -65,7 +65,7 @@
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
 | **FE∥BE 多 agent 工作区怎么划 / 切片太碎** | [[S36]]（路径沙箱 + 加厚 brief；未达门槛不拆仓） |
-| **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执** | [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
+| **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执 / worktree 里找不到刚写的文件** | [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计；**派工前置两条：基线绿 + worktree 重新基线**）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
 | **加了规则反而更慢 / 政策很多不落地 / docs 热闹 feat 不涨** | [[patterns/policy-without-mechanism]] → 先装机制再写门禁；对照 [[patterns/pressure-routing]] · [[patterns/project-evidence-vs-kb-ledger]] |
 | **四端角色串味 / 错端放审批权**（总后台≠运营商≠商家≠电池） | [[patterns/multi-portal-capability-gate]]（错误端放错能力=拒收） |
 | **前后端仓权限分离怎么协同** | [[S36]]（契约仓 + 中立编排 WM） |
