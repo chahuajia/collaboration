@@ -60,6 +60,11 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 | 2026-09-17 | [[S34-边界层与领域的错误翻译]]             | 差点继续用 `msg.startsWith("unknown station")` 在 Controller 判 404 | 改仓储文案即错 HTTP；边界重复「解析」领域消息，S34 反面   | 第 14 轮：`UnknownStationException` + `SwapApiErrorTranslator`；41 测绿。见 `evolutionary/specs/round-14-report.md` T4               |
 | 2026-09-17 | [[S34-边界层与领域的错误翻译]] | 差点复用站级/笼统 Commerce 翻译器把 ENTITLEMENT_* 映射成 409，或用 message 嗅探判状态码 | 权益用户不匹配被客户端当冲突重试；改文案即错 HTTP；S34 反面 | evo-collab-extreme 切片4：EntitledSwapApiErrorTranslator 按 DomainErrorCode→422/409；EntitledSwapControllerTest 3/0；evolutionary 90b4e89+89426a7 |
 | 2026-09-18 | [[patterns/policy-without-mechanism]] | 差点继续只堆 extreme v5–v7 条文、不装 worktree/回执/会计，并宣称「已按最新门禁优化」 | 集群净吞吐低于单主轴；docs/派工假繁荣；feat 滞后 | evo-collab-extreme 复盘；v8 起机制入库；见 `patterns/policy-without-mechanism.md` |
+| 2026-09-19 | [[patterns/tests-encode-assumptions]] | 差点把 `PerformSwap` 注释里的「同事务双写」当成已实现 —— 全仓**无一处 `@Transactional`**，两次写各在各的事务 | 日志写失败时站库存**已提交**：电池被取走、换电日志没有记录。**数据错且静默** | swap `26b4aba`：先写 `PerformSwapAtomicityTest`（红）证明站未回滚，再加事务边界转绿 |
+| 2026-09-19 | [[patterns/domain-purity-is-structural]] | 差点把 `@Transactional` 直接打到用例 `PerformSwap` 上 | `DomainFrameworkFreeTest` 会拒；且事务范围被错划成「一次 HTTP 请求」，换驱动方（CLI/消息）静默失去原子性 | swap `26b4aba`：事务边界放 `interfaces/TransactionalPerformSwap`，用例保持零框架 |
+| 2026-09-19 | [[patterns/derivation-over-copy]] | 差点只改类型、留下**两份** `AccrualView`（网关一份、领域一份，各自 `status: string`） | 两份真相必然分叉 —— 那正是漂移能发生的原因；下次改一边忘另一边 | settlement `e98dc3b`：网关改为只声明 `AccrualDto`，类型从领域派生 |
+| 2026-09-19 | [[S33-测试数据的契约一致性]] | 差点继续用 `status: "ACCRUED"` 当测试数据 —— 后端枚举是 `PENDING/SETTLED/REVERSED`，**从无 ACCRUED** | 契约从类型上丢失；测试「绿」但不反映真实契约；同类漂移会持续发生 | settlement `e98dc3b`：`status` 收紧为 `AccrualStatus` 后**编译器当场抓出**网关也在裸转 |
+| 2026-09-19 | [[patterns/parse-dont-validate]] | 差点继续 `String(r.status ?? "")` —— 未知状态**静默变成空串**往下传 | 服务端契约变了前端不炸，直到 UI 上显示空白才被发现；排查成本转嫁给最下游 | settlement `e98dc3b`：`parseAccrualStatus` 未知值当场抛；测试断言 `"ACCRUED"` 现在会 throw |
 
 ### 判据
 

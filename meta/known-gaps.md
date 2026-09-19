@@ -65,6 +65,7 @@ provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有�
 | 2026-09-18 | ~~集群派工未默认建 worktree~~ | evo-collab-extreme 同树四写 | S36 曾写「冲突频繁再上」 | **已关闭**（2026-09-18）：v8/v9 + wave20–22 均独立 worktree 写进 loop | — |
 | 2026-09-18 | ~~多门户×审批权无条目~~（总后台批商家 ≠ 运营商批下线 ≠ 店主≠电池运维） | evo 四端校正；用户纠角色串味 | catalog「portal/角色/入驻」→ 无；extreme 只治空转 | **已关闭**（2026-09-18）：[[patterns/multi-portal-capability-gate]] + AGENTS 症状行 | — |
 | 2026-09-19 | **「种子时机 / 初始化顺序」无条目** —— bean 构造时读数据的组件，其数据源必须在**同一时机**就绪；`ApplicationRunner` 晚于所有 bean 创建 | 接手 evo 做 operator JPA 化时撞到（`OrgAuthorization` 构造时快照组织表） | 症状表查「种子/初始化/启动/bean/构造/生命周期」→ **无行**；catalog 关键词 → 命中 `self-bootstrapping-requires-fixed-core`（**假阳性**：讲的是「一切皆 X」的递归自举，撞上它先例表里的 Bean 一词）与 `layered-defense`（讲编译/启动/请求三层防御，无关） | **不开条目**：判据是「不读它，称职模型会做错吗」——本项目代码里已有注释 + `HANDOVER.md` 明写，且这是本项目种子惯例，属**项目决定不是通用 pattern**。按 [[patterns/project-evidence-vs-kb-ledger]] 留业务仓 | — |
+| 2026-09-19 | **候选池只进不出** —— `interceptions-candidates` 有入口（「L2 撞墙先记候选」）**没有出口**：「W4 通过后 harvest」缺触发机制，于是候选一直挂着 | 2026-09-19 自审：连着几轮都在往候选池加行，**没跑过一次 W4** | 读 `meta/interceptions.md` 的流程约定 → 查到「W4 通过后再追加本表一行」，但**没有任何东西触发 W4** | **开**：[[patterns/policy-without-mechanism]] 实例 —— 用其三问自查：① 违反能否 ≤60s 观察？**能**（候选停在「待 W4」）② 发现后有强制动作？**没有** ③ 执行面具备？**没有** | 有可复现的触发（如 `collab` 报告候选龄期，或在候选超过 N 条时阻断） |
 
 ## 判据
 
