@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T17:42:43.498Z",
+  "generatedAt": "2026-09-19T00:46:22.907Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -285,6 +285,16 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "分层约束写了一长串禁止 import；或新增依赖时忘了补黑名单；或不确定某层到底能碰什么"
+    },
+    {
+      "id": "claims-without-enforcement",
+      "type": "pattern",
+      "status": "active",
+      "title": "声称需要被强制，否则会静默漂移",
+      "path": "patterns/claims-without-enforcement.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "读到一个注释/javadoc 声称跨切面属性（同事务、线程安全、幂等、已校验、有序）；或要基于这类声称往下写；或自己正想这么写注释"
     },
     {
       "id": "context-overflow-solved-by-retrieval",
@@ -1429,17 +1439,17 @@
     }
   ],
   "summary": {
-    "total": 119,
+    "total": 120,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 51,
+      "pattern": 52,
       "adr": 11,
       "integration": 3
     },
     "byStatus": {
-      "active": 105,
+      "active": 106,
       "draft": 3,
       "accepted": 10,
       "proposed": 1

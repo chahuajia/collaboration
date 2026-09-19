@@ -5,6 +5,7 @@
 | [[patterns/adapter-internal-structure]] | 六边形架构 | 适配器内部结构自由 |
 | [[patterns/allowlist-over-denylist]] | 安全工程 | 白名单优于黑名单 |
 | [[patterns/catalyst-nodes]] | 化学（催化剂） | 杠杆节点 |
+| [[patterns/claims-without-enforcement]] | 形式化方法 + 实测（PerformSwap 事务） | 注释声称的跨切面属性若无强制，会静默漂移 |
 | [[patterns/context-overflow-solved-by-retrieval]] | 数据库 / 检索 | 溢出的解法是检索，不是寄放 |
 | [[patterns/cross-domain-borrowing]] | A9 | 跨域借鉴五步法 |
 | [[patterns/delete-beats-automate]] | 软件工程 + 实测（手写计数腐烂） | 先问该不该存在，再问怎么保持新鲜 |

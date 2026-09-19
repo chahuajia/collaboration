@@ -77,6 +77,7 @@
 | **新条目要入库**（draft → active） | 必须填 `falsifier`：**不读它，模型会照着本地哪个模式写错？** 写不出 → 不该入库（`FALSIFIER_REQUIRED`，2026-09-19 起） |
 | **单测全绿但真库/真数据报错** | [[patterns/tests-encode-assumptions]] —— 先怀疑 fixture 与真产物的形态差异，**不要先怀疑真产物**；拿真产物跑一遍再收工 |
 | **文档里的数/清单总要手工同步**（想写生成器或新鲜度检查） | [[patterns/delete-beats-automate]] —— **先问它该不该在**，再问怎么保持新鲜；多数该删（删掉不腐烂，生成器要维护） |
+| **注释/javadoc 声称了跨切面属性**（同事务 / 线程安全 / 幂等 / 已校验） | [[patterns/claims-without-enforcement]] —— 一条 `grep` 查谁在强制它；无强制 → **先写红测试证明它坏了**，再加机制 |
 
 ## 协作规则（摘要）
 
