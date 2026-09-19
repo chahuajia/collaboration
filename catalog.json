@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T00:46:22.907Z",
+  "generatedAt": "2026-09-19T01:15:46.669Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -265,6 +265,18 @@
         "cli-agent"
       ],
       "trigger": "AI 有写权限不知边界；或不该 commit/push 却做了"
+    },
+    {
+      "id": "usage-guide",
+      "type": "integration",
+      "status": "active",
+      "title": "COLLABORATION 使用指南",
+      "path": "integrations/usage-guide.md",
+      "domains": [],
+      "appliesTo": [
+        "all"
+      ],
+      "trigger": "第一次用 collaboration；不知道该读什么/不该读什么；不确定某任务该不该查 KB；想给别的项目/别的 agent 接入"
     },
     {
       "id": "adapter-internal-structure",
@@ -1439,17 +1451,17 @@
     }
   ],
   "summary": {
-    "total": 120,
+    "total": 121,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
       "pattern": 52,
       "adr": 11,
-      "integration": 3
+      "integration": 4
     },
     "byStatus": {
-      "active": 106,
+      "active": 107,
       "draft": 3,
       "accepted": 10,
       "proposed": 1
