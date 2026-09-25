@@ -56,7 +56,7 @@ author: heiniao
 
 ```
 ❌ 修：README 写「模式 40 条」→ 改成「模式 52 条」   （下次照烂）
-⚠️ 生成：collab stats 生成这一段                       （生成器要维护）
+⚠️ 生成：collab stats 生成这一段（曾计划的方案，已否决）  （生成器要维护）
 ✅ 删：把「模式 40 条」删掉，改为「跑 collab catalog」  （不会烂）
 ```
 

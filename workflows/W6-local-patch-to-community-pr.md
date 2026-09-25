@@ -29,7 +29,7 @@ enforced: null
 
 1. **AI 输出 patch**：新文件内容或 unified diff，落到本地 `COLLABORATION/`。
 2. **用户本地确认**：
-   - 运行 `collab propose "<描述>"`。
+   - 运行 `collab propose "<描述>"`（`collab propose` **尚未实现** —— 见 [[S10-collab-cli]]）。
    - CLI 生成 commit（含 YAML 校验、双向链接检查）。
 3. **用户 push 到个人 fork**：
    - `collab push`。
