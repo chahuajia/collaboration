@@ -225,5 +225,40 @@ known-gaps.md      条目没能回答什么 → 决定补哪条
 
 ---
 
+## 十、它现在是什么状态（可安装的部分）
+
+**`@chahuajia/collab-cli@0.5.0`** —— 能用、有证据，但**还没被第二个项目验证过**。
+
+```bash
+npx --yes @chahuajia/collab-cli@0.5.0 --version
+npx --yes @chahuajia/collab-cli@0.5.0 --dir <你的知识库> validate
+```
+
+> **为什么不是 1.0**：核心命令稳定（734 个测试+53 文件全绿），
+> 但"读了到底有没有用"**至今不可判定**——唯一干净的对照实验测出零差异。
+> 版本号里应当写着这件事。
+
+### 三条接入通道（MCP 只是其中一条）
+
+| 通道 | 适合谁 | 代价 |
+| :--- | :--- | :--- |
+| **MCP** | 支持 MCP 的客户端（Codex / Claude / Cursor） | 注册一次 |
+| **CLI 直调** | 有 shell 的 agent | 无 |
+| **粘贴协议** | 无 IO 的聊天窗口 | 人工粘一次 |
+
+```bash
+codex mcp add collab -- node <repo>/bin/collab.js mcp --dir <你的知识库>
+```
+
+**MCP 只暴露 6 个只读工具**（`catalog` / `read` / `search` / `validate` / `parse` / `apply_plan`）——
+**故意没有 commit / push**。
+
+这一点值得单独说：**"AI 不 commit、不 push"不是写在文档里的叮嘱，而是工具表里不存在那一项。**
+最有效的规则，是让违反它在物理上不可能。
+
+### 它适合接在哪
+
+一个 MCP server 指向**唯一一个**知识库，所有项目共用 —— 项目侧不需要各建一份 KB。
+（真的需要独立 KB 时才 `init --profile kb`；多数情况是 fork，不是 init。）
 *整套东西 —— 包括上面每一个失败 —— 都在仓库里。*
 *想搬走的话，从两本账本和一扇会红的门开始，不要从 126 条开始。*

@@ -13,3 +13,4 @@
 | [[ADR-0009]]                       | id 是不可变快照                | 2026-09-16 | accepted |
 | [[ADR-0010]]                         | 授权边界与记账（三档）             | 2026-09-16 | accepted |
 | [[ADR-0011]]                         | 新增 enforced：让条目能"毕业"    | 2026-09-18 | proposed |
+| [[ADR-0012]] | 条目边界改用自描述 frontmatter | 2026-09-26 | accepted |

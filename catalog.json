@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T11:45:55.756Z",
+  "generatedAt": "2026-09-25T16:57:10.462Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -97,6 +97,15 @@
       "status": "proposed",
       "title": "ADR-0011 新增 `enforced`：让条目能\"毕业\"",
       "path": "meta/decision-records/ADR-0011-新增-enforced-退出路由索引.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
+      "id": "ADR-0012",
+      "type": "adr",
+      "status": "accepted",
+      "title": "ADR-0012 条目边界改用自描述 frontmatter",
+      "path": "meta/decision-records/ADR-0012-条目边界改用自描述-frontmatter.md",
       "domains": [],
       "appliesTo": []
     },
@@ -1461,19 +1470,19 @@
     }
   ],
   "summary": {
-    "total": 122,
+    "total": 123,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
       "pattern": 52,
-      "adr": 11,
+      "adr": 12,
       "integration": 5
     },
     "byStatus": {
       "active": 108,
       "draft": 3,
-      "accepted": 10,
+      "accepted": 11,
       "proposed": 1
     }
   }

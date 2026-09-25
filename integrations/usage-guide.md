@@ -109,6 +109,38 @@ node $COLLAB --dir $KB retire <id> --enforced <测试路径> --confirm   # 毕�
 3. **只有新条目有 falsifier 门槛**（2026-09-19 起）；之前 115 条没有。
    这意味着**老条目的承重性未被验证过**。
 
+### 六、接入方式：MCP / CLI / 粘贴（三选一，都不是前提）
+
+**先说清 `--dir` 指向什么**：它指向 **知识库工作区（KB workspace）**，**不是任意目录**。
+判定标准只有一条：**`collab validate` 能读懂它** —— 有基座目录
+（`agreements/ workflows/ skills/ patterns/ integrations/ meta/`）与根文档。
+
+| 你想要 | 怎么得到 |
+| :--- | :--- |
+| 用**已有的**全局 KB（最常见） | 直接指向它，如 `D:\actto\front\project\collaboration_aggregate\collaboration` |
+| 造一个**空 KB** | `collab init --profile kb --dir <path>` |
+| 只给**项目侧**接入（不建 KB） | `collab init`（默认 `consumer`：生成入口 + WM 骨架 + 对全局 KB 跑校验的 wrapper） |
+
+> **不需要把它做成 collaboration 的副本。** 你只要有**一个** KB ——
+> 指向它即可。`collaboration` 是参考实现，不是前置条件。
+
+**① MCP（支持 MCP 的客户端：Codex / Claude / Cursor）**
+
+```bash
+codex mcp add collab -- node <repo>/bin/collab.js mcp --dir <KB>
+```
+
+- 暴露 **6 个只读工具**：`catalog` / `read` / `search` / `validate` / `parse` / `apply_plan`
+- **没有 commit / push** —— A7 的边界不靠叮嘱，靠**工具表里不存在那一项**
+- **新开会话才生效**；KB 路径写在注册参数里，**KB 搬家要重新注册**
+
+**② CLI 直调**（有 shell 的 agent）：`collab --dir <KB> validate` / `catalog` / `retire`
+
+**③ 粘贴协议**（无 IO 的聊天窗口）：见 [[chatgpt-paste-protocol]] → `collab parse` → `collab apply`
+
+> 三者等价，按环境选。**MCP 唯一的增量**是：不必把 `catalog.json` 塞进上下文，
+> agent 可以直接按 id 取一条。
+
 ## 反面
 
 - **不要**把它当系统提示全量加载 —— 126 条同时在场 = 没有规则（`A16`）。
