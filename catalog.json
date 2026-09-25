@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T16:57:10.462Z",
+  "generatedAt": "2026-09-25T17:21:53.619Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -546,6 +546,21 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "只在一层做防护就觉得够了；或同一检查在多层重复；或不知道编译期/启动期/请求期该拦什么"
+    },
+    {
+      "id": "lenient-parsing",
+      "type": "pattern",
+      "status": "active",
+      "title": "宽容解析：对格式宽容，对语义严格",
+      "path": "patterns/lenient-parsing.md",
+      "domains": [],
+      "appliesTo": [
+        "parsing",
+        "protocol",
+        "integration"
+      ],
+      "trigger": "编写解析外部文本的代码时；或解析器拒绝了一份\"看起来对\"的输入",
+      "antiTrigger": "输入格式由本方完全控制（如内部序列化）；安全边界（如认证令牌）"
     },
     {
       "id": "load-bearing-vs-partition",
@@ -1470,17 +1485,17 @@
     }
   ],
   "summary": {
-    "total": 123,
+    "total": 124,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 52,
+      "pattern": 53,
       "adr": 12,
       "integration": 5
     },
     "byStatus": {
-      "active": 108,
+      "active": 109,
       "draft": 3,
       "accepted": 11,
       "proposed": 1

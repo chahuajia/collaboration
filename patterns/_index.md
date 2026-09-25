@@ -57,3 +57,4 @@
 | [[patterns/value-semantics]] | 工程实践 | 值同不代表语义同（原 A11） |
 | [[patterns/waiting-is-a-decision-window]] | 人机协作实践 | 等待是决策窗口，不是空隙 |
 | [[patterns/what-how-are-projections]] | 投影几何 | What / How 是同一事物的两个投影 |
+| [[lenient-parsing]] | 前端 / 工具 | 宽容解析：解析器的宽容必须来自「边界自描述」，不是逐例打补丁 |
