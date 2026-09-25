@@ -6,6 +6,7 @@
 | [[chatgpt-paste-protocol]] | 对话式 AI：粘贴交互 | AI 无 IO，靠用户传递与落盘 |
 | [[cli-agent-boundaries]] | 有 IO 的 agent：写权限边界 | AI 有权限但不 commit / 不 push |
 | [[usage-guide]] | 通用：怎么用这个库 | 该不该查 / 怎么查 / 怎么写 / 三条诚实说明 |
+| [[adoption-guide]] | 通用：接入与交接 | 该不该接（4 问） / 30 分钟起步（7 步） / 交给 agent / 交给维护者 |
 
 ## 关联
 

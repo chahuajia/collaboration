@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T11:29:56.856Z",
+  "generatedAt": "2026-09-25T11:45:55.756Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -229,6 +229,16 @@
       ],
       "trigger": "准备改条目；或不确定\"这个改动要不要对方确认\"",
       "antiTrigger": "只读书、不写库时"
+    },
+    {
+      "id": "adoption-guide",
+      "type": "integration",
+      "status": "active",
+      "title": "接入与交接指南",
+      "path": "integrations/adoption-guide.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "想把这套东西接到一个新项目；要把项目交接给新的 agent 或人；不确定该搬哪几样、先做哪一步"
     },
     {
       "id": "chatgpt-output-format",
@@ -1451,17 +1461,17 @@
     }
   ],
   "summary": {
-    "total": 121,
+    "total": 122,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
       "pattern": 52,
       "adr": 11,
-      "integration": 4
+      "integration": 5
     },
     "byStatus": {
-      "active": 107,
+      "active": 108,
       "draft": 3,
       "accepted": 10,
       "proposed": 1
