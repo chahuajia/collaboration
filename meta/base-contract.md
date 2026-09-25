@@ -3,7 +3,7 @@ id: base-contract
 type: meta
 status: active
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-26
 author: heiniao
 aliases:
   - base-contract
@@ -88,7 +88,9 @@ domains/         rfcs/           profiles/    templates/   inbox/
 **动上面任何一条 = 破坏性变更。** 必须同时具备三样，缺一不可：
 
 1. **ADR** —— 写清动机、后果、替代方案（`meta/decision-records/`）
-2. **迁移脚本** —— `scripts/migrate-*.mjs`，可重跑、可审计（见 `skills/S30-批处理脚本骨架`）
+2. **迁移脚本** —— 放**工具链仓**（`collab-cli/scripts/one-off/`），可重跑、可审计
+   （见 `skills/S30-批处理脚本骨架`）。**本仓不放脚本** —— 它保持纯文档
+   （2026-09-26 更正：原写 `scripts/migrate-*.mjs`，而脚本早已迁出本仓，指的是一个不存在的目录）
 3. **`collab validate` 归零** —— 它是唯一验收；引用面清不干净就是没改完
 
 > **不做迁移脚本的代价不是"麻烦"，是"下一个会话不知道发生过什么"。**

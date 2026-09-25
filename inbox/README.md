@@ -43,8 +43,16 @@
 
 ## 落盘工具
 
-`scripts/extract-bundle.mjs` 把 bundle 里的 `**未来文件路径**` 段落切出来，
-干跑输出清单、`--write` 输出到 `.landing/` 供人 review。落盘后本脚本可删。
+> ⚠️ **这个脚本已经不在了**（2026-09-26 更正）。
+>
+> 原文写的是"`scripts/extract-bundle.mjs` 把 bundle 里的未来文件路径段落切出来，
+> 干跑输出清单、`--write` 输出到 `.landing/` 供人 review。**落盘后本脚本可删**" ——
+> 它自己就写着会消失，而那一批 bundle 早就落完盘了。
+> 问题不在"脚本没了"，在于**这行字读起来像"仓里有这个文件"**：本仓没有 `scripts/`，
+> 属于死引用（同形问题见 [[meta/known-gaps]] 的"承诺 vs 现实"一类）。
+>
+> 落盘这条通道现在是 **`collab parse`**（AI 输出 → 条目 bundle）
+> + **`collab apply --dry-run`**（预演落盘），见 [[S10-collab-cli]]。
 
 ## 关联
 

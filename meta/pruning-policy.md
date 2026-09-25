@@ -70,13 +70,18 @@ git 是基因库——任何删除都在历史里，随时可复活。所以"退
 `checkIndexForward` 保证每条目都在自己的 `_index.md` 里，而同一张索引表里的条目
 彼此连通，于是全图成为一个连通分量。
 
-实测（`collab-cli/working-memory/reach-check.cjs`，可重跑）：
+实测（`collab-cli/scripts/one-off/reach-check.cjs`，可重跑：
+`node scripts/one-off/reach-check.cjs <collab-cli>/dist <KB>`）：
 
 | 读法 | 扫出 |
 | :--- | :--- |
 | A：`_index.md` 也是种子 | **0 条** ← 空操作，与 `known-gaps` 里"规则写了从未执行"同构 |
 | B：种子 = 根文档，**无向** | **1 条** |
 | C：种子 = 根文档，**有向** | 24 条（含 `A20`/`A21` 等明显还活着的条目） |
+
+> **读数会随库变，别当常数。** 2026-09-26 复跑：A **0** / B **1** / C **23**。
+> 其中 B 的那 1 条是**已退役**的 `catalyst-nodes` —— 所以 `collab retire --candidates`
+> 现在报"没有孤岛条目"：**退役过的条目不再算候选**，两处口径一致。
 
 **采用 B。** 理由：
 
