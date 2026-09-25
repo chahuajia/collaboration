@@ -37,4 +37,4 @@ confirmed-by: <待确认>
 
 ## 关联
 
-[[A6-version-authority]] [[cli-agent-boundaries]] [[W7-rfc-process]]
+`[[A6-version-authority]]` `[[cli-agent-boundaries]]` `[[W7-rfc-process]]`

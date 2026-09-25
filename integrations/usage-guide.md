@@ -83,8 +83,12 @@ node $COLLAB --dir $KB catalog               # 生成路由表 catalog.json
 node $COLLAB --dir $KB new <type> [id]       # 建条目（draft）
 node $COLLAB --dir $KB retire --candidates   # 列孤岛条目（只报告，不写盘）
 node $COLLAB --dir $KB retire <id> --dormant --reason "<分类>: <证据>"
-node $COLLAB --dir $KB retire <id> --enforced <测试路径> --confirm   # 毕业
+node $COLLAB --dir $KB retire <id> --enforced <测试路径> --reason "<分类>: <证据>" --confirm   # 毕业
 ```
+
+> **选项的权威是 `collab <cmd> --help`**，本文只给范式。
+> 2026-09-26 实测：`retire --enforced` 曾漏写 `--reason` 而 CLI 已强制要求它 ——
+> **照文档抄就报错**。同一份命令清单写在两处，必然漂移；这里不再复述细节。
 
 **`validate` 归零是唯一验收。** 但它验的是**结构一致性**
 （链接 / 索引 / id / 目录 / 生成物），**不验内容有没有价值**。

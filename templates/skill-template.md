@@ -24,5 +24,5 @@ provenance: <这条技能来自哪次真实事故/需求——禁止留空>
 ## 反面
 
 ## 关联
-[[W5-update-collaboration]] 
-[[W5-update-collaboration]][[A10-review-前置原则]]
+`[[W5-update-collaboration]]` 
+`[[W5-update-collaboration]]``[[A10-review-前置原则]]`

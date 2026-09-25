@@ -36,7 +36,7 @@ provenance: <这条约定来自哪次真实事故/需求——禁止留空>
 - 不加限制时，最可能出现的滥用是什么？
 
 ## 关联
-[[patterns/design-decision]] [[W5-update-collaboration]] [[A10-review-前置原则]] [[design-decision]]
+`[[patterns/design-decision]]` `[[W5-update-collaboration]]` `[[A10-review-前置原则]]` `[[design-decision]]`
 
 
 

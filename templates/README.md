@@ -13,6 +13,7 @@
 | `workflow-template.md` | 工作流 | `workflows/W<n>-<name>.md` |
 | `skill-template.md` | 技能 | `skills/S<n>-<name>.md` |
 | `pattern-template.md` | 模式 | `patterns/<kebab-name>.md` |
+| `integration-template.md` | 集成（特定环境的手册） | `integrations/<kebab-name>.md` |
 | `adr-template.md` | 结构性决策 | `meta/decision-records/ADR-<4 位>-<name>.md` |
 | `rfc-template.md` | 约定级提案 | `rfcs/RFC-<4 位>-<name>.md` |
 | `profile-template.yaml` | 个人侧重声明 | `profiles/<username>.yaml` |
