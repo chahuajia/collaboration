@@ -66,6 +66,7 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 | 2026-09-19 | [[S33-测试数据的契约一致性]] | 差点继续用 `status: "ACCRUED"` 当测试数据 —— 后端枚举是 `PENDING/SETTLED/REVERSED`，**从无 ACCRUED** | 契约从类型上丢失；测试「绿」但不反映真实契约；同类漂移会持续发生 | settlement `e98dc3b`：`status` 收紧为 `AccrualStatus` 后**编译器当场抓出**网关也在裸转 |
 | 2026-09-19 | [[patterns/parse-dont-validate]] | 差点继续 `String(r.status ?? "")` —— 未知状态**静默变成空串**往下传 | 服务端契约变了前端不炸，直到 UI 上显示空白才被发现；排查成本转嫁给最下游 | settlement `e98dc3b`：`parseAccrualStatus` 未知值当场抛；测试断言 `"ACCRUED"` 现在会 throw |
 | 2026-09-26 | [[patterns/reproducible-verification]] | 差点把"回归夹具 = `D:\下载缓存\test.txt`"留在**仓外**当验收标准（交接文档原文如此），并让"内容逐字节一致"这条不变量**挂在 git 的换行策略上**（仓库 `core.autocrlf=true`、无 `.gitattributes`） | 换人接手时验收**无法重跑**；下载目录一清，边界规则的证据只剩散文；字节级断言在不同机器上会假绿/假红 | 本轮把真产物钉进 `src/infrastructure/parsing/__tests__/fixtures/real-ai-output.txt`（SHA-256 与原文件逐字节一致）＋新建 `.gitattributes`（`-text`）＋两条测试（单元 + CLI 端到端落盘）。见 `collab-cli/working-memory/tasks/parse-adr0012/handoff.md` §W4 |
+| 2026-09-26 | [[patterns/tests-encode-assumptions]] | 差点只核实"源"就收工：模块从 `cli/lib` 移到 `application` 后，typecheck / lint / 750 测试全绿，但 **`dist/` 里仍留着旧编译产物** —— 而 `package.json` 的 `files` 收整个 `dist/`，于是**删掉的模块照样被打包发布** | 包内新旧两份同名逻辑并存（消费者 `require('.../dist/cli/lib/…')` 拿到**过期实现**）；实测已发布的 `0.5.1` 里就带着 5 个早已无源的模块 | 查包内文件列表（`npm pack @chahuajia/collab-cli@0.5.1`）发现；修法 = 构建先清 `dist`（`scripts/clean-dist.mjs`），包从 98 → **91 files**，逐项核对被移除者既无源也无引用。见 `collab-cli/working-memory/decisions.md` |
 
 ### 判据
 
