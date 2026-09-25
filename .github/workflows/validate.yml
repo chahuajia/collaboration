@@ -1,4 +1,9 @@
 # collaboration 真 CI —— 用 collab-cli 跑 validate（非手写假绿灯）
+#
+# 2026-09-26 修：这里曾写 `cache: npm` + `npm ci`，而 collab-cli **只有 pnpm-lock.yaml**
+# （没有 package-lock.json）——`actions/setup-node@v4` 在找锁文件时当场失败，
+# 后面三步全 skipped。实测 GitHub API：2026-09-25 的 5 次运行 `conclusion = failure`。
+# **"KB 文档错就该红 CI" 这句口号，当时连 CI 都没跑起来。**
 name: Validate
 
 on:
@@ -20,19 +25,33 @@ jobs:
           repository: chahuajia/collab-cli
           path: collab-cli
 
+      # pnpm 版本显式钉 major（⚠️ collab-cli 的 .github/workflows/ci.yml 里也写着同一个值）
+      - uses: pnpm/action-setup@v4
+        with:
+          version: "12"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: collab-cli/package-lock.json
+          cache: pnpm
+          cache-dependency-path: collab-cli/pnpm-lock.yaml
 
       - name: Install collab-cli
         working-directory: collab-cli
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build collab-cli
         working-directory: collab-cli
-        run: npm run build
+        run: pnpm run build
 
       - name: collab validate
         run: node collab-cli/dist/cli/index.js --dir collaboration validate
+
+      # "KB 的文档错就红 CI" —— 这两条检查读的是本仓的文档与模板，
+      # 以前只在有真库的机器上手动跑（allowlist 里的 3 条 skip）。
+      # COLLAB_REAL_KB 指向刚 checkout 的本仓，等于把仪器接上线。
+      - name: KB 文档 ↔ CLI（文档错就红）
+        working-directory: collab-cli
+        env:
+          COLLAB_REAL_KB: ${{ github.workspace }}/collaboration
+        run: pnpm exec vitest run scripts/__tests__/kb-command-docs.test.ts scripts/__tests__/kb-templates.test.ts

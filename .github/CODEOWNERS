@@ -1,9 +1,15 @@
 # 主干保护
+#
+# 2026-09-26 更正：这里曾写 @core-team / @maintainers / @any-contributor ——
+# 三个**不存在的 GitHub 团队**。CODEOWNERS 指向不存在的团队时**不报错**，只是静默不生效，
+# 于是"主干受保护"变成一句没有机制的话（[[patterns/policy-without-mechanism]]）。
+# 本仓目前是单维护者，就照实写一个人；等真的有团队了再换成团队 slug。
 
-agreements/**      @core-team
-workflows/**       @maintainers
-skills/**          @any-contributor
-patterns/**        @maintainers
-meta/**            @core-team
-rfcs/**            @core-team
-profiles/**        @any-contributor
+*                  @chahuajia
+agreements/**      @chahuajia
+workflows/**       @chahuajia
+skills/**          @chahuajia
+patterns/**        @chahuajia
+meta/**            @chahuajia
+rfcs/**            @chahuajia
+profiles/**        @chahuajia

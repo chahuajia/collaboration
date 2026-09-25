@@ -3,7 +3,7 @@ id: design-decision
 type: pattern
 status: active
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-18
 source: 工程方法论（源自 A8 设计不是可选项）
 author: heiniao
 aliases: [design-decision]

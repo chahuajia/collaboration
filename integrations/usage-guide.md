@@ -3,7 +3,7 @@ id: usage-guide
 type: integration
 status: active
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-26
 aliases:
   - usage-guide
 enforced: null

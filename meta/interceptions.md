@@ -3,7 +3,7 @@ id: interceptions
 type: meta
 status: active
 created: 2026-09-15
-updated: 2026-09-18
+updated: 2026-09-26
 author: heiniao
 provenance: ROOT 的"选择压力"缺了收益侧测量——没有它，演化只会优化"便宜"
 aliases: [interceptions]

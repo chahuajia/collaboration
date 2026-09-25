@@ -3,7 +3,7 @@ id: policy-without-mechanism
 type: pattern
 status: active
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-26
 source: 人机协作实践（extreme v5–v7 政策堆砌负吞吐）+ 外源对照（隔离/回执/会计）
 author: heiniao
 aliases:
@@ -52,6 +52,10 @@ enforced: null
 | 「6 个月未被引用 → dormant」 | **无** —— 从未执行（v4.1.3 已废，理由正是"从未测量"） |
 | 代谢配额「新增 3 → 处理 1」 | **无** —— 从未执行 |
 | 「W4 通过后 harvest」 | **无** —— 连加几轮候选却**一次 W4 都没跑过** |
+
+**2026-09-26 复查**：把 [[meta/pruning-policy]] 逐条对照仪器，又扫出 5 条同形状的
+（分代、热 / 冷分级 + `archive/`、重叠 ≥ 50%、被 ≥ 3 个 fork 引用、某分支 ≥ 7 条建子目录）
+—— 那张「机制成熟度」表是单一清单，**不在这里重抄**（同一事实写两处必然漂移）。
 
 对照：**有仪器的，都立刻起了作用** ——
 
