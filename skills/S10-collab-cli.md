@@ -69,8 +69,8 @@ collab sync --rebase --respect-profile    # 从上游同步，保留本地 profi
 1. ✅ `validate` —— 规则不可执行，后面全是空中楼阁
 2. ✅ `new` / `index`
 3. ✅ `apply` —— bundle → 工作区（全有或全无）
-4. ⬜ `parse` —— A17 文本 → `bundle.json`（`apply` 的进料口）
-5. ⬜ `init` / `propose` / `pr` / `sync` —— 社区阶段的事，**等有第二个真实消费者**
+4. ✅ `parse` —— AI 粘贴输出 → `bundle.json`（`apply` 的进料口；块边界 = 条目自描述 frontmatter，见 [[ADR-0012]]）
+5. ⬜ `propose` / `pr` / `sync`（`init` 已落地）—— 社区阶段的事，**等有第二个真实消费者**
 
 ## 反面
 

@@ -65,6 +65,7 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 | 2026-09-19 | [[patterns/derivation-over-copy]] | 差点只改类型、留下**两份** `AccrualView`（网关一份、领域一份，各自 `status: string`） | 两份真相必然分叉 —— 那正是漂移能发生的原因；下次改一边忘另一边 | settlement `e98dc3b`：网关改为只声明 `AccrualDto`，类型从领域派生 |
 | 2026-09-19 | [[S33-测试数据的契约一致性]] | 差点继续用 `status: "ACCRUED"` 当测试数据 —— 后端枚举是 `PENDING/SETTLED/REVERSED`，**从无 ACCRUED** | 契约从类型上丢失；测试「绿」但不反映真实契约；同类漂移会持续发生 | settlement `e98dc3b`：`status` 收紧为 `AccrualStatus` 后**编译器当场抓出**网关也在裸转 |
 | 2026-09-19 | [[patterns/parse-dont-validate]] | 差点继续 `String(r.status ?? "")` —— 未知状态**静默变成空串**往下传 | 服务端契约变了前端不炸，直到 UI 上显示空白才被发现；排查成本转嫁给最下游 | settlement `e98dc3b`：`parseAccrualStatus` 未知值当场抛；测试断言 `"ACCRUED"` 现在会 throw |
+| 2026-09-26 | [[patterns/reproducible-verification]] | 差点把"回归夹具 = `D:\下载缓存\test.txt`"留在**仓外**当验收标准（交接文档原文如此），并让"内容逐字节一致"这条不变量**挂在 git 的换行策略上**（仓库 `core.autocrlf=true`、无 `.gitattributes`） | 换人接手时验收**无法重跑**；下载目录一清，边界规则的证据只剩散文；字节级断言在不同机器上会假绿/假红 | 本轮把真产物钉进 `src/infrastructure/parsing/__tests__/fixtures/real-ai-output.txt`（SHA-256 与原文件逐字节一致）＋新建 `.gitattributes`（`-text`）＋两条测试（单元 + CLI 端到端落盘）。见 `collab-cli/working-memory/tasks/parse-adr0012/handoff.md` §W4 |
 
 ### 判据
 

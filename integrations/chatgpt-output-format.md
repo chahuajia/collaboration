@@ -3,7 +3,7 @@ id: chatgpt-output-format
 type: integration
 status: active
 created: 2026-09-15
-updated: 2026-09-17
+updated: 2026-09-26
 applies-to:
   - chatgpt-like
 supersedes:
@@ -73,7 +73,7 @@ enforced: null
 
 **原因**：COLLABORATION 条目**每个 100-300 行**，且**一次输出多个**——边界"一眼看不清"。**用户需要精确切分到不同文件**。`===== FILE` 提供了：
 
-- **机器可解析**（脚本切分）。
+- **视觉标记给人看**（机器切分改由 frontmatter 承担 —— 见下节与 [[ADR-0012]]）。
     
 - **视觉上强边界**（用户手动切分）。
     
@@ -91,24 +91,35 @@ enforced: null
 - **`===== FILE` 在短内容里视觉过重**——它把"一行文件头"变成"三行包裹"，噪音比价值大。
     
 
-### 文件分隔符协议（多文件输出）
+### 条目边界协议（多文件输出，2026-09-26 改）
+
+**契约是条目自己的 frontmatter，不是人为分隔符。**
 
 ```
-当一次输出多个**长**文件（如 COLLABORATION 内容）时：
-===== FILE: <相对路径> =====
-<完整内容>
-===== END FILE =====
+---
+id: lenient-parsing      ← 文件名由 id 决定
+type: pattern            ← 目录由 type 决定
+status: active
+---
 
-===== FILE: <相对路径> =====
-<完整内容>
-===== END FILE =====
+## 正文示例
+...
 ```
-用户可以：
 
-- 手动按分隔符切分。
-    
-- 用脚本自动切分（`scripts/apply-files.mjs`）。
-    
+| | 2026-09-26 之前 | 现在 |
+| :--- | :--- | :--- |
+| 块边界 | `===== FILE:` / `===== END FILE` 成对标记 | 自描述 frontmatter（`---` … `---`） |
+| 路径 | 随文本带来 | **派生**：`type` → 目录，`id` → 文件名 |
+| 块外散文 | 整单拒收 | **天然跳过**（并 warn 跳过了什么） |
+| `===== FILE:` | 必须 | **可选冗余**（帮人眼切分；路径以 frontmatter 为准） |
+
+于是 AI 顺手加的东西（开场白、` ``` ` 围栏、协议示例块、合规说明表、结尾追问）
+**原样粘贴即可**：`collab parse <粘贴存成的 txt>` → `collab apply`。
+被跳过的块会打 warning（`PARSE_SKIPPED_BLOCK`）—— **宽容不等于静默**。
+
+**为什么改**：实测（2026-09-26）AI 交出来的是「开场白 + 围栏 + 真条目 + 协议示例 + 说明表」。
+旧协议只认 `===== FILE:`，于是**整单拒收**（15 条 `content outside any block`）。
+约定的形状不对时，加宽容规则追不上：换一个模型就要再打一个补丁（[[patterns/lenient-parsing]]）。
 
 ### 与 A15 的关系
 
@@ -124,9 +135,13 @@ A15 说"批处理写入"——用户一次写入多个文件。本约定的"三�
     
 - 不要为一行代码用块级包裹——用行内代码。
     
-- **不要为代码文件用 `===== FILE`**——那应该用于 COLLABORATION 内容。
+- **不要为代码文件用 `===== FILE`**——那应该用于 COLLABORATION 内容。
+    
+- **不要把 `===== FILE:` 当契约**——机器认的是 frontmatter（`type` + `id`）；标记与它不一致时以 frontmatter 为准。
+    
+- **不要为了"格式合规"去裁剪自己的输出**——开场白、围栏、说明表都无妨，工具会跳过它们。
     
 
 ## 关联
 
-[[chatgpt-paste-protocol]] [[A12-知识笔记返回]] [[A16-上下文预算法]]
+[[chatgpt-paste-protocol]] [[A12-知识笔记返回]] [[A16-上下文预算法]] [[ADR-0012]] [[patterns/lenient-parsing]]
