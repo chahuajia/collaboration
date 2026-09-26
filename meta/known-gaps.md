@@ -71,6 +71,8 @@ provenance: 第 3 轮对照实验（D）；2026-09-18 负优化审计补「有�
 | 2026-09-26 | **frontmatter `updated` 会腐烂** —— 8 个文件的 `updated` 早于该文件最后一次提交（`A14` / `A16` 停在 09-13 而 09-18 被改过；`CORE` / `usage-guide` / `interceptions` / `known-gaps` / `pruning-policy` / `design-decision` 同类）。git 里已有真相，frontmatter 里是它的**手写副本** | 全库检查（`git log -1 --date=short` 对照扫描 frontmatter） | 症状表 → 无；catalog「更新时间戳」→ 无专条 | **开**：本次只把 8 处值对齐，**没有机制** —— 下次照样漂 | CI 里一条会红的检查：`updated` < 该文件最后一次提交日期 → 红。注意 `validate` 是纯文档校验、**不读 git**，所以要单独一步（需 `fetch-depth: 0`）或一个新子命令。**另一条路**是删掉 `updated`（git 已有真相）—— 那是基座变更，需 ADR + 迁移 |
 | 2026-09-26 | **文档里的"文件路径"引用没有检查**（**命令**有 —— `kb-command-docs`；**路径**没有） | 本轮全盘扫描：`inbox/README.md` 指向 `scripts/extract-bundle.mjs`（本仓没有 `scripts/`）、`profiles/_index.md` 让复制一个不存在的 `_template.yaml`、`meta/base-contract.md` 指向已迁走的脚本位置 —— 三处都是"照文档找，找不到" | 症状表 → 无 | **已手工修 3 处**；**刻意不开自动检查** | 关闭条件：能区分"**声称存在**的路径"与"示例路径"。今天分不开：`src/foo.ts`（举例）、`profile-template.yaml`（相对 `templates/`）、ADR/账本里的旧路径（历史）都是正当的 —— 机械检查的假阳性会超过收益（见 [[patterns/policy-without-mechanism]] 的"假阳性会让仪器被无视"）。可能的方向：约定"声称存在的路径必须带 repo 前缀" |
 
+| 2026-09-26 | **引用不带路径 = 找不到**（不是路径写错，是**根本没有路径**）：KB 的 `SHARE.md` 写"交接文档里有说明『本轮没验过的维度』"，却不说是哪一份、在哪个仓 —— 而 KB 的 `AGENTS.md` 又明写"本仓没有 `working-memory/`，别去找"，读者于是两头落空 | 用户直接问："这个交接文档真实存在吗？为什么我没找到" | 三个仓全文 grep → 文档**确实存在**：`collab-cli/working-memory/tasks/2026-09-26-session-handoff.md` §3.4 | **已修**：`SHARE.md` 补上仓 + 路径 + §编号，并补"后来怎么样了"（7 条里 3 条已成测试、Windows 长路径仍未验、CI 那条当天就被撞上） | 关闭条件：**不开**自动检查。试算过"只查带 repo 前缀的路径"也不通：带 `collab-cli/` 前缀的可能是 WM 里的文件，而 WM 按流程会**归档到 `_archive/`**，历史账本里的旧路径会**合法地失效**。真要有机制，得先有"哪些引用要求永久有效"的分类，成本超过收益 |
+
 ## 判据
 
 - **必须有"找过"**：记"有人按正确路径找过、没找到"。**"我觉得缺 X"不算** —— 那是愿望，不是缺口。

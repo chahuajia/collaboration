@@ -68,6 +68,8 @@ L2 撞墙 → 先 `working-memory/interceptions-candidates.md`；W4 通过后再
 | 2026-09-26 | [[patterns/reproducible-verification]] | 差点把"回归夹具 = `D:\下载缓存\test.txt`"留在**仓外**当验收标准（交接文档原文如此），并让"内容逐字节一致"这条不变量**挂在 git 的换行策略上**（仓库 `core.autocrlf=true`、无 `.gitattributes`） | 换人接手时验收**无法重跑**；下载目录一清，边界规则的证据只剩散文；字节级断言在不同机器上会假绿/假红 | 本轮把真产物钉进 `src/infrastructure/parsing/__tests__/fixtures/real-ai-output.txt`（SHA-256 与原文件逐字节一致）＋新建 `.gitattributes`（`-text`）＋两条测试（单元 + CLI 端到端落盘）。见 `collab-cli/working-memory/tasks/parse-adr0012/handoff.md` §W4 |
 | 2026-09-26 | [[patterns/tests-encode-assumptions]] | 差点只核实"源"就收工：模块从 `cli/lib` 移到 `application` 后，typecheck / lint / 750 测试全绿，但 **`dist/` 里仍留着旧编译产物** —— 而 `package.json` 的 `files` 收整个 `dist/`，于是**删掉的模块照样被打包发布** | 包内新旧两份同名逻辑并存（消费者 `require('.../dist/cli/lib/…')` 拿到**过期实现**）；实测已发布的 `0.5.1` 里就带着 5 个早已无源的模块 | 查包内文件列表（`npm pack @chahuajia/collab-cli@0.5.1`）发现；修法 = 构建先清 `dist`（`scripts/clean-dist.mjs`），包从 98 → **91 files**，逐项核对被移除者既无源也无引用。见 `collab-cli/working-memory/decisions.md` |
 
+| 2026-09-26 | [[patterns/tests-encode-assumptions]] | 差点把「**测试跑在哪种机器上**」当成不变量：`retire` 那条测试期待"--enforced 指向不存在的产物 → 拒绝"，而这只在**业务仓在本机可达**时成立 —— GitHub runner 上没有那个仓 → 命令走"无法判定 → 警告放行"（exit 0）→ 断言落空 | 本地永远绿、CI 永远红；更坏的方向是把"查不到"当成"查过了"——那条**真实分支**没有任何测试钉住 | CI run #38：`pnpm install --frozen-lockfile` 已过，卡在 `pnpm run check`；**GitHub check-runs 注解**给出原文 `Expected CLI to fail, but it succeeded`（`retire.test.ts:178`）。修法：测试工作台**钉死仓位置**（`COLLAB_PROJECTS_DIR` 指向不存在的路径 + 三个逐仓变量置空，任何测试都不许继承开发机的仓），那条用例自造"可达但没有该文件"的临时仓，另补一条钉住"不可达 → 警告放行"这条**刻意**分支。见 `collab-cli/working-memory/tasks/2026-09-26-ci-never-ran.md` |
+
 ### 判据
 
 - **必须具体**：写"拦住了什么"，不写"很有用"。
