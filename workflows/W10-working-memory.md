@@ -3,7 +3,7 @@ id: W10
 type: workflow
 status: active
 created: 2026-09-13
-updated: 2026-09-17
+updated: 2026-09-26
 author: heiniao
 aliases: [W10]
 domains:
@@ -85,6 +85,13 @@ working-memory/
 - 不要每天更新——只在"阶段完成"或"决策变更"时更新。
 - 不要归档而不提炼——归档是暂存，COLLABORATION 才是长期归宿。
 - 不要让用户维护它——它是**给 AI 的上下文**。
+- **不要把任务在仓之间搬走时，把仓内的相对命令原样搬过去。**
+  `loop.md` 里常见 `node working-memory/<x>.mjs`、`npm run <script>` 这种**相对本仓**的命令 ——
+  换个仓就指向不存在的东西。实测：battery-pressure 从 `collab-cli` 迁到 `evolutionary`（2026-09-17），
+  `node working-memory/check-freshness.mjs` 跟着一起搬，而那个文件**在 evolutionary 从来不存在**
+  （`git log` 全历史零命中）—— 于是"每 tick 第 1 步"是个坏引用，**活了 9 天**才被一次全盘审计发现。
+  搬运时**按目标仓重写**，或者写成"在**哪个仓**里跑"（工具的入口本身也会搬家：那个脚本
+  2026-09-26 从 `collab-cli/working-memory/` 搬到了 `collab-cli/scripts/`）。
 
 ## 关联
 
