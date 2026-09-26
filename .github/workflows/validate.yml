@@ -2,7 +2,8 @@
 #
 # 2026-09-26 修：这里曾写 `cache: npm` + `npm ci`，而 collab-cli **只有 pnpm-lock.yaml**
 # （没有 package-lock.json）——`actions/setup-node@v4` 在找锁文件时当场失败，
-# 后面三步全 skipped。实测 GitHub API：2026-09-25 的 5 次运行 `conclusion = failure`。
+# 后面三步全 skipped。实测 GitHub API：本 workflow **从 #1（09-17）到 #11（09-25）连续 11 次
+# `failure`**，直到 #12（09-25 23:52，本次修复落地）才第一次 `success`。
 # **"KB 文档错就该红 CI" 这句口号，当时连 CI 都没跑起来。**
 name: Validate
 
