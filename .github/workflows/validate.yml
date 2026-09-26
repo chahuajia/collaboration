@@ -13,25 +13,39 @@ on:
     branches: [main, master]
   workflow_dispatch:
 
+# 最小权限：只读（本 job 不写任何东西 —— 它只跑校验）
+permissions:
+  contents: read
+
+# 同一分支连推多次：取消上一轮
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
+    name: collab validate
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      # action 用当前大版本（理由见 collab-cli 的 `.github/workflows/ci.yml`）
+      - uses: actions/checkout@v7
         with:
           path: collaboration
+          persist-credentials: false
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: chahuajia/collab-cli
           path: collab-cli
+          persist-credentials: false
 
       # pnpm 版本显式钉 major（⚠️ collab-cli 的 .github/workflows/ci.yml 里也写着同一个值）
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           version: "12"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
           cache: pnpm

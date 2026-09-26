@@ -72,6 +72,9 @@
 
 - 许可证：CC BY-SA 4.0（全文见 `LICENSE`）
 - 主干：https://github.com/chahuajia/collaboration
+- CI：`.github/workflows/validate.yml`（真 `collab validate` + KB 文档↔`--help` 检查）；
+  **建议设成 required check**（GitHub：`Settings → Branches`，check 名 **`collab validate`**）——
+  2026-09-26 实测：这个 workflow 从 #1 到 #11 连续红着，而没人被通知到
 - 贡献流程：[[W6-local-patch-to-community-pr]]（本地补丁 → 你的 fork → 社区 PR）；约定级变更走 [[W7-rfc-process]]
 - AI 写权限边界：[[cli-agent-boundaries]]
 - 个人侧重：[[S11-profile-declaration]] · `profiles/`
