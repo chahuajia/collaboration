@@ -338,7 +338,7 @@ codex mcp add collab -- node <repo>/bin/collab.js mcp --dir <你的知识库>
 整套东西 —— 包括上面每一个失败 —— 都在仓库里：
 
 - 知识库：https://github.com/chahuajia/collaboration
-- 工具链：https://github.com/chahuajia/collab-cli（npm 上叫 `@chahuajia/collab-cli`）
+- 工具链：https://github.com/chahuajia/collab-cli  npm上叫 `@chahuajia/collab-cli`）
 
 ```bash
 npx --yes @chahuajia/collab-cli --dir <你的知识库> validate

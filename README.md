@@ -72,6 +72,9 @@
 
 - 许可证：CC BY-SA 4.0（全文见 `LICENSE`）
 - 主干：https://github.com/chahuajia/collaboration
+- 对外文章（2026-09-26 发布于掘金）：https://juejin.cn/post/7689045619357188105
+  —— 内容与 `SHARE.md` **同源**。**仓里这份是源头**：平台的标题与排版随时可能被编辑，
+  两个版本打架时以 `SHARE.md` 为准（这是[[patterns/derivation-over-copy]]用在"对外分发"上）。
 - CI：`.github/workflows/validate.yml`（真 `collab validate` + KB 文档↔`--help` 检查）；
   **建议设成 required check**（GitHub：`Settings → Branches`，check 名 **`collab validate`**）——
   2026-09-26 实测：这个 workflow 从 #1 到 #11 连续红着，而没人被通知到
