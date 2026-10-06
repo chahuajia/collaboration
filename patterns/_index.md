@@ -6,6 +6,7 @@
 | [[patterns/agent-delegation-criteria]] | 什么时候该派子智能体（为什么它们会白跑） | 派前过闸：能自验 / 自足 / 有界 / 不派不可逆操作；无产出的子智能体会留下永久记录 |
 | [[patterns/allowlist-over-denylist]] | 安全工程 | 白名单优于黑名单 |
 | [[patterns/catalyst-nodes]] | 化学（催化剂） | 杠杆节点 |
+| [[patterns/characterization-first-refactor]] | 软件工程（特征测试）+ 实测（DDD/TDD 重构） | 先把被替换实现**原文**抄成预言机；等价性分级、可测量；行为变更必须表现为预言机的 diff |
 | [[patterns/claims-without-enforcement]] | 形式化方法 + 实测（PerformSwap 事务） | 注释声称的跨切面属性若无强制，会静默漂移 |
 | [[patterns/context-overflow-solved-by-retrieval]] | 数据库 / 检索 | 溢出的解法是检索，不是寄放 |
 | [[patterns/cross-domain-borrowing]] | A9 | 跨域借鉴五步法 |
@@ -35,6 +36,7 @@
 | [[patterns/module-identity-before-layout]] |  |  |
 | [[patterns/multi-portal-capability-gate]] | 人机协作实践 | 多门户 × 能力门禁（错误端放错能力=拒收） |
 | [[patterns/naming-as-definition]] | 语言哲学 | 命名即定义 |
+| [[patterns/one-kb-per-org]] | 实测（业务仓长出第二本库） | 判"是不是第二本库" → 迁 / 并 / 删；通用判据→KB、证据→WM、项目文档→docs；fork ≠ init；验收 `collab doctor` |
 | [[patterns/ooda-loop]] | 军事（OODA） | 复盘闭环 |
 | [[patterns/parallel-work-needs-delivery-proof]] | 分布式系统 + 人机协作 | 并行不是分派，是让每份分派可确认到达 |
 | [[patterns/parse-dont-validate]] | 函数式编程 | 边界解析 |
@@ -44,9 +46,11 @@
 | [[patterns/pressure-routing]] | 人机协作实践 | L1/L2/L3 压测路由与成功判据 |
 | [[patterns/project-evidence-vs-kb-ledger]] | 人机协作实践 | 项目证据 vs KB 账本分层 |
 | [[patterns/qian-systems-engineering]] | 钱学森《系统工程》 | 总体设计部 |
+| [[patterns/refactor-slice-done-criteria]] | 实测（十多个重构切片反推；**draft**） | 四条同时满足才算完成：规格先行 / 等价性分级 / 验证覆盖改动本身 / 账记下来 |
 | [[patterns/reproducible-verification]] | 工程实践 | 可复现的证据优于手工验证 |
 | [[patterns/rfc-process]] | Rust RFC | **dormant** → 以 [[W7]] 为准 |
 | [[patterns/rooted-graph]] | 图论 | 主结构：树 + 横切 + 双向链接 |
+| [[patterns/rule-placement-by-layer]] | DDD 分层 + 实测（同一条规则四处四种写法） | 自下而上四问定归属；死副本 vs 活副本；域声明 + 翻译函数，别让用例替数据库说话 |
 | [[patterns/rule-set-as-subset]] | 契约 + 集合论 | 规则集基集⊂扩展；子集即生命周期契约 |
 | [[patterns/self-bootstrapping-requires-fixed-core]] | Lisp / Git / 哥德尔 | 自举必须固定基座 |
 | [[patterns/shared-kernel-across-bc]] | DDD（共享内核） | 跨 BC 只依赖共享内核，禁止对方核心聚合 |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:33:54.524Z",
+  "generatedAt": "2026-10-06T10:05:20.464Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -327,6 +327,16 @@
       "trigger": "分层约束写了一长串禁止 import；或新增依赖时忘了补黑名单；或不确定某层到底能碰什么"
     },
     {
+      "id": "characterization-first-refactor",
+      "type": "pattern",
+      "status": "active",
+      "title": "行为冻结重构：把被替换的实现抄成预言机",
+      "path": "patterns/characterization-first-refactor.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "要在不改外部行为的前提下重构一段没有测试的旧代码；或准备把两处\"看起来重复\"的实现合并"
+    },
+    {
       "id": "claims-without-enforcement",
       "type": "pattern",
       "status": "active",
@@ -611,6 +621,16 @@
       "trigger": "想命名却怕撞 TS/框架全局名；或名字读不出它代表什么；或单一值/集合该用哪种命名形态"
     },
     {
+      "id": "one-kb-per-org",
+      "type": "pattern",
+      "status": "active",
+      "title": "一个组织只有一个知识库",
+      "path": "patterns/one-kb-per-org.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "业务仓里长出了 agreements/ meta/ patterns/ catalog.json；或发现两本同名账本（两个 known-gaps / 两个 interceptions）/ 两个 catalog.json；或有人问\"每个项目要不要各建一个知识库\""
+    },
+    {
       "id": "ooda-loop",
       "type": "pattern",
       "status": "active",
@@ -702,6 +722,16 @@
       "trigger": "每个部件差不多能用但整体没人负责；或只追局部最优；或拆太碎看不见整体"
     },
     {
+      "id": "refactor-slice-done-criteria",
+      "type": "pattern",
+      "status": "draft",
+      "title": "一个重构切片算不算完成",
+      "path": "patterns/refactor-slice-done-criteria.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "说不清一次重构切片算不算做完；或准备用\"测试全绿\"\"代码变短\"宣布完成"
+    },
+    {
       "id": "reproducible-verification",
       "type": "pattern",
       "status": "active",
@@ -720,6 +750,16 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "纯树找不到横切概念；或同一概念多分支重复；或不确定要不要加双链"
+    },
+    {
+      "id": "rule-placement-by-layer",
+      "type": "pattern",
+      "status": "active",
+      "title": "一条规则该住在哪一层",
+      "path": "patterns/rule-placement-by-layer.md",
+      "domains": [],
+      "appliesTo": [],
+      "trigger": "说不清一条业务规则该住 domain / application / infrastructure 哪一层；或同一条规则在实体断言、内存过滤、数据库查询里各写一份"
     },
     {
       "id": "rule-set-as-subset",
@@ -1512,18 +1552,18 @@
     }
   ],
   "summary": {
-    "total": 127,
+    "total": 131,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 56,
+      "pattern": 60,
       "adr": 12,
       "integration": 5
     },
     "byStatus": {
-      "active": 109,
-      "draft": 6,
+      "active": 112,
+      "draft": 7,
       "accepted": 11,
       "proposed": 1
     }

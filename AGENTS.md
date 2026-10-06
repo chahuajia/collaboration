@@ -73,6 +73,10 @@
 | **边界错误怎么映射 HTTP**（API/CLI） | ~~[[S34-边界层与领域的错误翻译]]~~ **已毕业** → `SwapApiErrorTranslatorTest` 已在跑（禁止用领域 message 前缀猜状态码） |
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
+| **业务仓里长出了 `agreements/` `meta/` `patterns/` `catalog.json`（第二本库）/ 两本同名账本 / 问"每个项目要不要各建一个知识库"** | [[patterns/one-kb-per-org]]（先判"是不是第二本库" → 迁 / 并 / 删 → 验收 `collab doctor`） |
+| **一条规则该住 domain / application / infrastructure 哪一层** | [[rule-placement-by-layer]]（自下而上四问 + 死副本 vs 活副本 + 域声明与翻译函数） |
+| **要在不改外部行为的前提下重构没测试的旧代码 / 准备合并"看起来重复"的实现** | [[characterization-first-refactor]]（先把被替换实现抄成预言机；等价性分级、可测量） |
+| **说不清一次重构切片算不算做完** | [[refactor-slice-done-criteria]]（draft；四条同时满足才叫完成） |
 | **FE∥BE 多 agent 工作区怎么划 / 切片太碎** | [[S36]]（路径沙箱 + 加厚 brief；未达门槛不拆仓） |
 | **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执** | 先过**派工三问**（能自验吗 / 自足吗 / 会改同一处吗）→ [[patterns/agent-delegation-criteria]]；再读 [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计；**派工前置两条：基线绿 + worktree 重新基线**）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
 | **加了规则反而更慢 / 政策很多不落地 / docs 热闹 feat 不涨** | [[patterns/policy-without-mechanism]] → 先装机制再写门禁；对照 [[patterns/pressure-routing]] · [[patterns/project-evidence-vs-kb-ledger]] |

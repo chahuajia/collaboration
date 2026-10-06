@@ -56,6 +56,4 @@ author: heiniao
 
 ## 关联
 
-[[ROOT]] [[patterns/module-identity-before-layout]] [[skills/S10-collab-cli]] [[meta/pruning-policy]]
-
-项目侧的 `patterns/characterization-first-refactor.md`（行为冻结）与本条同源，但不在本共享库中，故以正文提及而不建链接。
+[[ROOT]] [[patterns/module-identity-before-layout]] [[skills/S10-collab-cli]] [[meta/pruning-policy]] [[characterization-first-refactor]]

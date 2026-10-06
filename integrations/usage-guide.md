@@ -127,6 +127,9 @@ node $COLLAB --dir $KB retire <id> --enforced <测试路径> --reason "<分类>:
 
 > **不需要把它做成 collaboration 的副本。** 你只要有**一个** KB ——
 > 指向它即可。`collaboration` 是参考实现，不是前置条件。
+>
+> 反过来说：**不要在业务仓里再建一本**。本地 `catalog.json` / `meta/known-gaps.md` /
+> `agreements/` 一旦出现，同一事实就有了两个家 —— 判据与修法见 [[patterns/one-kb-per-org]]。
 
 **① MCP（支持 MCP 的客户端：Codex / Claude / Cursor）**
 
@@ -152,8 +155,10 @@ codex mcp add collab -- node <repo>/bin/collab.js mcp --dir <KB>
 - **不要**在查不到时编一条规范 —— 报"找不到"并记 `known-gaps`。
 - **不要**把项目进度写进 KB —— 那是 `working-memory/` 的活（`W10`）。
 - **不要**把项目特有决定写成 pattern 再对外推 —— 换项目就是噪音。
+- **不要**在业务仓里复制 KB 的目录结构（`agreements/` `meta/` `patterns/` + `catalog.json`）——
+  那是第二本库；用 [[patterns/one-kb-per-org]] 的"迁 / 并 / 删"收掉。
 - **不要**为了"有产出"建条目 —— 入库门槛在上一条。
 
 ## 关联
 
-[[A16-上下文预算法]] [[W10-working-memory]] [[meta/pruning-policy]] [[meta/known-gaps]] [[meta/interceptions]] [[patterns/extreme-unattended-cluster]] [[ADR-0011]] [[S10-collab-cli]] [[patterns/project-evidence-vs-kb-ledger]]
+[[A16-上下文预算法]] [[W10-working-memory]] [[meta/pruning-policy]] [[meta/known-gaps]] [[meta/interceptions]] [[patterns/extreme-unattended-cluster]] [[ADR-0011]] [[S10-collab-cli]] [[patterns/project-evidence-vs-kb-ledger]] [[patterns/one-kb-per-org]]
