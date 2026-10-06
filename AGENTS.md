@@ -1,7 +1,8 @@
 # AGENTS.md
 
 > 本文件是 **AI 进入本仓库的入口**。人类用户读 `README.md`。
-> 原则：**入口指向，不复制内容**（[[A13-AI-入口文件规范]]）。本文件保持 100 行以内。
+> 原则：**入口指向，不复制内容**（[[A13-AI-入口文件规范]]）。**只放路由与协议** ——
+> 不写死行数：那是手写计数，会腐烂（[[patterns/delete-beats-automate]]）。
 
 ## 项目是什么
 
@@ -28,7 +29,7 @@
    - 概念、判据、跨领域借鉴 → `patterns/`
    - 特定环境下的操作手册（对话式 AI / 有 IO 的 agent） → `integrations/`
    - 按领域找入口 → `domains/`
-6. **工作记忆不在本仓库**：本仓库只放**长期知识**。进度/决策在**各主体仓**的 `working-memory/`
+7. **工作记忆不在本仓库**：本仓库只放**长期知识**。进度/决策在**各主体仓**的 `working-memory/`
    （工具链 → `collab-cli`；业务 → 如 `evolutionary`；见 [[W10-working-memory]]）。
    本仓库内**没有** `working-memory/` —— 别去找，也别在这里新建。
 
@@ -44,6 +45,14 @@
 
 > 按症状组织，不是按条目清单。表里没有 → `catalog.json` 关键词检索 →
 > 仍没有 → **报告"找不到"**，记进 [[known-gaps]]；**不要发明规范**。
+
+### 协议（先读这五条，再看路由）
+
+- **接在哪**：新增任何规则前先答 —— 违反它**能否 60 秒内被外部观察到**、发现后**有无强制动作**、**执行面在哪**。答不出来就别写（[[patterns/policy-without-mechanism]]）。
+- **红灯协议**：仪器/账本亮红后**只允许两个动作** —— 更新它，或降级归档。"知道了但不动" = 该仪器失效（同上）。
+- **两本账本**：[[interceptions]] 记"**拦住了**什么"（决定**留**）· [[known-gaps]] 记"**没能回答**什么"（决定**补**）；都只写**一行摘要 + 证据链接**，正文留业务仓（[[patterns/project-evidence-vs-kb-ledger]]）。
+- **数字一律派生**：文档里的计数/清单由命令生成（`collab validate` / `collab catalog`），**禁止手写**。
+- **生成物即仪器**：`catalog.json` 空或陈旧 = 仪器没接线 → 立刻 `collab catalog`，别当成"别人的事"（[[S10-collab-cli]]）。
 
 | 遇到的情况 | 先读 |
 | :--- | :--- |
@@ -65,7 +74,7 @@
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
 | **FE∥BE 多 agent 工作区怎么划 / 切片太碎** | [[S36]]（路径沙箱 + 加厚 brief；未达门槛不拆仓） |
-| **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执 / worktree 里找不到刚写的文件** | [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计；**派工前置两条：基线绿 + worktree 重新基线**）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
+| **无人托管要极端集群 / 空转 / 同树互盖 / 派了无回执** | 先过**派工三问**（能自验吗 / 自足吗 / 会改同一处吗）→ [[patterns/agent-delegation-criteria]]；再读 [[patterns/extreme-unattended-cluster]]（v8 worktree·回执契约·派出会计；**派工前置两条：基线绿 + worktree 重新基线**）→ [[S36]] → [[patterns/parallel-work-needs-delivery-proof]] |
 | **加了规则反而更慢 / 政策很多不落地 / docs 热闹 feat 不涨** | [[patterns/policy-without-mechanism]] → 先装机制再写门禁；对照 [[patterns/pressure-routing]] · [[patterns/project-evidence-vs-kb-ledger]] |
 | **四端角色串味 / 错端放审批权**（总后台≠运营商≠商家≠电池） | [[patterns/multi-portal-capability-gate]]（错误端放错能力=拒收） |
 | **前后端仓权限分离怎么协同** | [[S36]]（契约仓 + 中立编排 WM） |
@@ -79,6 +88,7 @@
 | **文档里的数/清单总要手工同步**（想写生成器或新鲜度检查） | [[patterns/delete-beats-automate]] —— **先问它该不该在**，再问怎么保持新鲜；多数该删（删掉不腐烂，生成器要维护） |
 | **注释/javadoc 声称了跨切面属性**（同事务 / 线程安全 / 幂等 / 已校验） | [[patterns/claims-without-enforcement]] —— 一条 `grep` 查谁在强制它；无强制 → **先写红测试证明它坏了**，再加机制 |
 | **第一次用这个库 / 不确定该不该查 / 想接入别的项目** | [[usage-guide]] —— 该不该查（判据表）→ 怎么查（三步）→ 怎么写（三条门槛）→ **三条诚实说明**（读了有没有用至今不可判定） |
+| **不确定这套接线还活着吗**（入口没点名工具 / 生成物陈旧 / 换了台机器） | `collab doctor` —— 一条命令查：工作区 / 校验 / 生成物 / **入口有没有点名工具** / git；有 ❌ → exit 1 |
 
 ## 协作规则（摘要）
 
@@ -88,12 +98,12 @@
 - 不确定就问，不猜；先看地图再点菜（[[chatgpt-paste-protocol]]）。
 - 复杂讨论结束附一份**面向人的知识笔记**（[[A12-知识笔记返回]]），它与条目是两种表达，不是复制。
 - **新增条目必须能说出它拦住了什么**；说不出来就别进库（[[meta/pruning-policy]]）。
-- **「关联」节要用 `[[双链]]`**（`[[id]]` 最好）：那里写裸路径（`patterns/x`、`agreements/y.md`）
-  是**漏了边** —— 死链规则看不见它，可达性扫描与 `catalog` 的图各少一条边（`RELATIONS_NOT_LINKED`）。
+- **「关联」节要用 `[[id]]`**（裸路径 = 漏边，`RELATIONS_NOT_LINKED` 会拦）；**收工必须交一份 handoff**，
+  含"**本轮未验过的维度**"（每条带路径/命令）—— 交接文档正文留业务仓，KB 只留指针。
 
 ## 边界
 
-- **AI 不 commit、不 push**：改动留在工作区，由人确认（[[cli-agent-boundaries]]、[[A6-version-authority]]）。
+- **AI 可 commit（走 `collab commit`：先 validate + `Generated-by` 署名、一任务一分支），但不 push、不 merge 主干**（[[cli-agent-boundaries]]）。
 - 约定级变更走 [[W7-rfc-process]]；技能/模式可自由增删，但要走同一套校验。
 - 本文件**不存放**日常进度、任务、决策——它们属于工作记忆或条目本身。
 

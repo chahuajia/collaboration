@@ -323,10 +323,17 @@ npx --yes @chahuajia/collab-cli --dir <你的知识库> validate
 codex mcp add collab -- node <repo>/bin/collab.js mcp --dir <你的知识库>
 ```
 
-**MCP 只暴露 6 个只读工具**（`catalog` / `read` / `search` / `validate` / `parse` / `apply_plan`）——
-**没有 commit / push**。
+**MCP 暴露 7 个工具**：6 个只读 / 只出计划（`catalog` / `read` / `search` / `validate` / `parse` / `apply_plan`）
+加 **1 个带门禁的写** —— `commit`：它先跑 `validate`（阻断级就拒绝），并给提交信息加 `Generated-by:` 署名。
+**`push` 仍然没有，也不打算有。**
 
-因为：**"AI 不 commit、不 push"不是写在文档里的叮嘱，而是工具表里不存在那一项。**
+> 这条边界在 2026-10-06 改过一次（**仓里这份是最新的**；平台那份发布版还写着旧的
+> "只暴露 6 个只读工具、没有 commit"）：长任务里 agent 需要切分支、出错回滚，
+> 而"改动只留在工作区"让 git 历史看不出过程。原版反对 commit 的两条理由
+> （**历史噪音** / **无法归因**）都**可机制化**：一任务一分支 + `Generated-by:` 署名。
+> **"不 push"则从散文变成了门**：CLI 里 `collab push` 默认拒绝（要 `--allow-push` /
+> `COLLAB_ALLOW_PUSH=1`），MCP 里**根本没有那个工具**。
+> —— 这也是它自己的判据：**能装成门禁的边界，别只写在文档里。**
 
 ### 它适合接在哪
 
