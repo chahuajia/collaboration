@@ -73,6 +73,7 @@
 | **边界错误怎么映射 HTTP**（API/CLI） | ~~[[S34-边界层与领域的错误翻译]]~~ **已毕业** → `SwapApiErrorTranslatorTest` 已在跑（禁止用领域 message 前缀猜状态码） |
 | **压测放哪 / 长运行空转 / 测数涨 KB 不涨** | [[patterns/pressure-routing]]（L1 工具链 vs L2 业务 vs L3 KB；每 tick 问期望哪个 HEAD 变） |
 | **项目日志要不要进 evolution-log / interceptions** | [[patterns/project-evidence-vs-kb-ledger]]（KB 账本短摘要；证据留业务仓） |
+| **推/合并到主干被拒；或要声明本仓的主干（`release/*`）** | [[cli-agent-boundaries]] 的「执行面」节 —— 两把钥匙（`--allow-push` / `--allow-protected`）、`collab guard-push`、`.collab-protected-branches` |
 | **业务仓里长出了 `agreements/` `meta/` `patterns/` `catalog.json`（第二本库）/ 两本同名账本 / 问"每个项目要不要各建一个知识库"** | [[patterns/one-kb-per-org]]（先判"是不是第二本库" → 迁 / 并 / 删 → 验收 `collab doctor`） |
 | **一条规则该住 domain / application / infrastructure 哪一层** | [[rule-placement-by-layer]]（自下而上四问 + 死副本 vs 活副本 + 域声明与翻译函数） |
 | **要在不改外部行为的前提下重构没测试的旧代码 / 准备合并"看起来重复"的实现** | [[characterization-first-refactor]]（先把被替换实现抄成预言机；等价性分级、可测量） |
@@ -107,7 +108,7 @@
 
 ## 边界
 
-- **AI 可 commit（走 `collab commit`：先 validate + `Generated-by` 署名、一任务一分支），但不 push、不 merge 主干**（[[cli-agent-boundaries]]）。
+- **AI 可 commit（走 `collab commit`：先 validate + `Generated-by` 署名、一任务一分支）、任务分支之间可 merge；但不 push、不 merge 到保护分支（主干）**（[[cli-agent-boundaries]] —— 「保护分支」的定义与自证方式只写在该条一处）。
 - 约定级变更走 [[W7-rfc-process]]；技能/模式可自由增删，但要走同一套校验。
 - 本文件**不存放**日常进度、任务、决策——它们属于工作记忆或条目本身。
 

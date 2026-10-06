@@ -80,8 +80,8 @@ trigger: 想把这套东西接到一个新项目；要把项目交接给新的 a
 
 > 真相仓是 `<业务仓>`；`<KB 仓>` 只放长期知识；`<工具链>` 提供 validate/catalog/retire/mcp。
 > 先读 `AGENTS.md` 的症状表；表里没有就用 catalog 检索；都没有就**报告"找不到"并记 known-gaps**。
-> **AI 可以 commit（走 `collab commit`：先 validate + `Generated-by` 署名、一任务一分支），但不 push、不 merge 主干**；
-> 「继续」不等于 merge（见 [[cli-agent-boundaries]]）。
+> **AI 可以 commit（走 `collab commit`：先 validate + `Generated-by` 署名、一任务一分支），也可以在任务分支之间 merge；但不 push、不 merge 到保护分支（主干）**；
+> 「继续」不等于 merge，**merge 到主干也不等于"继续"**（见 [[cli-agent-boundaries]]）。
 
 ### 四、交给维护者（维护层）
 

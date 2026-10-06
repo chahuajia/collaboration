@@ -33,6 +33,7 @@
 | [[patterns/layered-defense]] | 军事纵深防御 | 分层拦截 |
 | [[lenient-parsing]] | 前端 / 工具 | 宽容解析：解析器的宽容必须来自「边界自描述」，不是逐例打补丁 |
 | [[patterns/load-bearing-vs-partition]] | 建筑 | 承重墙 vs 隔断（变更权限） |
+| [[patterns/measure-hoisting-conflicts-before-workspace]] | 先量"提升冲突面"，再决定要不要 workspace | 框架级依赖出现多个不兼容版本时，别用会 hoist 的 workspace；`file:` 声明也能让依赖图说得清 |
 | [[patterns/module-identity-before-layout]] |  |  |
 | [[patterns/multi-portal-capability-gate]] | 人机协作实践 | 多门户 × 能力门禁（错误端放错能力=拒收） |
 | [[patterns/naming-as-definition]] | 语言哲学 | 命名即定义 |

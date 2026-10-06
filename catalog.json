@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:05:20.464Z",
+  "generatedAt": "2026-10-06T11:40:27.673Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -590,6 +590,15 @@
       "domains": [],
       "appliesTo": [],
       "trigger": "不确定改的是约定还是技能；或把技能当承重墙改不动；或约定被当隔断随便改"
+    },
+    {
+      "id": "measure-hoisting-conflicts-before-workspace",
+      "type": "pattern",
+      "status": "draft",
+      "title": "先量\"提升冲突面\"，再决定要不要 workspace",
+      "path": "patterns/measure-hoisting-conflicts-before-workspace.md",
+      "domains": [],
+      "appliesTo": []
     },
     {
       "id": "module-identity-before-layout",
@@ -1552,18 +1561,18 @@
     }
   ],
   "summary": {
-    "total": 131,
+    "total": 132,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 60,
+      "pattern": 61,
       "adr": 12,
       "integration": 5
     },
     "byStatus": {
       "active": 112,
-      "draft": 7,
+      "draft": 8,
       "accepted": 11,
       "proposed": 1
     }

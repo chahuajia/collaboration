@@ -70,7 +70,8 @@ updated: 2026-09-26
 - 分层：本地 / fork / 主干。
 - 身份：Git + YAML + Profile。
 - 门槛：约定 RFC，工作流 PR，技能 CI。
-- AI 边界：不持主干写权限，不自动 push。
+- AI 边界：**可 commit（带署名 + 一任务一分支）、任务分支之间可 merge；不 push、不 merge 到保护分支（主干）** ——
+  **完整边界与「保护分支」的定义只写在 [[cli-agent-boundaries]] 一处**（本节原先写"不持主干写权限"，那是**已被证伪的事实陈述**：有文件权限的 agent 确实有写权限）。
 - 详见 [[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[W7-rfc-process]]。
 
 ## 反面

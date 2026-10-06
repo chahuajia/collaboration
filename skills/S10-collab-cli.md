@@ -3,7 +3,7 @@ id: S10
 type: skill
 status: draft
 created: 2026-09-11
-updated: 2026-09-17
+updated: 2026-10-06
 domains: [meta, tooling]
 applies-to: [W6]
 supersedes: null
@@ -39,7 +39,9 @@ AI 输出 patch 后，需要一条可靠路径把它转成 commit、branch、PR�
 | `collab index [dir]` | 刷新 `_index.md`（保留人工列，只补不毁） |
 | `collab apply <bundle.json>` | **把 bundle 落盘**：全有或全无；`--dry-run` / `--index` / `--commit` / `--json` |
 | `collab commit -m "<msg>"` | validate + `git add` + commit |
-| `collab push` | validate + `git push` |
+| `collab push [--allow-push] [--allow-protected]` | validate + `git push`。**默认拒绝**（远端归人）；推**保护分支**还要第二把钥匙 |
+| `collab guard-push [--branch <b>]` | **保护分支门**：`pre-push` hook 调它（无参数时读 git 从 stdin 给的待推 refs）；`git push` 绕过 CLI 时靠它兜住 |
+| `collab doctor` | **接线体检**：工作区 / 校验 / 生成物 / **入口有没有点名工具** / git（有 ❌ → exit 1） |
 
 > ⚠️ **语义变更**：`apply` 在早期草案里是"确认 AI 的 patch 并生成 commit"，
 > 现在是"把 `bundle.json` 落盘"。**以本表为准**，草案作废。
@@ -87,3 +89,10 @@ collab sync --rebase --respect-profile    # 从上游同步，保留本地 profi
 ## 关联
 
 [[cli-agent-boundaries]] [[W6-local-patch-to-community-pr]] [[S11-profile-declaration]] [[profiles/_index]]
+## 实测坑（2026-10-06，本仓会话）
+
+- **`## 关联` 必须用 `[[wikilink]]`**（本文件即范例）。写成"正文提到某路径"= 断链；跨库不存在的目标**不要建链接**，改为正文提及并说明"不在本共享库中"。
+- **`index` 会给新条目留空单元格**（`| [[patterns/x]] |  |  |`）→ **必须补名字与摘要**；CLI 只在输出里警告一行，不补也不会红，容易漏 ✗。
+- **`agreement` 有硬上限：10/10 已满**。满了 `new agreement` 直接拒收，并提示：先 `retire` 一条，**或把它改写成 工作流 / 模式 / 集成层**（"约定是承重墙，每加一条都在向未来每一次交互收税"）。实测：我把"上下文归属"判据改写为 `patterns/module-identity-before-layout` 才得以入库 ✓。
+- **`pattern` 的必需章节是精确标题**：`## 上下文` / `## 问题` / `## 方案` / `## 反面` / `## 关联`。把括注写进标题（如 `## 问题（本仓实测）`）会被判 `MISSING_SECTION` ✗ —— **括注写在正文里**。
+- **`--dir` 永远显式给**：本机存在用户级 `COLLAB_DIR`，裸命令会被它接管（把 `cwd` 语义夺走）→ 脚本 / hook / CI 里一律带 `--dir`。
