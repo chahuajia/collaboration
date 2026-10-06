@@ -3,6 +3,7 @@
 | 模式 | 来源 | 用途 |
 | :--- | :--- | :--- |
 | [[patterns/adapter-internal-structure]] | 六边形架构 | 适配器内部结构自由 |
+| [[patterns/agent-delegation-criteria]] | 什么时候该派子智能体（为什么它们会白跑） | 派前过闸：能自验 / 自足 / 有界 / 不派不可逆操作；无产出的子智能体会留下永久记录 |
 | [[patterns/allowlist-over-denylist]] | 安全工程 | 白名单优于黑名单 |
 | [[patterns/catalyst-nodes]] | 化学（催化剂） | 杠杆节点 |
 | [[patterns/claims-without-enforcement]] | 形式化方法 + 实测（PerformSwap 事务） | 注释声称的跨切面属性若无强制，会静默漂移 |
@@ -29,7 +30,9 @@
 | [[patterns/law-three-tiers]] | 法律 | 三层结构（约定/工作流/技能） |
 | [[patterns/layer-vs-context]] | DDD + 六边形架构 | **层 ≠ 上下文** |
 | [[patterns/layered-defense]] | 军事纵深防御 | 分层拦截 |
+| [[lenient-parsing]] | 前端 / 工具 | 宽容解析：解析器的宽容必须来自「边界自描述」，不是逐例打补丁 |
 | [[patterns/load-bearing-vs-partition]] | 建筑 | 承重墙 vs 隔断（变更权限） |
+| [[patterns/module-identity-before-layout]] |  |  |
 | [[patterns/multi-portal-capability-gate]] | 人机协作实践 | 多门户 × 能力门禁（错误端放错能力=拒收） |
 | [[patterns/naming-as-definition]] | 语言哲学 | 命名即定义 |
 | [[patterns/ooda-loop]] | 军事（OODA） | 复盘闭环 |
@@ -55,6 +58,6 @@
 | [[patterns/type-as-design]] | 类型论 | 类型即设计 |
 | [[patterns/value-object-as-raw-material]] | 制造业 | 值对象是原料 |
 | [[patterns/value-semantics]] | 工程实践 | 值同不代表语义同（原 A11） |
+| [[patterns/verify-with-independent-instruments]] | 用互相独立的仪器验证（工具会沉默、会吵、也会坏） | 探针先证明会红；交叉验证；改完同一把尺子复量；输出带文件边界；检索键选 basename 且集合写全 |
 | [[patterns/waiting-is-a-decision-window]] | 人机协作实践 | 等待是决策窗口，不是空隙 |
 | [[patterns/what-how-are-projections]] | 投影几何 | What / How 是同一事物的两个投影 |
-| [[lenient-parsing]] | 前端 / 工具 | 宽容解析：解析器的宽容必须来自「边界自描述」，不是逐例打补丁 |

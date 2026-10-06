@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T21:17:01.152Z",
+  "generatedAt": "2026-10-06T08:33:54.524Z",
   "entries": [
     {
       "id": "ADR-0001",
@@ -308,6 +308,15 @@
       "trigger": "不知道 commands/lib 该放哪一层；或想把 CLI 工具塞进 src 顶层；或担心未来 HTTP 和 commands 抢名"
     },
     {
+      "id": "agent-delegation-criteria",
+      "type": "pattern",
+      "status": "draft",
+      "title": "什么时候该派子智能体（以及为什么它们会白跑）",
+      "path": "patterns/agent-delegation-criteria.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
       "id": "allowlist-over-denylist",
       "type": "pattern",
       "status": "active",
@@ -573,6 +582,15 @@
       "trigger": "不确定改的是约定还是技能；或把技能当承重墙改不动；或约定被当隔断随便改"
     },
     {
+      "id": "module-identity-before-layout",
+      "type": "pattern",
+      "status": "draft",
+      "title": "模块身份先于目录（单仓库里\"模块\"如何获得身份）",
+      "path": "patterns/module-identity-before-layout.md",
+      "domains": [],
+      "appliesTo": []
+    },
+    {
       "id": "multi-portal-capability-gate",
       "type": "pattern",
       "status": "active",
@@ -814,6 +832,15 @@
         "all"
       ],
       "trigger": "想跨域共享通用 0/空串常量；或同一个值在不同业务含义不清；或常量名读不出业务语义"
+    },
+    {
+      "id": "verify-with-independent-instruments",
+      "type": "pattern",
+      "status": "draft",
+      "title": "用互相独立的仪器验证（工具会沉默、会吵、也会坏）",
+      "path": "patterns/verify-with-independent-instruments.md",
+      "domains": [],
+      "appliesTo": []
     },
     {
       "id": "waiting-is-a-decision-window",
@@ -1485,18 +1512,18 @@
     }
   ],
   "summary": {
-    "total": 124,
+    "total": 127,
     "byType": {
       "agreement": 10,
       "workflow": 11,
       "skill": 33,
-      "pattern": 53,
+      "pattern": 56,
       "adr": 12,
       "integration": 5
     },
     "byStatus": {
       "active": 109,
-      "draft": 3,
+      "draft": 6,
       "accepted": 11,
       "proposed": 1
     }

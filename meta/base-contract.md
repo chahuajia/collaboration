@@ -75,6 +75,8 @@ domains/         rfcs/           profiles/    templates/   inbox/
 1. **推荐 id**：`[[S12]]` —— 不可变，改名不失效
 2. **也接受文件名**：`[[S12-边界解析]]` —— 更可读，改名要跟着改
 3. **围栏与行内代码里的双括号不算链接**（`extractLinks`）
+4. **`.md` 后缀两种写法等价**：`[[patterns/x]]` 与 `[[patterns/x.md]]` 都能解析
+   （2026-10-06 修的 bug：`allMarkdownPaths` 是无扩展名口径，带 `.md` 的引用曾被误报 `DEAD_LINK`）
 
 ### 六、生成物
 
